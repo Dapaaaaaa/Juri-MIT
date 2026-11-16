@@ -55,3 +55,4 @@ if (-not (Test-Path "MITWEEK-inponamatim")) {
 }
 
 Write-Host "Selesai! Seluruh repositori peserta siap digunakan." -ForegroundColor Cyan
+
