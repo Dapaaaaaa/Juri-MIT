@@ -1,0 +1,1188 @@
+# Rekap Penilaian Lomba Web Development MIT-WEEK 2026
+
+Dokumen ini digunakan untuk mencatat hasil penilaian setiap tim peserta, disesuaikan langsung dengan format isian pada portal penilaian juri.
+Setiap draf masukan dirancang proporsional: memuat apresiasi konsep, koreksi bug kritis, serta saran peningkatan metode teknis (maksimal 2.000 karakter).
+
+## Klasemen Sementara Hasil Penilaian (20 Tim)
+
+| Peringkat | Tim / Proyek | Folder Sumber | Fungsionalitas (35%) | Kesesuaian (25%) | UI/UX (20%) | Kualitas Kode (10%) | Dokumentasi (10%) | Nilai Akhir |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | Ridz010 - Ward-Ly | `wardly-app` | 98 | 98 | 97 | 98 | 97 | **97.70** |
+| 2 | Ahmad Syifa'ul F. - JagaRuang | `JagaRuang` | 97 | 97 | 96 | 94 | 94 | **96.30** |
+| 3 | Yanuar Faturrahman - Guardian Digital | `guardian-digital` | 96 | 98 | 97 | 92 | 93 | **96.20** |
+| 4 | Linus Wannabe - Clarity | `clarity` | 97 | 96 | 96 | 94 | 94 | **96.05** |
+| 5 | Legansdeveloper - Cynthia | `MIT-WEBDEVELOPMENT-IFORB` | 96 | 95 | 97 | 96 | 95 | **95.85** |
+| 6 | hissyam90 - Saring | `saring-app` | 96 | 97 | 95 | 93 | 94 | **95.60** |
+| 7 | Tim Pecut Claude - AMBA | `MIT-week` | 95 | 97 | 95 | 94 | 95 | **95.40** |
+| 8 | Zaid Al Hibbur Rasul - ITIHIX | `ITIHIX` | 95 | 97 | 95 | 93 | 92 | **95.15** |
+| 9 | ProgrammerAkhirZaman - CEKIN | `Cekin` | 96 | 98 | 96 | 86 | 92 | **95.10** |
+| 10 | M. Ridho Alfarod - TUNTUN | `TUNTUN_KARHUTLA` | 93 | 95 | 96 | 94 | 90 | **93.90** |
+| 11 | 404Forbidden (MIT-002) - PANDU | `pandu` | 90 | 98 | 93 | 82 | 92 | **92.00** |
+| 12 | Nathan Chandra - CekDulu | `web-development` | 86 | 97 | 98 | 96 | 82 | **91.75** |
+| 13 | Tim Tiga Trio (MIT-010) - TRASP | `TRASP` | 92 | 90 | 90 | 88 | 89 | **90.50** |
+| 14 | Lodraalbar - Spot the Scam | `Spot-the-Scam-Cek-Pesan-Penipuan` | 90 | 90 | 86 | 82 | 87 | **88.25** |
+| 15 | ArmBagus dkk. - VeriFy | `VeriFy-` | 82 | 95 | 96 | 80 | 84 | **88.05** |
+| 16 | MaharajaGeral / ITK - Cekkan | `Cekkan` | 88 | 90 | 89 | 85 | 75 | **87.10** |
+| 17 | BASIS-64 (MIT-009) - DaveMod | `davemoderator` | 86 | 88 | 90 | 88 | 65 | **85.40** |
+| 18 | Nosutora - Guardian | `Guardian` | 82 | 80 | 88 | 88 | 85 | **83.60** |
+| 19 | Leonardo Elian - FRAUD-ANT | `FRAUDD-ANT/FRAUD-ANT` | 78 | 82 | 88 | 85 | 80 | **81.90** |
+| 20 | anugrahdwantara - JeBe | `JeBe-Jebakan_Betmen` | 72 | 78 | 76 | 76 | 82 | **75.20** |
+
+---
+
+## 1. Tim: 404Forbidden (MIT-002) - PANDU
+- **Folder Sumber**: `pandu`
+- **Ketua Tim**: Rio Ardian Pratama | Telkom University
+- **Tautan Deployment**: https://pandu.web.id
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 90 | 31.50 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 93 | 18.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 82 | 8.20 |
+| Dokumentasi | 10% | 92 | 9.20 |
+| **Total Nilai Akhir** | **100%** | - | **92.00** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.488 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Konsep platform PANDU sangat relevan dan tepat sasaran menjawab modus kejahatan siber di Indonesia (kurir APK, tilang ETLE, hingga phising bank). Fitur sandbox simulasi interaktif dan pembedahan manifest APK sangat baik.
+
+Perbaikan Bug & Keamanan Kritis:
+1. handlers.go:168: Penulisan string(rune(matchedEntry.ReportCount+'0')) memicu karakter rusak jika laporan >= 10. Ganti dengan strconv.Itoa().
+2. admin.go: Hapus fallback hardcoded credential dan HMAC secret key. Terapkan prinsip fail-fast (server langsung berhenti jika file .env kosong).
+3. Path Absolut VPS: Pindahkan path server seperti /www/wwwroot/... dan /root/.hermes/.env ke environment variable agar tidak error di OS lain dan tidak membocorkan arsitektur server.
+4. next.config.ts: Tambahkan API rewrites ke port 8082 agar pengetesan lokal tanpa Nginx tidak 404.
+
+Saran Peningkatan & Metode yang Lebih Baik:
+1. Proteksi SSRF & DNS Rebinding: Pada url_scanner.go, validasi IP sebaiknya dipindah ke dalam callback Dialer.Control saat soket TCP dibuka, bukan sebelum HTTP request dikirim.
+2. Analisis APK yang Lebih Dalam: Saat ini inspeksi APK masih membaca manifest mentah. Ke depan, kalian bisa mengintegrasikan engine berbasis YARA rules atau Dex header parser agar deteksi trojan sniffer SMS lebih akurat tanpa harus menjalankan file.
+3. Integrasi Bot / Ekstensi: Pertimbangkan integrasi WhatsApp Bot atau ekstensi browser agar pengguna tidak perlu repot copy-paste manual ke website saat menerima pesan mencurigakan.
+
+Eksekusi yang sangat berani dan potensial!
+```
+
+---
+
+## 2. Tim: Linus Wannabe - Clarity
+- **Folder Sumber**: `clarity`
+- **Ketua Tim**: Mohammad Ariffansyah (Anggota: Nailah Salsabila Ramadhani Kusnadi)
+- **Tautan Deployment**: https://clarity.arpthef.my.id/
+- **Video Demo**: https://youtu.be/2LXWugoGrGk
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 95 | 33.25 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 94 | 9.40 |
+| Dokumentasi | 10% | 97 | 9.70 |
+| **Total Nilai Akhir** | **100%** | - | **96.05** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.458 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Karya Clarity luar biasa matang dan humanis. Metafora meja 3D berkas kertas dan stabilo terasa sangat orisinal dan intuitif. Pendekatannya sangat terstruktur: Understand (Peta Tipuan), Recognize, Learn, Prevent, dan Act. Kasus yang diangkat sangat up-to-date (suara tiruan AI, salah transfer, hingga penipuan QRIS refund).
+
+Poin Keunggulan Teknis:
+1. Standar Privasi Tinggi: Penerapan dual-layer redaction (di browser dan diulang di server sebelum ke Groq) adalah implementasi trust boundary yang sangat patut dicontoh.
+2. Robust AI Handling: Pembersihan kutipan halusinasi AI dan stripping URL bot penipu menjaga keamanan dan tampilan teks tetap rapi.
+3. Aksesibilitas: Fallback saat WebGL tidak aktif, tombol skip-to-content, dan dukungan prefers-reduced-motion diterapkan dengan sangat teliti.
+
+Saran Peningkatan & Metode yang Lebih Baik:
+1. Distributed Rate Limiter: In-memory Map di lib/groq.ts bersifat ephemeral di Vercel serverless. Pertimbangkan memakai Upstash Redis / Vercel KV agar pembatasan kuota IP tersinkronisasi antar-instance.
+2. Deteksi Gambar / Screenshot (Client-Side OCR): Saat ini Clarity hanya menerima teks dan URL. Kalian bisa menambahkan Web Worker berbasis Tesseract.js di browser untuk membaca tangkapan layar chat tanpa melanggar prinsip privasi zero-server.
+3. Token Window pada Negasi: Cek negasi 16 karakter ke belakang di analyze.ts bisa ditingkatkan menggunakan analisis klausa/token kata agar kalimat majemuk bertingkat yang panjang tertangani lebih fleksibel.
+
+Karya yang sangat bersih, elegan, dan inspiratif!
+```
+
+---
+
+## 3. Tim: Pecut Claude - AMBA
+- **Folder Sumber**: `MIT-week`
+- **Ketua Tim / Anggota**: Mursyid Dwi Wahidiyantoro, Bagus Joshua Parabang, Jericho Mikael Tuapardi L, M. Ridho Ansyori
+- **Tautan Deployment**: https://amba.madewadigital.com/
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 96 | 33.60 |
+| Kesesuaian dengan Studi Kasus | 25% | 94 | 23.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 98 | 9.80 |
+| Dokumentasi | 10% | 93 | 9.30 |
+| **Total Nilai Akhir** | **100%** | - | **95.40** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.548 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Kualitas rekayasa perangkat lunak AMBA berstandar industri. Pipeline deteksi 4 lapis (Jejak AI, ELA visual kompresi, Cek Fakta media kredibel, dan Keamanan Link) berjalan sangat mulus. Desain antarmuka bergaya Google Gemini tonal surfaces juga modern dan sangat aksesibel.
+
+Poin Keunggulan Teknis:
+1. Mitigasi SSRF Sempurna: Penggunaan Dialer.Control pada socket dial time adalah solusi terbaik dalam menepis celah DNS Rebinding (TOCTOU).
+2. Mesin Skoring Deterministik: Logika skoring murni di scoring.go yang dikalibrasi batas empirisnya pada dataset riil sangat ilmiah dan objektif.
+3. Aksesibilitas & PWA: Sangat patuh standar WCAG, fokus heading otomatis pada pembaca layar, dan dukungan Web Share Target API di perangkat mobile.
+
+Saran Peningkatan & Metode yang Lebih Baik:
+1. Optimasi Bandwidth Video: Saat ini yt-dlp mengunduh seluruh file video hingga 60 MB. Untuk mempercepat analisis dan menghemat bandwidth server, gunakan flag ekstraksi audio-only (misal format -f ba) dan sampling thumbnail jarak jauh via HTTP range request sebelum mengunduh biner penuh.
+2. Modul Simulasi Percakapan: Fokus AMBA saat ini dominan pada verifikasi konten media. Agar lebih kuat menjawab kasus rekayasa sosial langsung, pertimbangkan menambah arena simulasi chat interaktif (adversarial chat) untuk melatih kewaspadaan pengguna saat ditekan penipu.
+3. Kelengkapan Berkas: Cantumkan tautan rekaman video demo 5 menit pada README.md agar juri dapat mengaksesnya langsung tanpa membuka form terpisah.
+
+Kombinasi Go Chi dan Svelte 5 yang luar biasa solid!
+```
+
+---
+
+## 4. Tim: hissyam90 - Saring
+- **Folder Sumber**: `saring-app`
+- **Ketua Tim / Repositori**: hissyam90 (GitHub)
+- **Tautan Deployment**: https://saring.app
+- **Video Demo**: Naskah tersedia di docs (link video tidak dicantumkan di README)
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 95 | 33.25 |
+| Kesesuaian dengan Studi Kasus | 25% | 97 | 24.25 |
+| UI/UX | 20% | 95 | 19.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 97 | 9.70 |
+| Dokumentasi | 10% | 94 | 9.40 |
+| **Total Nilai Akhir** | **100%** | - | **95.60** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.512 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Saring memiliki kedewasaan filosofi produk yang luar biasa: memposisikan diri sebagai jeda berpikir ("Saring Sebelum Sharing") tanpa vonis biner yang menyesatkan. Ekosistem fiturnya sangat lengkap: periksa pesan 3-in-1, 23 skenario latihan, panduan langkah darurat pascainsiden, serta komunitas publik berbasis Tiptap dengan sistem revisi dan moderasi admin.
+
+Poin Keunggulan Teknis:
+1. Mesin Heuristik Berkesadaran Konteks: engine.ts membedakan reported speech, narasi masa lalu, dan kalimat peringatan sehingga minim false-positive.
+2. Keamanan Basis Data: Query terparameterisasi, cookie terenkripsi iron-session, session versioning saat reset password, dan rate limiter berbasis PostgreSQL sangat siap produksi.
+3. Desain & Aksesibilitas: Tampilan neo-brutalist berkarakter kuat, lulus audit kontras WCAG 2.2 AA, dan drawer mobile dilengkapi focus trap.
+
+Saran Peningkatan & Metode yang Lebih Baik:
+1. Export Dossier Bukti (PDF): Pada modul /langkah, sediakan fitur cetak/unduh checklist bukti insiden dalam format PDF terstruktur agar korban bisa langsung membawanya ke kantor polisi atau bank.
+2. Inspeksi Tangkapan Layar (Client-Side OCR): Tambahkan kemampuan membaca gambar chat secara lokal di browser via Tesseract.js Web Worker agar pengguna tidak perlu menyalin teks panjang secara manual.
+3. Tautan Video Demo di README: Naskah video di docs sudah sangat rapi, namun link video jadi belum ada di README. Cantumkan link tersebut berdampingan dengan link produksi.
+
+Karya Next.js dan PostgreSQL yang sangat matang dan terstruktur!
+```
+
+---
+
+## 5. Tim: Lodraalbar - Spot the Scam
+- **Folder Sumber**: `Spot-the-Scam-Cek-Pesan-Penipuan`
+- **Ketua Tim**: Lodra Kalimasada A.A. (Anggota: Hadaina Silmi Damanik)
+- **Tautan Deployment**: https://spot-the-scam-cek-pesan-penipuan.vercel.app
+- **Mirror**: https://lodraalbar.github.io/Spot-the-Scam-Cek-Pesan-Penipuan/
+- **Video Demo**: https://drive.google.com/drive/folders/1atma_uZMZzU-VxVqn3-PWwsz-sfBBmW7?usp=sharing/
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 87 | 30.45 |
+| Kesesuaian dengan Studi Kasus | 25% | 90 | 22.50 |
+| UI/UX | 20% | 88 | 17.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 82 | 8.20 |
+| Dokumentasi | 10% | 95 | 9.50 |
+| **Total Nilai Akhir** | **100%** | - | **88.25** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.586 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Konsep Spot the Scam ini solutif, terutama keberanian menaruh OCR Tesseract.js langsung di browser. Gambar chat pengguna tidak perlu dikirim ke server luar sehingga privasi tetap terjaga. Panduan darurat kilat dan kontak aduan resmi (OJK 157, Patroli Siber) juga sangat aplikatif membantu korban.
+
+Catatan teknis dan celah keamanan:
+1. Potensi Blacklist Palsu di Database: Di file setup.sql, trigger trg_sync_reported_number langsung menaikkan hitungan laporan tiap ada input baru di tabel reports. Tanpa rate limit atau moderasi, akun jahat bisa membanjiri laporan palsu dalam sekejap untuk membuat nomor target otomatis dicap bahaya.
+2. False Positive Regex: Kata "selamat" membuat sapaan wajar seperti "Selamat pagi" langsung terdeteksi sebagai penipuan undian. Pola OTP juga belum membedakan SMS resmi dari bank dengan pesan pemerasan penipu.
+3. Whitelist Domain Terlalu Sedikit: Daftar domain resmi hanya berisi 5 nama, sehingga situs resmi bank lain (Mandiri, BNI) atau web pemerintah (.go.id) langsung dianggap mencurigakan.
+
+Saran pengembangan ke depan:
+1. Buka Akses Tanpa Wajib Login: Korban penipuan biasanya panik dan butuh verifikasi cepat. Berikan opsi periksa pesan tanpa registrasi, lalu tawarkan login hanya jika ingin menyimpan riwayat.
+2. Amankan Jalur Laporan: Pindahkan proses lapor nomor ke Supabase Edge Functions dengan proteksi captcha dan sistem persetujuan moderasi sebelum nomor dimunculkan ke publik.
+3. Rapikan Kode: Pisahkan skrip 2.200 baris di home.html ke berkas mandiri, dan hindari memuat Tailwind CDN bersamaan dengan Bootstrap di history.html agar loading halaman lebih ringan.
+
+Idenya sudah sangat bagus dan fungsional, tinggal matangkan lagi logika filternya. Sukses terus buat kalian!
+```
+
+---
+
+## 6. Tim: Ridz010 - Ward-Ly
+- **Folder Sumber**: `wardly-app`
+- **Ketua Tim / Pengembang**: Farid Kusuma (`Ridz010`)
+- **Tautan Deployment**: https://wardly-app.vercel.app/
+- **Video Demo**: https://drive.google.com/file/d/14_3fUp-_Ewp4XSJo-lS0fyySxBGB-3VY/view
+- **Repositori**: https://github.com/Ridz010/wardly-app
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 98 | 34.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 97 | 19.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 98 | 9.80 |
+| Dokumentasi | 10% | 97 | 9.70 |
+| **Total Nilai Akhir** | **100%** | - | **97.70** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.572 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Eksekusi Ward-Ly ini salah satu yang paling matang di kompetisi ini. Kerangka kerjanya rapi dari Recognize, Learn, Act, sampai Komunitas. Pengguna bisa langsung coba tanpa harus bikin akun, dan optimasi lite-mode buat HP spek rendah membuktikan kalian beneran memikirkan kenyamanan pengguna di lapangan.
+
+Poin keunggulan teknis dan keamanan:
+1. Pengecekan Link Aman: Pendekatan inspeksi struktural domain (punycode, brand lookalike, TLD risiko) tanpa request keluar itu langkah tepat untuk menutup total celah SSRF dan DNS Rebinding.
+2. Perlindungan Privasi: Sanitasi data pribadi (PII redaction) sebelum teks dikirim ke AI, validasi biner magic byte file upload, dan hashing IP tamu sudah menerapkan standar keamanan yang baik.
+3. Kontrol Akses Admin: Pembagian role user, moderator, dan admin di Server Actions sudah ketat, plus ada proteksi agar admin tidak bisa mengunci akunnya sendiri.
+
+Saran pengembangan ke depan:
+1. Fallback OCR Lokal: Saat ini pembacaan screenshot masih bergantung penuh ke API OpenRouter. Coba tambahkan fallback OCR di sisi browser (misal pakai Tesseract.js worker) agar saat kuota API habis atau server down, fitur baca gambar tetap bisa jalan.
+2. Ekspor Berkas Bukti (PDF): Di modul Lindungi, sediakan tombol unduh rangkuman checklist darurat dalam format PDF rapi agar korban bisa langsung membawanya ke bank atau kantor polisi.
+3. Filter Komunitas: Tambahkan filter kategori modus (misal: Loker Palsu, Kurir APK, Giveaway) di halaman komunitas agar pengguna lebih cepat menemukan cerita yang relevan dengan kasus yang dialami.
+
+Kombinasi Next.js 16 dan Supabase yang sangat solid dan inspiratif. Semangat terus buat pengembangannya!
+```
+
+---
+
+## 7. Tim: MaharajaGeral / ITK - Cekkan
+- **Folder Sumber**: `Cekkan`
+- **Ketua Tim / Anggota**: Maharaja Geral, RajibIF, dkk. | Institut Teknologi Kalimantan (ITK)
+- **Tautan Deployment**: https://cekkan-frontend.vercel.app
+- **Backend API**: https://cekkan-backend.vercel.app
+- **Video Demo**: https://drive.google.com/drive/folders/1f2CaQuWWRZCF41nOsW11-Yxoh5h7Ue7B?usp=sharing
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 88 | 30.80 |
+| Kesesuaian dengan Studi Kasus | 25% | 90 | 22.50 |
+| UI/UX | 20% | 89 | 17.80 |
+| Kualitas Kode & Pemeliharaan | 10% | 85 | 8.50 |
+| Dokumentasi | 10% | 75 | 7.50 |
+| **Total Nilai Akhir** | **100%** | - | **87.10** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.706 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Cekkan punya fokus masalah yang sangat tajam dan tepat sasaran buat anak muda, khususnya mahasiswa dan fresh graduate yang rentan terjebak lowongan kerja palsu. Pembagian fiturnya rapi dari periksa pesan, tautan, dokumen syarat kerja, sampai simulasi chat interaktif dengan skenario bercabang. Hasil analisis AI juga responsif dan penjelasannya mudah dipahami orang awam.
+
+Catatan teknis dan arsitektur yang perlu diperhatikan:
+1. State In-Memory di Serverless: Di server.js, pembatasan kuota harian (DAILY_LIMIT) dan rate limiter masih disimpan di variabel memori lokal. Karena backend di-deploy ke Vercel serverless yang sifatnya ephemeral, hitungan ini bakal otomatis ter-reset tiap ada instance baru.
+2. Penanganan XSS Sangat Baik: Penggunaan textContent secara konsisten di app.js untuk merender teks hasil analisis patut diapresiasi karena menutup celah DOM XSS dengan sangat bersih.
+3. Kerapian Dokumentasi: Di file README.md masih ada placeholder teks yang lupa diisi ("Pilih skenario: [ISI: ...]"), serta belum ada petunjuk instalasi lokal dan konfigurasi environment variable (.env).
+
+Saran pengembangan ke depan:
+1. Pasang Distributed Storage: Gunakan database ringan atau Redis (seperti Upstash Redis) untuk menyimpan kuota harian dan rate limit agar tersinkronisasi antar-instance serverless.
+2. Tambah Skenario Simulasi: Saat ini simulasi baru punya satu skenario aktif. Menambahkan variasi kasus seperti penipuan loker luar negeri, admin part-time like-and-share, atau magang fiktif bakal bikin platform ini jauh lebih kaya edukasi.
+3. Lengkapi Panduan Setup: Perbarui README dengan langkah instalasi npm install, port default, dan deskripsi tech stack agar pengembang lain mudah berkontribusi.
+
+Konsep solutif dengan eksekusi yang fungsional dan bersih. Semangat terus buat tim Cekkan!
+```
+
+---
+
+## 8. Tim: BASIS-64 (MIT-009) - DaveMod
+- **Folder Sumber**: `davemoderator`
+- **Ketua Tim / Anggota**: Gabriel Ado Ramos Tukan | BASIS-64
+- **Tautan Deployment**: https://davemoderator.vercel.app *(Ditemukan pada metadata app/layout.tsx; tidak tercantum di README)*
+- **Video Demo**: Tidak dicantumkan di README maupun repositori
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 86 | 30.10 |
+| Kesesuaian dengan Studi Kasus | 25% | 88 | 22.00 |
+| UI/UX | 20% | 90 | 18.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 88 | 8.80 |
+| Dokumentasi | 10% | 65 | 6.50 |
+| **Total Nilai Akhir** | **100%** | - | **85.40** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.730 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Inovasi DaveMod sangat menarik dan berani karena melatih neural network sendiri dari nol lalu menjalankannya langsung di browser menggunakan ONNX Runtime Web. Pendekatan zero-server ini luar biasa dalam menjaga privasi data pengguna, sekaligus sangat hemat biaya karena tidak bergantung pada API LLM eksternal. Visualisasi probabilitas 10 kategorinya juga memberikan transparansi yang bagus.
+
+Catatan teknis dan bug yang perlu diperbaiki:
+1. Ketidaksinkronan Vocab Size: Di train.py ukuran vocabulary disetel 3.500, tetapi di MessageDetector.tsx variabel maxValidIndex malah di-hardcode ke angka 2.500. Akibatnya, ada 1.000 kata hasil pelatihan yang dipaksa menjadi OOV (Out of Vocabulary) saat inferensi di web, sehingga akurasi model di browser menurun.
+2. Batas Panjang Kalimat (Max Len 40): Teks input dipotong maksimal 40 kata. Padahal banyak pesan penipuan memakai kalimat pembuka formal yang panjang, sehingga instruksi transfer atau link jebakan di bagian akhir pesan berisiko terpotong dan tidak terbaca oleh model.
+3. Ketergantungan CDN WASM: Runtime ONNX memuat file biner WASM dari jsDelivr. Jika koneksi pengguna sedang offline atau CDN mengalami kendala, model gagal diinisialisasi.
+4. Kelengkapan Berkas README: Tautan live demo dan video presentasi belum dicantumkan di README.md, padahal kedua tautan ini merupakan berkas wajib pada juknis lomba.
+
+Saran pengembangan ke depan:
+1. Simpan Aset WASM Lokal: Pindahkan file biner ONNX WASM ke folder public agar aplikasi bisa berjalan penuh secara offline (PWA) tanpa bergantung pada CDN pihak ketiga.
+2. Tingkatkan Arsitektur Model: Pertimbangkan menaikkan max_len ke 80–120 kata dan tambahkan layer bidirectional LSTM sebelum pooling agar konteks urutan kata tertangkap lebih baik.
+3. Tambah Fitur Interaktif: Lengkapi platform dengan simulasi interaktif atau panduan aduan resmi agar pengguna punya kanal aksi lanjutan setelah membaca hasil deteksi.
+
+Eksplorasi machine learning di peramban yang sangat potensial dan solutif. Sukses terus buat tim BASIS-64!
+```
+
+---
+
+## 9. Tim: Tiga Trio (MIT-010) - TRASP
+- **Folder Sumber**: `TRASP`
+- **Ketua Tim / Anggota**: Raya Raihana Yasmin (Ketua), Andi Rivelani Aurellah, Yelena Amanda | SMK Negeri 6 Balikpapan
+- **Tautan Deployment**: Tidak dicantumkan di README *(Domain tebakan https://trasp.vercel.app menghasilkan 404 Not Found)*
+- **Video Demo**: https://youtu.be/4-OiCrQ8kHI
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 88 | 30.80 |
+| Kesesuaian dengan Studi Kasus | 25% | 96 | 24.00 |
+| UI/UX | 20% | 95 | 19.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 82 | 8.20 |
+| Dokumentasi | 10% | 85 | 8.50 |
+| **Total Nilai Akhir** | **100%** | - | **90.50** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.769 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform TRASP sangat impresif, terutama dibangun oleh tim tingkat SMK dengan Next.js 16 dan Tailwind v4 yang modern. Konsep forensik digitalnya matang, mulai dari redaksi privasi gambar berbasis canvas, normalisasi teks leetspeak, alur darurat 15 menit, hingga simulasi 10 level Cyber Quest dengan Telemetry X-Ray psikologi penipu.
+
+Catatan teknis dan keamanan yang perlu diperhatikan:
+1. Kebocoran Kredensial S3 Nyata: Di file .env.example tercantum kredensial aktif IDCloudHost S3 (Access Key dan Secret Key). Kredensial ini wajib segera di-revoke dan diganti via dashboard cloud agar bucket storage kalian tidak disalahgunakan pihak luar.
+2. Tidak Ada Tautan Deployment Aktif: README belum memuat URL live demo (hanya ada localhost:3000), dan domain tebakan trasp.vercel.app menghasilkan status 404. Berdasarkan juknis, ketiadaan live deployment berdampak langsung pada nilai fungsionalitas.
+3. Sanitasi File Upload: Pada endpoint media, penamaan file gambar sebaiknya di-hash memakai UUID acak sebelum diunggah ke storage untuk mencegah tabrakan nama file atau celah traversal.
+
+Saran pengembangan ke depan:
+1. Praktik Environment Variable: Selalu pakai dummy placeholder seperti your_key_here pada .env.example dan kelola secret nyata langsung di dashboard deployment.
+2. Optimasi Kanvas Redaksi: Pemrosesan piksel pada gambar besar sebaiknya memanfaatkan OffscreenCanvas atau Web Worker agar thread UI di browser mobile tetap responsif tanpa lag.
+3. Deploy ke Cloud Publik: Sambungkan repositori ke Vercel dan PostgreSQL cloud gratis (seperti Neon/Supabase) agar karya kalian bisa langsung diuji publik secara daring.
+
+Karya yang sangat berani, komprehensif, dan membanggakan untuk level SMK. Pertahankan standar rekayasa ini dan sukses terus buat tim Tiga Trio!
+```
+
+---
+
+## 10. Tim: JagaRuang (Ahmad Syifa'ul Falakhul Khayyi dkk.) - JagaRuang
+- **Folder Sumber**: `JagaRuang`
+- **Ketua Tim / Anggota**: Ahmad Syifa'ul Falakhul Khayyi, Mutiara Dewanda Prisvilla, Raffi Azzaky Ramadhani, Ahmad Syafi'al Anam
+- **Tautan Deployment**: https://jaga-ruang-ten.vercel.app/
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 96 | 33.60 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 97 | 19.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 96 | 9.60 |
+| Dokumentasi | 10% | 92 | 9.20 |
+| **Total Nilai Akhir** | **100%** | - | **96.30** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.695 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Eksekusi JagaRuang luar biasa matang dan disiplin. Mengadopsi kerangka kerja resmi Guardians (Recognize, Learn, Act) dengan arsitektur 100% on-device client-side tanpa backend server adalah keputusan rekayasa yang sangat tepat dalam menjaga privasi data pengguna. Fitur 8 simulator interaktif, dial-tone synthesizer Web Audio API, 12 modul edukasi, hingga Sandi Verifikasi Keluarga anti-AI Voice Cloning sangat inovatif.
+
+Catatan teknis dan temuan yang perlu diperbaiki:
+1. Data Notifikasi Awal: Pada notificationService.ts, daftar notifikasi bawaan masih menyisakan teks dummy berbahasa Inggris ("Your AI Just Got Smarter") yang kurang selaras dengan bahasa aplikasi.
+2. Label Tombol Login Google: Opsi "Login with Google" langsung mengarahkan sesi ke akun demo lokal. Sebaiknya gunakan label transparan seperti "Masuk Instan (Akun Demo)" agar tidak disangka integrasi OAuth Google sungguhan.
+3. Kelengkapan Berkas Video: Tautan rekaman video demo 5 menit belum dicantumkan di README.md, padahal tautan ini merupakan berkas wajib pada juknis lomba.
+
+Saran pengembangan ke depan:
+1. Modularisasi Belajar.tsx: File Belajar.tsx saat ini berukuran lebih dari 4.400 baris. Sebaiknya tab simulator kasus, kuis kilat refleks, dan kamus istilah dipecah ke file komponen terpisah dengan React.lazy agar pemisahan bundle kode (code splitting) lebih optimal.
+2. Integrasi Web Speech API: Pada simulator panggilan suara, menambahkan sintesis suara lisan via window.speechSynthesis bahasa Indonesia akan membuat simulasi telepon terdengar nyata tanpa memerlukan rekaman audio manual.
+
+Standar rekayasa monorepo, dokumen ADR, dan pengujian Vitest yang sangat profesional. Selamat untuk seluruh tim JagaRuang!
+```
+
+---
+
+## 11. Tim: Anugrah Dwantara (anugrahdwantara-Sage) - JeBe (Jebakan Betmen)
+- **Folder Sumber**: `JeBe-Jebakan_Betmen`
+- **Ketua Tim / Akun**: Anugrah Dwantara (anugrahdwantara-Sage)
+- **Tautan Deployment**: Belum dicantumkan *(Placeholder "ISI DENGAN URL NETLIFY" di README.md; domain tebakan jebe.netlify.app menghasilkan 404)*
+- **Video Demo**: Belum dicantumkan *(Placeholder "ISI DENGAN URL VIDEO" di README.md)*
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 70 | 24.50 |
+| Kesesuaian dengan Studi Kasus | 25% | 78 | 19.50 |
+| UI/UX | 20% | 82 | 16.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 80 | 8.00 |
+| Dokumentasi | 10% | 68 | 6.80 |
+| **Total Nilai Akhir** | **100%** | - | **75.20** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.782 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Pendekatan JeBe (Jebakan Betmen) menarik karena dibangun dengan arsitektur zero-dependency menggunakan Node.js dan vanilla JavaScript tanpa dependensi eksternal. Mesin aturan pada analyzer.js tersusun rapi dengan 12 kategori deteksi, pembobotan kumulatif, penanganan negasi kalimat, dan rekomendasi langkah aman (Act) yang kontekstual. Manipulasi DOM di script.js juga aman dari celah XSS karena menghindari innerHTML.
+
+Catatan teknis dan temuan yang perlu diperhatikan:
+1. Placeholder Submission Belum Diisi: Di README.md, tautan wajib masih berupa draf ("ISI DENGAN URL NETLIFY", "ISI DENGAN URL VIDEO"). Ketiadaan tautan live deployment aktif sangat memengaruhi penilaian juknis karena juri tidak dapat menguji aplikasi secara daring.
+2. File Terbengkalai main.html: Terdapat file main.html yang belum selesai (tanpa tag body dan konten terpotong) serta tidak bisa diakses dari server. Bersihkan file uji coba yang tidak terpakai dari repositori.
+3. Cakupan Fitur Masih Terbatas: Platform baru menangani analisis pesan teks satu arah. Belum tersedia modul edukasi atau simulasi interaktif (Learn), serta belum ada inspeksi berkas berbahaya (seperti sniffer APK kurir/undangan).
+
+Saran pengembangan ke depan:
+1. Lengkapi Deployment Netlify: Segera deploy aplikasi ke Netlify dan cantumkan tautan aktifnya di README agar platform bisa dicoba langsung oleh publik.
+2. Tambah Skenario Latihan: Bangun simulasi percakapan interaktif untuk melatih refleks pengguna dalam mengambil keputusan saat menghadapi penipu.
+3. Proteksi Rate Limit di Serverless: Pasang distributed rate limiter pada Netlify Functions agar pembatasan request per IP tetap berjalan di lingkungan cloud.
+
+Fondasi kode vanilla yang sangat bersih dan rapi. Terus kembangkan fiturnya dan sukses selalu untuk tim JeBe!
+```
+
+---
+
+## 12. Tim: Nathan Chandra (th4nch4) - CekDulu
+- **Folder Sumber**: `web-development`
+- **Ketua Tim / Akun**: Nathan Chandra (th4nch4 / nathanchandra141-star)
+- **Tautan Deployment**: Belum dicantumkan di README *(Arsitektur 100% file statis offline; domain GitHub Pages belum diaktifkan)*
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 86 | 30.10 |
+| Kesesuaian dengan Studi Kasus | 25% | 97 | 24.25 |
+| UI/UX | 20% | 98 | 19.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 96 | 9.60 |
+| Dokumentasi | 10% | 82 | 8.20 |
+| **Total Nilai Akhir** | **100%** | - | **91.75** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.746 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform CekDulu adalah karya yang luar biasa segar, menyenangkan, dan inovatif. Memadukan mekanik gamifikasi ala Duolingo dengan maskot Coach Wall (9 ekspresi SVG), simulasi HP bergaya iPhone yang adaptif, serta materi Voice Phishing dengan Web Speech API on-device adalah pendekatan kreatif yang sangat efektif melatih kewaspadaan anak muda. Kehadiran skenario pesan asli juga sangat mendidik agar pengguna tidak paranoid.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Tautan Live Deployment: README.md belum mencantumkan URL live deployment (seperti GitHub Pages atau Vercel). Berdasarkan juknis, kemudahan akses daring langsung bagi penguji menjadi faktor krusial penilaian fungsionalitas.
+2. Kelengkapan Berkas Video: Tautan rekaman video demo 5 menit belum dicantumkan di README.
+3. Kerapian Layar Sempit: Pada perangkat dengan lebar di bawah 360px, beberapa dialog opsi jawaban bertumpuk cukup padat dengan bingkai HP simulasi.
+
+Saran pengembangan ke depan:
+1. Aktifkan GitHub Pages: Karena web ini berbasis file statis murni tanpa build rumit, kalian cukup mengaktifkan fitur GitHub Pages di repositori lalu menyematkan tautannya pada README.
+2. Tambah Mode Cek Bebas: Saat ini CekDulu berfokus pada latihan terpandu. Menambahkan modul pemeriksa pesan bebas (sandbox) akan membuat platform ini menjadi pertolongan pertama saat pengguna menerima pesan mencurigakan di dunia nyata.
+3. Fallback Sintesis Suara: Untuk peramban yang belum memiliki paket bahasa Indonesia di window.speechSynthesis, tambahkan nada panggil oscillator Web Audio agar efek simulasi telepon tetap berbunyi.
+
+Disiplin pengujian 93 unit test dan Playwright E2E yang sangat profesional. Karya yang luar biasa keren dan inspiratif buat tim CekDulu!
+```
+
+---
+
+## 13. Tim: ZaidAlHibb - ITIHIX
+- **Folder Sumber**: `ITIHIX`
+- **Ketua Tim**: Zaid Al Hibbur Rasul (zaidarschool@gmail.com)
+- **Tautan Deployment**: https://itihix.my.id *(Aktif, SSL valid, Cookie HttpOnly/SameSite=Lax, CSP terkonfigurasi)*
+- **Video Demo**: Belum dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 98 | 34.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 97 | 24.25 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 84 | 8.40 |
+| Dokumentasi | 10% | 90 | 9.00 |
+| **Total Nilai Akhir** | **100%** | - | **95.15** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.745 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform ITIHIX adalah ekosistem media sosial keamanan siber yang luar biasa matang dan masif. Alur multi-role (User, Terpercaya, Moderator, Admin) bekerja sangat rapi, mulai dari antrean moderasi laporan dengan chip alasan cepat, lencana verifikasi, SafeSnaps edukasi, hingga ItihScan AI multi-gambar berfitur editor sensor privasi (blur/mosaik) di peramban.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Kebocoran Kredensial di Git History: Pada komit e193e52, file itihix.env sempat ter-commit memuat sandi MySQL, API key AI, dan App Password Gmail SMTP. Meski file sudah dihapus di komit berikutnya, rahasia ini tersimpan permanen di riwayat git dan wajib segera di-rotate di server.
+2. Beban Payload Multi-Gambar AI: Di api/detect.php, batas teks 4.000 karakter sudah baik, tetapi jika pengguna mengunggah 6 foto resolusi tinggi sekaligus, konversi base64 berisiko memicu timeout pada gateway AI.
+3. Kelengkapan Berkas README: Bagian tim di akhir README masih terpotong dan tautan rekaman video demo 5 menit belum dicantumkan.
+
+Saran pengembangan ke depan:
+1. Bersihkan Riwayat Git: Gunakan git-filter-repo atau BFG Cleaner untuk menghapus jejak file itihix.env dari git history, lalu rotasi seluruh sandi dan token aktif di server hosting.
+2. Kompresi Sisi Klien: Kompresi GD di server sudah rapi, namun menambahkan resize kanvas di browser sebelum upload akan menghemat bandwidth dan mempercepat pengiriman laporan.
+3. Background Worker Video: Pemrosesan ffmpeg pada video SafeSnaps sebaiknya dialihkan ke antrean cron worker agar thread web server tidak tertahan saat video diproses.
+
+Arsitektur PHP dan skema relasional yang sangat solid, serta sanitasi PDO dan CSRF yang patut diacungi jempol. Sukses terus untuk tim ITIHIX!
+```
+
+---
+
+## 14. Tim: Yanuar Faturrahman - Guardian Digital
+- **Folder Sumber**: `guardian-digital`
+- **Ketua Tim**: Yanuar Faturrahman
+- **Tautan Deployment**: https://guardian-digital.gamer.gd *(Aktif di InfinityFree, proteksi bot aes.js, SSL aktif)*
+- **Video Demo**: https://youtu.be/E-vGpW0R8og?si=COJkxim3vC_Yz6i- *(Durasi 5 menit)*
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 96 | 33.60 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 94 | 18.80 |
+| Kualitas Kode & Pemeliharaan | 10% | 95 | 9.50 |
+| Dokumentasi | 10% | 98 | 9.80 |
+| **Total Nilai Akhir** | **100%** | - | **96.20** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.787 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Guardian Digital menghadirkan solusi edukasi keamanan siber yang sangat matang, komprehensif, dan menyentuh ekosistem nyata (siswa, guru, orang tua, sekolah, dan superadmin). Simulasi cerita bercabang, kepatuhan privasi berbasis UU PDP (persetujuan wali untuk siswa minor, hak ekspor dan hapus data), serta fitur keberlangsungan sistem seperti health check, backup mandiri, dan lazy scheduler adalah rekayasa perangkat lunak yang sangat mengesankan.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Penempatan Modal Onboarding di Blade: Pada layouts/app.blade.php, include modal onboarding diletakkan sebelum tag pembuka body. Menurut standar W3C, elemen tampilan visual wajib berada di dalam body agar hierarki DOM valid.
+2. Kebersihan Berkas Produksi: Skrip cek-hosting.php masih tertinggal di folder public. Meski berstatus 403, file pemeriksa konfigurasi sebaiknya dihapus dari server publik. Selain itu, file docx tutorial masih berada di dalam folder tests/Feature.
+3. Keterbatasan Hosting Gratis: Hosting InfinityFree menerapkan proteksi anti-bot JavaScript (aes.js) yang dapat menghambat pemantauan uptime otomatis dari layanan luar jika endpoint status diakses tanpa peramban nyata.
+
+Saran pengembangan ke depan:
+1. Generator QR Code 2FA: Penggunaan TOTP RFC 6238 mandiri sudah sangat rapi. Menambahkan generator QR code SVG sederhana di sisi server akan mempermudah pemindaian via Google Authenticator atau Authy.
+2. Migrasi ke Platform Modern: Konfigurasi Dockerfile dan Caddyfile yang kalian siapkan sudah bagus. Memindahkan aplikasi ke VPS atau platform cloud (Railway/Vercel) akan menghilangkan batasan cron dan proteksi bot shared hosting.
+
+Disiplin pengujian unit test dan kepatuhan privasi yang luar biasa solid. Sukses terus untuk tim Guardian Digital!
+```
+
+---
+
+## 15. Tim: ProgrammerAkhirZaman - CEKIN
+- **Folder Sumber**: `Cekin`
+- **Ketua Tim / Anggota**: Ahmad Irfan Maruf M / Damar Syahada / Nelsen Reynardo
+- **Tautan Deployment**: https://ayocekin.vercel.app *(Aktif, SSL Vercel valid, respon API cepat)*
+- **Video Demo**: https://www.youtube.com/watch?v=e4QNCRjAx44 *(Aktif)*
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 96 | 33.60 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 86 | 8.60 |
+| Dokumentasi | 10% | 92 | 9.20 |
+| **Total Nilai Akhir** | **100%** | - | **95.10** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.758 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform CEKIN adalah solusi keamanan siber yang luar biasa kaya fitur, inovatif, dan sangat relevan dengan studi kasus The Trust Trap. Enam simulasi interaktifnya (khususnya pembongkaran jebakan psikologis Mind Traps dan bahaya judi online) dieksekusi dengan dedikasi tinggi, dipadukan mesin deteksi multi-vektor (teks, URL, telepon, email breach, investasi bodong, gambar) serta forum komunitas berfitur moderasi admin yang mulus.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Celah Keamanan SSRF pada Pemindai URL: Di api/analyze/url/route.ts, fungsi fetchPageMetadata langsung memanggil fetch ke URL target tanpa validasi alamat IP lokal/privat (seperti 127.0.0.1 atau 169.254.169.254). Ini membuka celah Server-Side Request Forgery untuk memindai layanan internal server.
+2. Penanganan Format Nomor Telepon: Di api/analyze/phone/route.ts, pemanggilan parsePhoneNumberFromString tanpa parameter kode negara default ('ID') menyebabkan nomor lokal 08 ditolak dengan pesan format tidak valid, kecuali pengguna mengetik +62.
+3. Kerapian Dokumentasi README: Terdapat pengulangan teks penjelasan fitur yang terduplikasi secara verbatim pada bab tengah README.
+
+Saran pengembangan ke depan:
+1. Mitigasi SSRF Berbasis DNS: Validasi IP sebelum request fetch dikirim dan tolak resolusi ke blok IP privat (RFC 1918) serta metadata cloud provider.
+2. Default Country Code: Tambahkan parameter 'ID' pada libphonenumber-js agar nomor ponsel berawalan 08 langsung terdeteksi valid secara otomatis.
+3. Perluas Unit Test: Menambahkan pengujian otomatis pada endpoint analisis dan skema Drizzle akan menjaga stabilitas integrasi saat produksi.
+
+Kombinasi simulasi edukasi dan deteksi ancaman yang sangat matang dan berdampak nyata. Sukses terus untuk tim CEKIN!
+```
+
+---
+
+## 16. Tim: Muhammad Ridho Alfarod - TUNTUN: Digital Guardian
+- **Folder Sumber**: `TUNTUN_KARHUTLA`
+- **Ketua Tim**: Muhammad Ridho Alfarod (muhridhoalfarod@gmail.com)
+- **Tautan Deployment**: https://tuntun-karhutla.vercel.app *(Aktif di Vercel, client-side SPA, SSL valid)*
+- **Video Demo**: Belum dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 93 | 32.55 |
+| Kesesuaian dengan Studi Kasus | 25% | 95 | 23.75 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 94 | 9.40 |
+| Dokumentasi | 10% | 90 | 9.00 |
+| **Total Nilai Akhir** | **100%** | - | **93.90** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.756 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform TUNTUN Digital Guardian adalah karya rekayasa perangkat lunak yang sangat matang, rapi, dan memiliki ketajaman forensik yang impresif. Tiga pilar utamanya (Recognize, Learn, Act) dieksekusi dengan standar tinggi: pemindai magic-bytes biner berkas di peramban, de-obfuskasi teks leetspeak, simulator percakapan bercabang dengan guardrail deterministik, detektif bukti, serta generator laporan resmi bank dan audio TTS ramah lansia.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Penamaan Repositori yang Membingungkan: Nama repositori TUNTUN_KARHUTLA menimbulkan kesan aplikasi kebakaran hutan, padahal kontennya 100% adalah literasi keamanan siber dan penipuan digital.
+2. Status Routing Serverless di Vercel: Pada deployment live, endpoint /api/health mengembalikan dokumen HTML frontend karena root directory diarahkan ke folder frontend. Seluruh pemrosesan berjalan di sisi klien (SPA), sehingga modul di folder Backend menjadi dead code pada server Vercel.
+3. Kelengkapan Berkas Video: README.md belum mencantumkan tautan rekaman video demo 5 menit sesuai panduan teknis lomba.
+
+Saran pengembangan ke depan:
+1. Penataan Ulang Repositori: Ubah nama repositori GitHub menjadi lebih representatif (misalnya tuntun-guardian) agar tidak memicu kebingungan bagi penilai maupun publik.
+2. Unifikasi Deployment: Gabungkan skrip build agar Vercel mengeksekusi serverless functions di folder api, atau rapikan folder Backend jika memang fokus pada arsitektur 100% client-side.
+3. Otentikasi dan Riwayat Sesi: Pertimbangkan akun pengguna opsional agar capaian lencana dan skor kesiapsiagaan dapat disimpan lintas perangkat.
+
+Disiplin pengujian unit test dan dokumentasi system design yang luar biasa komprehensif. Sukses terus untuk tim TUNTUN!
+```
+
+---
+
+## 17. Tim: Nosutora - Guardian
+- **Folder Sumber**: `Guardian`
+- **Ketua Tim**: Nosutora (altaccdamqsstar@gmail.com)
+- **Tautan Deployment**: https://guardian-protect.up.railway.app *(Aktif di Railway, HTTPS valid, Laravel 12)*
+- **Video Demo**: Belum dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 82 | 28.70 |
+| Kesesuaian dengan Studi Kasus | 25% | 80 | 20.00 |
+| UI/UX | 20% | 88 | 17.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 88 | 8.80 |
+| Dokumentasi | 10% | 85 | 8.50 |
+| **Total Nilai Akhir** | **100%** | - | **83.60** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.704 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Guardian menghadirkan utilitas keamanan digital yang ringkas, bersih, dan berfokus langsung pada fungsi deteksi praktis. Integrasi server-side API VirusTotal untuk pemindaian tautan dan berkas serta chatbot Gemini untuk konsultasi keamanan siber berjalan mulus di server Railway, dipercantik dengan maskot robot interaktif, efek Web Audio, dan radial menu yang futuristik.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ruang Lingkup Fitur dan Studi Kasus: Aplikasi saat ini murni berfokus sebagai pemindai utilitas (wrapper API eksternal). Belum ada fitur interaktif studi kasus The Trust Trap, modul simulasi percakapan penipuan, maupun sistem basis data untuk menyimpan riwayat analisis pengguna.
+2. Ketergantungan Eksternal Tanpa Fallback: Pemindaian dan chatbot sepenuhnya bergantung pada ketersediaan kuota VirusTotal dan Gemini. Jika kuota API habis atau server pihak ketiga lambat, aplikasi tidak memiliki mesin aturan heuristik lokal sebagai jaring pengaman.
+3. Optimasi Aset Tailwind: Pada template Blade, CSS masih memuat script cdn.tailwindcss.com secara runtime di peramban, yang kurang efisien untuk performa aplikasi produksi.
+4. Kelengkapan Berkas Video: README belum mencantumkan tautan rekaman video demo 5 menit sesuai panduan juknis lomba.
+
+Saran pengembangan ke depan:
+1. Bangun Mesin Deteksi Heuristik Lokal: Tambahkan parser ekspresi reguler dan deteksi pola rekayasa sosial di sisi server agar tautan atau teks umum tetap dapat dianalisis secara instan tanpa membebani kuota API luar.
+2. Tambahkan Modul Simulasi Edukatif: Sertakan skenario latihan interaktif (seperti simulasi modus kurir APK atau phishing perbankan) agar selaras dengan misi edukasi generasi muda.
+
+Eksekusi antarmuka yang unik dan integrasi API yang sangat rapi. Sukses terus untuk tim Guardian!
+```
+
+---
+
+## 18. Tim: ArmBagus dkk. - VeriFy
+- **Folder Sumber**: `VeriFy-`
+- **Ketua Tim / Anggota**: Bagus Aufa Ariq Armeidi (`ArmBagus`), Irfan (`AIZOFan`), Affan Abdul Majid Syahrul, Dea Gusriyanti | Universitas Multi Data Palembang (MDP)
+- **Tautan Deployment**: Belum dicantumkan di README *(Arsitektur Laravel dengan panduan php artisan serve di localhost:8000)*
+- **Video Demo**: Belum dicantumkan di README
+- **Akun Demo**:
+  - User: `irfan@gmail.com` / `12345678` (seeder: `user@verify.id` / `user123`)
+  - Admin: `admin@gmail.com` / `admin123` (seeder: `admin@verify.id` / `admin123`)
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 82 | 28.70 |
+| Kesesuaian dengan Studi Kasus | 25% | 95 | 23.75 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 80 | 8.00 |
+| Dokumentasi | 10% | 84 | 8.40 |
+| **Total Nilai Akhir** | **100%** | - | **88.05** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.736 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform VeriFy adalah karya yang sangat terkonsep dengan arsitektur matang untuk menjawab studi kasus The Trust Trap. Mesin deteksinya memadukan regex pola penipuan lokal, heuristik URL, dan Google Safe Browsing. Yang paling impresif adalah Scam Simulator berbasis Story Graph JSON dengan validasi graf DFS (StoryValidator) untuk mencegah alur buntu, serta panel admin lengkap untuk mengelola modul edukasi, skenario latihan, dan pemantauan scan.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Tautan Live Deployment: File README.md belum mencantumkan tautan deployment aktif (hanya panduan localhost). Berdasarkan juknis, kemudahan akses daring langsung bagi penguji menjadi faktor krusial penilaian fungsionalitas.
+2. Kebocoran Kredensial di README: Kunci API Google Safe Browsing (AIzaSy...) tertulis terbuka pada baris contoh .env di README.md publik. Segera lakukan rotasi/revoke key tersebut di Google Cloud Console.
+3. Potensi Kerentanan IDOR: Di Api/SimulatorController.php pada method saveAttempt, field user_id diambil dari payload request ($request->user_id). Ini membuka celah manipulasi skor atas nama akun lain. Sebaiknya kunci mutlak ke Auth::id().
+4. Template .env Hilang: File .env.example terhapus dari repositori, sehingga langkah setup lokal pada dokumentasi mengalami kegagalan.
+
+Saran pengembangan ke depan:
+1. Sediakan Live Deployment: Deploy aplikasi ke platform cloud publik dan sematkan tautan aktifnya di README agar platform bisa diuji langsung secara daring.
+2. Proteksi Kunci API: Terapkan pembatasan HTTP referrer di Google Cloud Console agar API key tidak disalahgunakan pihak luar.
+
+Konsep alur simulasi dan rancangan panel admin yang sangat berbobot. Sukses terus untuk tim VeriFy!
+```
+
+---
+
+## 19. Tim: Leonardo Elian - FRAUD-ANT
+- **Folder Sumber**: `FRAUDD-ANT/FRAUD-ANT`
+- **Ketua Tim**: Leonardo Elian (leonardo.elian2008@gmail.com)
+- **Tautan Deployment**: Belum dicantumkan di README *(Arsitektur full-stack React + Express lokal)*
+- **Video Demo**: Belum dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 78 | 27.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 82 | 20.50 |
+| UI/UX | 20% | 88 | 17.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 85 | 8.50 |
+| Dokumentasi | 10% | 80 | 8.00 |
+| **Total Nilai Akhir** | **100%** | - | **81.90** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.747 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform FRAUD-ANT menghadirkan pendekatan menarik dengan memadukan pemindai bukti chat TrapScan berbasis OCR Tesseract lokal dan pemeriksa tautan TrapLink. Keputusan memproses OCR dan aturan heuristik langsung di lingkungan server tanpa ketergantungan API pihak ketiga patut diapresiasi karena menjaga privasi tangkapan layar pengguna, dipercantik antarmuka modern bernuansa hijau-kuning dengan animasi partikel dinamis.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Tautan Live Deployment dan Video: File README.md belum menyertakan tautan deployment aktif yang dapat diakses publik maupun video demonstrasi. Sesuai panduan teknis lomba, kemudahan juri menguji aplikasi secara langsung menjadi aspek esensial penilaian fungsionalitas.
+2. Siklus Hidup Worker OCR pada Backend: Di server/src/routes/scan.ts, fungsi createWorker('ind+eng') dan worker.terminate() dieksekusi berulang kali di dalam setiap request. Inisialisasi ulang model per-request memicu latensi tinggi dan beban CPU berlebih saat ada unggahan gambar bersamaan.
+3. Ruang Lingkup Fitur Masih Terbatas: Platform saat ini berfokus pada utilitas pemindai satu arah. Belum tersedia modul simulasi interaktif bercabang untuk melatih kewaspadaan pengguna maupun sistem basis data untuk menyimpan riwayat analisis.
+
+Saran pengembangan ke depan:
+1. Optimasi Worker Pool OCR: Terapkan pola singleton worker pool di server agar model Tesseract dimuat sekali saat boot dan siap melayani permintaan secara instan.
+2. Sediakan Live Deployment: Deploy aplikasi ke cloud hosting publik (seperti Railway atau Render) dan sematkan tautan aktifnya di README.
+
+Konsep pelindung digital yang solid dengan eksekusi OCR mandiri yang sangat berani. Sukses terus untuk tim FRAUD-ANT!
+```
+
+---
+
+## 20. Tim: Legansdeveloper - Cynthia
+- **Folder Sumber**: `MIT-WEBDEVELOPMENT-IFORB`
+- **Ketua Tim / Akun**: @Legansdeveloper (aleasyafa00@gmail.com)
+- **Tautan Deployment**: https://cynthia.oscspace.online/ *(Aktif, SSL valid, Django + React + IndoBERT + Groq + ElevenLabs + Live2D)*
+- **Video Demo**: Belum dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 96 | 33.60 |
+| Kesesuaian dengan Studi Kasus | 25% | 95 | 23.75 |
+| UI/UX | 20% | 97 | 19.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 96 | 9.60 |
+| Dokumentasi | 10% | 95 | 9.50 |
+| **Total Nilai Akhir** | **100%** | - | **95.85** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.741 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Cynthia adalah karya yang luar biasa memukau, inovatif, dan berstandar rekayasa perangkat lunak tinggi. Penggabungan fine-tuned IndoBERT untuk klasifikasi pesan, Google Safe Browsing dan heuristik untuk validasi URL, model bahasa Groq untuk penjelasan edukatif santai, sintesis suara ElevenLabs yang jernih, serta karakter interaktif Live2D Haru yang responsif terhadap tingkat ancaman menciptakan pengalaman pengguna yang sangat berkelas di cynthia.oscspace.online.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Batasan Pembacaan Dokumen PDF: Fitur analisis dokumen saat ini memakai pypdf yang hanya membaca layer teks murni. Jika berkas PDF merupakan hasil pemindaian gambar (scanned document), teks tidak terbaca dan sistem akan menolak dokumen karena belum dilengkapi mesin OCR lokal.
+2. Belum Tersedia Modul Simulasi Percakapan: Cynthia sangat unggul sebagai asisten intelijen dan deteksi pesan. Namun, platform belum menyediakan skenario latihan percakapan bercabang (decision sandbox) untuk menguji respons pengguna secara langsung dalam studi kasus The Trust Trap.
+3. Kelengkapan Berkas Video: README.md sudah sangat detail dan transparan dalam atribusi lisensi, namun belum menyertakan tautan rekaman video demo 5 menit sesuai panduan juknis lomba.
+
+Saran pengembangan ke depan:
+1. Integrasi OCR Fallback pada PDF: Tambahkan fallback OCR untuk mengekstraksi teks dari PDF berbasis gambar agar berkas pindaian surat tilang atau tagihan tetap dapat dianalisis.
+2. Tambahkan Mode Latihan Skenario: Bangun modul simulasi interaktif di mana karakter Cynthia dapat memandu pengguna membedah berbagai modus jebakan siber secara bertahap.
+
+Inovasi teknologi yang sangat matang dan berani. Sukses terus untuk tim Cynthia!
+```
+
+---
+
+## 21. Tim: SlushyMint - TrustTrail
+- **Folder Sumber**: `trusttrail`
+- **Ketua Tim**: Muhammad Shumin (SlushyMint)
+- **Tautan Deployment**: Tidak Ada (README menyatakan: "No public demo URL has been verified")
+- **Video Demo**: Tidak Dicantumkan di README (Tersedia rencana di `docs/mit-week-demo-video-plan.md`)
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 88 | 30.80 |
+| Kesesuaian dengan Studi Kasus | 25% | 99 | 24.75 |
+| UI/UX | 20% | 98 | 19.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 99 | 9.90 |
+| Dokumentasi | 10% | 88 | 8.80 |
+| **Total Nilai Akhir** | **100%** | - | **93.85** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.769 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+TrustTrail menghadirkan pengalaman investigasi siber interaktif yang sangat matang dan selaras dengan tema The Trust Trap. Konsep gameplay yang menempatkan pengguna dalam dilema rekrutmen daring Ari, dipadukan arsitektur dual-shell Lacak OS untuk desktop dan Saku untuk perangkat bergerak, membuktikan dedikasi rekayasa antarmuka yang sangat serius. Mekanisme verifikasi bukti independen, recovery mission berbasis eksposur data, serta sintesis efek audio prosedural Web Audio API merupakan pencapaian teknis yang impresif.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md secara transparan menyatakan belum ada URL demo publik yang terverifikasi dan hanya menyertakan panduan instalasi lokal. Berdasarkan juknis kompetisi, ketiadaan tautan deployment aktif mempengaruhi aspek penilaian fungsionalitas dan aksesibilitas pengujian instan.
+2. Kelengkapan Tautan Video Demo: Rencana video sudah tersusun rapi di repositori, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
+3. Ketergantungan State pada Local Storage: Seluruh riwayat dan progres investigasi tersimpan di local storage peramban. Jika pengguna membersihkan cache atau berganti gawai, progres penyelidikan akan terulang dari awal.
+
+Saran pengembangan ke depan:
+1. Publikasi Live Demo: Luncurkan aplikasi ke platform hosting statis seperti Vercel, Cloudflare Pages, atau Netlify agar karya dapat langsung diakses publik secara instan.
+2. Opsi Ekspor Sesi: Sediakan fitur ekspor berkas kasus dalam format JSON terenkripsi agar pengguna dapat memindahkan progres investigasi ke perangkat lain.
+
+Karya yang sangat brilian dengan arsitektur dan kualitas kode yang luar biasa tinggi. Sukses selalu untuk tim TrustTrail!
+```
+
+---
+
+## 22. Tim: Dery Wahyu Perdana dkk. - Guardian Lab
+- **Folder Sumber**: `mit-week-guardian-lab`
+- **Ketua Tim**: Dery Wahyu Perdana | Universitas Teknologi Yogyakarta
+- **Tautan Deployment**: Tidak Ada (README hanya menyertakan panduan eksekusi lokal Docker dan Bun host)
+- **Video Demo**: Tidak Dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 89 | 31.15 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 96 | 9.60 |
+| Dokumentasi | 10% | 88 | 8.80 |
+| **Total Nilai Akhir** | **100%** | - | **93.25** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.760 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Guardian Lab adalah karya rekayasa keamanan siber yang sangat matang dan selaras dengan tema The Trust Trap. Integrasi pemeriksaan tautan dan QR berbasis Logistic Regression V6, bedah statis APK menggunakan dekompilasi JADX dengan DeepSeek AI dan fallback heuristik luring, serta penyediaan Ruang Uji terisolasi berbasis KasmVNC Chromium mencerminkan standar rekayasa yang sangat tinggi. Fitur pembagian Guardian Share Card, modul Academy, dan Community Drill juga berhasil menjembatani edukasi teknis ke masyarakat awam.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyediakan petunjuk instalasi lokal (Docker dan Bun host). Berdasarkan juknis lomba, ketiadaan URL deployment publik yang aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
+2. Kelengkapan Berkas Video Demo: Dokumen panduan demo sudah tertata rapi dan menyertakan sampel APK uji coba, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
+3. Kompleksitas Dependensi Lintas Bahasa: Menjalankan ekosistem di luar Docker menuntut banyak dependensi (Bun, MySQL, Python Uvicorn, Java JADX, dan broker Docker), yang rentan memicu friksi lingkungan saat deployment mandiri.
+
+Saran pengembangan ke depan:
+1. Penyebaran Live Demo ke Cloud: Sediakan deployment demo daring di VPS atau cloud hosting agar juri dan publik dapat langsung mencoba platform tanpa perlu menjalankan stack Docker lokal.
+2. Sandbox Dinamis Android: Kembangkan modul analisis dinamis Android berbasis emulator cloud terisolasi untuk melengkapi fitur bedah APK statis yang sudah sangat solid.
+
+Karya yang sangat brilian, komprehensif, dan berstandar tinggi. Sukses selalu untuk tim Guardian Lab!
+```
+
+---
+
+## 23. Tim: Muhammad Ali Reza dkk. - Aswaja CyberShield
+- **Folder Sumber**: `aswaja_cybershield`
+- **Ketua Tim**: Muhammad Ali Reza | Universitas Nahdlatul Ulama Kalimantan Timur (UNUKALTAM)
+- **Tautan Deployment**: https://aswajacybershield.vercel.app (Portal Login: https://aswajacybershield.vercel.app/login)
+- **Video Demo**: Tidak Dicantumkan di README (Tersedia naskah pitch di `PENJELASAN_WEB.md`)
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 98 | 34.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 97 | 24.25 |
+| UI/UX | 20% | 95 | 19.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 96 | 9.60 |
+| Dokumentasi | 10% | 92 | 9.20 |
+| **Total Nilai Akhir** | **100%** | - | **96.35** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.785 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Aswaja CyberShield merupakan platform ketahanan digital yang sangat inovatif dan memiliki kedalaman analisis keamanan siber yang tinggi. Perpaduan tradisi Tabayyun (Kaidah 4T) dengan instrumen teknis seperti UrlThreatAnalyzer, sensor Suricata NIDS, dan Google Gemini AI menghasilkan solusi verifikasi tautan yang sangat kontekstual dalam membedah modus The Trust Trap, khususnya penipuan investasi bodong berkedok judol pada domain pemerintah (.go.id) dan akademik (.ac.id). Kesiapan live deployment di Vercel dengan integrasi Supabase PostgreSQL dan panel admin multi-role berjalan sangat mulus.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Kelengkapan Tautan Video Demo: Berkas README.md dan dokumen pendukung sudah sangat lengkap memuat naskah presentasi, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama sesuai ketentuan juknis lomba.
+2. Penanganan Ketergantungan API Eksternal: Mesin orkestrasi bekerja baik, namun ketersediaan kuota dan latensi pemanggilan API Gemini cloud perlu diproteksi dengan fallback cache lokal deterministik yang lebih agresif saat trafik pemindaian melonjak.
+3. Ketergantungan Log Sensor Suricata: Integrasi telemetri Suricata pada lingkungan serverless saat ini masih membaca berkas log telemetri terkurasi.
+
+Saran pengembangan ke depan:
+1. Integrasi Daemon NIDS Aktif: Kembangkan daemon pemantauan paket jaringan real-time pada infrastruktur VPS mandiri agar telemetri Suricata dapat menganalisis trafik live secara dinamis.
+2. Ekstensi Peramban Mandiri: Bangun ekstensi browser (Chrome/Firefox) berbasis modul Tabayyun agar verifikasi tautan dapat dilakukan otomatis sebelum pengguna membuka tautan berisiko.
+
+Karya yang sangat brilian, matang, dan berbobot tinggi. Sukses selalu untuk tim Aswaja CyberShield!
+```
+
+---
+
+## 24. Tim: rizkydavid & Rayendra dkk. - Jeda
+- **Folder Sumber**: `Jeda`
+- **Ketua Tim**: Rizky David / Rayendra
+- **Tautan Deployment**: https://jeda.up.railway.app
+- **Video Demo**: Tidak Dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 98 | 34.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 97 | 19.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 97 | 9.70 |
+| Dokumentasi | 10% | 92 | 9.20 |
+| **Total Nilai Akhir** | **100%** | - | **97.10** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.778 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Aplikasi Jeda adalah karya rekayasa keamanan digital yang sangat elegan, matang, dan memiliki filosofi privasi yang mendalam. Konsep 'Ragu? Jeda dulu' menyasar akar psikologis The Trust Trap secara tepat dengan mengedukasi warga agar tidak terburu-buru. Pendekatan pemeriksaan bertingkat pada Bedah Pesan, Cek Tautan dengan proteksi SSRF NetworkGuard, serta inspeksi biner file lokal di peramban sebelum dikirim ke server mencerminkan etika keamanan yang tinggi. Fitur Jam Emas pascainsiden, proteksi Keluarga, PWA Android Share Target, hingga kuis Latihan dengan kode pemulihan berjalan sangat responsif di jeda.up.railway.app.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Kelengkapan Berkas Video Demo: Repositori dan dokumen teknis (ARSITEKTUR.md, API.md, DATABASE.md) sudah tersusun rapi, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama sesuai ketentuan juknis lomba.
+2. Penanganan Dokumen Terproteksi: Pemeriksaan file lokal sangat solid mendeteksi makro dan tanda bahaya awal, namun berkas terenkripsi atau arsip berpassword belum dapat diinspeksi mendalam tanpa kata sandi.
+3. Ketergantungan Sesi Tanpa Akun: Sistem kode pemulihan sangat praktis, namun pengguna awam berisiko kehilangan progres jika membersihkan cache peramban sebelum mencatat kode pemulihan.
+
+Saran pengembangan ke depan:
+1. Pengingat Kode Pemulihan: Tampilkan dialog pengingat pencatatan kode pemulihan saat pengguna mencapai level tertentu agar progres kuis tidak hilang saat sesi peramban berakhir.
+2. Ekstensi Peramban Jeda: Kembangkan add-on peramban ringan berbasis modul Bedah Pesan agar peringatan risiko dapat langsung muncul pada WhatsApp Web secara otomatis.
+
+Karya yang sangat brilian, beretika tinggi, dan inspiratif. Sukses selalu untuk tim Jeda!
+```
+
+---
+
+## 25. Tim: Muhamad Fauzaan & Raditt10 - Cekara
+- **Folder Sumber**: `Cekara`
+- **Ketua Tim**: Muhamad Fauzaan
+- **Tautan Deployment**: Tidak Ada (README hanya menyertakan panduan instalasi lokal dan konfigurasi Docker / Laravel Cloud)
+- **Video Demo**: Tidak Dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 89 | 31.15 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 98 | 9.80 |
+| Dokumentasi | 10% | 88 | 8.80 |
+| **Total Nilai Akhir** | **100%** | - | **93.45** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.783 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Cekara adalah karya rekayasa keamanan siber yang sangat komprehensif, matang, dan relevan membentengi anak muda dari The Trust Trap. Pendekatan arsitektur tiga pilar (Recognize, Learn, Act) dieksekusi dengan standar teknis yang sangat tinggi. Integrasi deteksi multi-modal teks, pemindai URL phishing, dan analisis tangkapan layar gambar via Gemini Vision, dipadukan failover otomatis ke Heuristic Guardian Engine, membuktikan ketahanan sistem yang handal. Modul simulasi percakapan interaktif, pusat tanggap darurat pascainsiden, WhatsApp Alert Generator, serta Radar Komunitas memperkuat ekosistem perlindungan digital secara nyata.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyertakan panduan instalasi lokal dan opsi Docker. Berdasarkan juknis lomba, ketiadaan URL demo daring aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
+2. Kelengkapan Berkas Video Demo: Repositori dan dokumen pendukung sudah sangat kaya (ATURAN-DESAIN.md, BRAND_GUIDELINE.md, TEST_READY.md), namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
+3. Ketergantungan Layanan Real-time Reverb: Fitur ruang diskusi radar komunitas yang memanfaatkan Laravel Reverb membutuhkan daemon websocket yang harus terus berjalan di latar belakang saat deployment.
+
+Saran pengembangan ke depan:
+1. Penyebaran Live Demo Publik: Rilis aplikasi ke cloud hosting aktif agar juri dan masyarakat luas dapat langsung menguji fitur tanpa kendala instalasi lokal.
+2. Ekstensi Peramban Cekara: Kembangkan ekstensi browser untuk memindai pesan chat masuk secara real-time pada aplikasi perpesanan web.
+
+Karya yang sangat brilian, komprehensif, dan inspiratif. Sukses selalu untuk tim Cekara!
+```
+
+---
+
+## 26. Tim: Joan Orlanda Purba - JAGA
+- **Folder Sumber**: `jaga`
+- **Ketua Tim**: Joan Orlanda Purba
+- **Tautan Deployment**: Tidak Ada (README hanya menyertakan panduan instalasi lokal dan opsi tunnel)
+- **Video Demo**: Tidak Dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 87 | 30.45 |
+| Kesesuaian dengan Studi Kasus | 25% | 96 | 24.00 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 95 | 9.50 |
+| Dokumentasi | 10% | 88 | 8.80 |
+| **Total Nilai Akhir** | **100%** | - | **91.95** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.786 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform JAGA adalah karya rekayasa keamanan digital yang sangat inspiratif dan berbobot dengan penerapan prinsip Privacy by Design yang kuat. Filosofi 'Kenali sebelum terjebak' diterjemahkan dengan baik melalui kerangka Recognize, Learn, dan Act. Simulasi percakapan WhatsApp kurir APK dieksekusi dengan detail antarmuka yang sangat realistis dan edukatif. Pemrosesan murni di sisi klien (client-side) pada Cek Pesan, validasi CRC-16 pada Cek QRIS, serta panduan mitigasi berbasis urgensi waktu pada modul 'Sudah Terlanjur?' membuktikan kepedulian tinggi terhadap privasi data.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyertakan panduan instalasi lokal dan opsi tunnel. Berdasarkan juknis lomba, ketiadaan URL demo daring aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
+2. Kelengkapan Berkas Video Demo: Repositori dan dokumen pendukung sudah tersusun rapi dengan gambar antarmuka, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
+3. Ketergantungan Model AI Vision Lokal: Fitur Cek Lowongan Kerja mengandalkan inferensi lokal Ollama (Qwen3-VL) tanpa fallback otomatis. Jika perangkat penguji belum memasang model lokal, fitur belum dapat digunakan secara langsung.
+
+Saran pengembangan ke depan:
+1. Sediakan Fallback Heuristik pada Cek Lowongan: Tambahkan mesin analisis aturan berbasis kata kunci lokal atau opsi cloud API ringan agar Cek Lowongan tetap dapat diuji tanpa keharusan mengunduh model lokal.
+2. Penyebaran Live Demo Publik: Rilis aplikasi ke cloud hosting (Vercel atau Netlify) agar juri dan masyarakat luas dapat langsung mencoba platform.
+
+Karya yang sangat solutif, beretika tinggi, dan rapi. Sukses selalu untuk pengembang JAGA!
+```
+
+---
+
+## 27. Tim: Kalzz76 (Rafli) dkk. - Scamora AI
+- **Folder Sumber**: `Scamora`
+- **Ketua Tim**: Rafli (Kalzz76) / Alif Yusuf Anwar (lemonade199) dkk.
+- **Tautan Deployment**: https://scamora-teal.vercel.app
+- **Video Demo**: Tidak Dicantumkan di README (Dokumentasi arsitektur mandiri pada README.md)
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 93 | 32.55 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 94 | 9.40 |
+| Dokumentasi | 10% | 97 | 9.70 |
+| **Total Nilai Akhir** | **100%** | - | **95.35** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.697 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Scamora AI menunjukkan arsitektur keamanan siber yang sangat terkonsep, matang, dan relevan dengan studi kasus The Trust Trap. Filosofi 'indikasi risiko bukan vonis mutlak' diterapkan disiplin dengan 3 kategori resmi. Integrasi Google Safe Browsing, heuristik URL, masking PII otomatis, serta pembedahan rekayasa sosial berbasis Gemini AI berjalan nyata dan akurat di deployment live. Antarmuka web tampil bersih, responsif, dan dilengkapi navigasi bawah mobile yang ergonomis.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Serverless Cold-Start pada Sesi Kuis: Endpoint POST /challenges/sessions menghasilkan status 500 di serverless Vercel. Fungsi createSession bergantung pada map dynamicScenarios yang disinkronisasi lewat setTimeout background tanpa await. Pada fungsi serverless, proses background membeku pasca-request sehingga skenario belum termuat di memori saat sesi diinisiasi.
+2. Aktivasi Akun Pengguna: Akun demo non-admin mensyaratkan verifikasi OTP email nyata untuk aktivasi database. Tanpa akses ke kotak masuk email terkait, proses login tertahan di tahap verifikasi. Namun, akun superadmin berjalan mulus dan membuka seluruh hak akses sistem.
+
+Saran peningkatan teknis ke depan:
+1. Eager Hydration pada Serverless: Ganti pola setTimeout dengan query database langsung atau cache fallback di dalam createSession agar fungsi serverless tidak bergantung pada memori persisten antar-invokasi.
+2. In-Memory Seeder Otomatis: Pastikan in-memory store lokal terisi seeder default saat DATABASE_URL kosong agar seluruh unit test otomatis lulus sempurna di lingkungan offline.
+
+Eksekusi arsitektur yang sangat solid, rapi, dan membanggakan. Terus tingkatkan karyanya!
+```
+
+---
+
+## 28. Tim: MITWEEK-inponamatim (arzghy, xrafidx, Saublues) - ThreatLens
+- **Folder Sumber**: `MITWEEK-inponamatim` (Repositori: `Dokumentasi`, `frontend`, `backend`, `infra`, `analysis-service`)
+- **Ketua Tim**: arzghy / Rafid Wahyu A / Sausan Asma
+- **Tautan Deployment**: Tidak Ada (Dirancang berbasis Docker Compose lokal dengan cloud backend Supabase/OpenAI)
+- **Video Demo**: Tidak Dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 88 | 30.80 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 97 | 9.70 |
+| Dokumentasi | 10% | 95 | 9.50 |
+| **Total Nilai Akhir** | **100%** | - | **93.70** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.739 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform ThreatLens menghadirkan rekayasa arsitektur keamanan siber yang sangat matang dan berbobot dalam kompetisi ini. Pemisahan multi-layanan (Go API, Python analysis-service dengan LangGraph, dan Next.js 16) dirancang sangat disiplin. Prinsip 'aman butuh bukti nyata, bukan sekadar ketiadaan temuan' patut menjadi acuan industri. Modul simulasi percakapan WhatsApp, panduan darurat 15 menit, serta proteksi privasi warga (masking PII, alias HMAC Warga-a1b2c3, dan isolasi worker browser non-root) dieksekusi dengan standar keamanan tinggi.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Ketiadaan Live Deployment Publik: Repositori berfokus penuh pada panduan Docker lokal dan belum menyertakan URL deployment cloud aktif. Sesuai juknis, ketiadaan tautan daring yang dapat diuji langsung membatasi verifikasi instan bagi penguji dan berdampak pada skor fungsionalitas.
+2. Format Multi-Repo vs Monorepo: Memecah proyek ke dalam 5 repositori terpisah tanpa git submodule atau root monorepo menambah beban setup lokal karena juri harus meng-clone dan mengonfigurasi file .env lima kali.
+3. Ketergantungan Kredensial Pihak Ketiga: Sistem membutuhkan banyak konfigurasi eksternal (Supabase, Cloudinary, OpenAI, Turnstile) agar seluruh fitur dapat berjalan penuh tanpa berstatus unavailable.
+
+Saran peningkatan teknis ke depan:
+1. Penyediaan Demo Staging Publik: Sediakan deployment demo daring di platform cloud dengan akun tamu agar penguji dapat langsung mencoba kecanggihan sistem.
+2. Monorepo Terpadu: Satukan seluruh repositori dalam satu proyek monorepo dengan Docker Compose di root repositori agar alur review lebih mulus.
+
+Karya rekayasa yang sangat impresif, mendalam, dan membanggakan. Terus berkarya dan sukses selalu!
+```
+
+---
+
+## 29. Tim: ajrth21 dkk. - TRASCO (Trap & Scope)
+- **Folder Sumber**: `Trasco---MIT-WEEK-2026`
+- **Ketua Tim**: ajrth21 (Anggota: Muhammad Dwi Reza, Rx)
+- **Tautan Deployment**: https://trasco.oscspace.online/ (Tercantum pada berkas LINK TRASCO YANG DI WEBSITE SALAH KUMPUL)
+- **Video Demo**: Tidak Dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 94 | 32.90 |
+| Kesesuaian dengan Studi Kasus | 25% | 97 | 24.25 |
+| UI/UX | 20% | 95 | 19.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 95 | 9.50 |
+| Dokumentasi | 10% | 96 | 9.60 |
+| **Total Nilai Akhir** | **100%** | - | **95.25** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.678 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform TRASCO (Trap & Scope) menghadirkan solusi keamanan siber yang sangat solid, matang, dan relevan dengan studi kasus The Trust Trap. Deteksi mesin ganda yang memadukan heuristik deterministik lokal dengan Google Gemini AI berjalan responsif di deployment live. Validasi citra 14 tahap dengan proteksi anti-decompression bomb dan prinsip fail-closed (status UNKNOWN saat AI offline) mencerminkan standar integritas tinggi. Dasbor web tampil berkarakter dengan skor higienitas, visualisasi radar ancaman, serta simulator interaktif yang dilengkapi sintesis suara (TTS) avatar berbahasa Indonesia.
+
+Catatan teknis dan evaluasi yang perlu diperhatikan:
+1. Status Ekstensi Peramban: Kejujuran tim mencatat bahwa ekstensi peramban masih dalam mode pengembangan (unpacked) sangat diapresiasi. Ketiadaan publikasi di Chrome Web Store sedikit membatasi adopsi instan, namun dasbor publik di trasco.oscspace.online membuktikan seluruh mesin deteksi dan API berjalan nyata.
+2. Identitas Berbasis Cookie: Pelacakan analitik mengandalkan signed cookie visitor_id per peramban tanpa sistem multi-user. Pola ini menjaga privasi tanpa registrasi paksa, namun riwayat hilang jika cookie terhapus atau pengguna berganti perangkat.
+
+Saran peningkatan teknis ke depan:
+1. Distribusi Ekstensi Mandiri: Sediakan berkas terpaket (.crx) atau arsip unduhan langsung di dasbor sembari menunggu proses verifikasi di Chrome Web Store.
+2. Sinkronisasi Akun Opsional: Aktifkan modul autentikasi FastAPI yang sudah tersedia sebagai opsi sekunder bagi pengguna yang membutuhkan sinkronisasi riwayat lintas perangkat.
+
+Karya yang sangat solutif, rapi, dan beretika tinggi. Sukses selalu untuk tim TRASCO!
+```
+
+---
+
+## 30. Tim: Muhammad Shafly Putra Darmawan dkk. - Anti Trap Order (ATO)
+- **Folder Sumber**: `anti-trap-order`
+- **Ketua Tim**: Muhammad Shafly Putra Darmawan (Anggota: Al-Ghani Desta Setyawan, Syafaruddin, Widhi Nur Maulida | Dosen Pendamping: Naufal Azmi Verdikha, S.Kom., M.Eng. — Teknik Informatika UMKT)
+- **Tautan Deployment**: https://ato.kousozo.tech
+- **Video Demo**: Tidak Dicantumkan di README (Pipeline rendering video mandiri berbasis fframes/Rust tersedia di direktori demo/video)
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 98 | 34.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 97 | 9.70 |
+| Dokumentasi | 10% | 98 | 9.80 |
+| **Total Nilai Akhir** | **100%** | - | **97.50** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.760 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Anti Trap Order (ATO) menghadirkan terobosan pendekatan yang sangat cerdas, etis, dan dewasa dalam menjawab studi kasus The Trust Trap. Alih-alih memberikan vonis persentase bahaya pasif, ATO melatih pengguna berpikir dari kacamata pelaku kejahatan digital. Modul A20 Lite yang dipadukan dengan A20 Soul Guardian Arc serta Action Card berisi pesan siap salin (santai dan tegas) memberikan amunisi praktis yang nyata untuk melindungi orang terkasih dari manipulasi digital.
+
+Kualitas rekayasa sistem dan komitmen privasi tim ini sangat luar biasa:
+1. Privasi dan Integritas Data Mutlak: Teks pengguna disamarkan di peramban sebelum dikirim ke endpoint analisis Go, langsung dibuang tanpa pencatatan basis data, serta bebas dari telemetri pihak ketiga. Karakter dan nama panggilan pada modul Soul diproses murni di sisi peramban.
+2. Sinkronisasi Mesin Ganda: Mode terbatas berbasis Naive Bayes TypeScript di peramban terbukti identik seratus persen dengan mesin Go melalui 51 skenario uji fixture bersama. Ini pencapaian arsitektur yang sangat presisi dan elegan.
+3. Manajemen Status dan UX Rapi: Alur navigasi terintegrasi apik dengan riwayat peramban (pushState), dilengkapi penanganan galat menyeluruh seperti sheet jaringan luring, fallback mesin lokal, hingga pembatas laju HTTP 429 dengan hitung mundur waktu.
+
+Saran peningkatan teknis ke depan:
+1. Dukungan Progressive Web App: Tambahkan Service Worker agar mode terbatas dapat dibuka langsung saat perangkat luring tanpa bergantung sesi pembuka aktif.
+2. Pengayaan Korpus Slang: Pembaruan berkala pada kamus slang dan singkatan percakapan penipuan daring akan semakin menajamkan ekstraksi token deterministik.
+
+Karya yang sangat matang, beretika tinggi, dan solutif. Sukses selalu untuk tim ATO!
+```
+
+---
+
+## Template Penilaian Tim Berikutnya
+
+```markdown
+## [Nomor Urut]. Tim: [Nama Tim] ([Kode Tim]) - [Nama Proyek]
+- **Folder Sumber**: `[nama_folder]`
+- **Ketua Tim**: [Nama Ketua] | [Asal Kampus / Sekolah]
+- **Tautan Deployment**: [URL]
+- **Video Demo**: [URL atau Keterangan]
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | [Nilai] | [Nilai * 0.35] |
+| Kesesuaian dengan Studi Kasus | 25% | [Nilai] | [Nilai * 0.25] |
+| UI/UX | 20% | [Nilai] | [Nilai * 0.20] |
+| Kualitas Kode & Pemeliharaan | 10% | [Nilai] | [Nilai * 0.10] |
+| Dokumentasi | 10% | [Nilai] | [Nilai * 0.10] |
+| **Total Nilai Akhir** | **100%** | - | **[Total Skor]** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*(Panjang 1.200 - 1.800 Karakter / di bawah batas 2.000 karakter portal)*
+
+[Apresiasi konsep, perbaikan bug kritis, dan saran peningkatan metode/arsitektur teknis]
+```

@@ -1,0 +1,10 @@
+# Abaikan seluruh subfolder peserta lomba (karena masing-masing adalah git repo mandiri)
+*/
+
+# Pertahankan file penilaian, panduan, dan skrip helper
+!PENILAIAN.md
+!GEMINI.md
+!Juknis Web Development MIT-WEEK 2026.pdf
+!clone-peserta.ps1
+!README.md
+!.gitignore
