@@ -548,18 +548,16 @@ Kombinasi Go Chi dan Svelte 5 yang luar biasa solid!
 | **Total Nilai Akhir** | **100%** | - | **93.60** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1607 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1108 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 TrustTrail menghadirkan pengalaman investigasi siber interaktif yang sangat matang dan selaras dengan tema The Trust Trap. Konsep gameplay yang menempatkan pengguna dalam dilema rekrutmen daring Ari, dipadukan arsitektur dual-shell Lacak OS untuk desktop dan Saku untuk perangkat bergerak, membuktikan dedikasi rekayasa antarmuka yang sangat serius. Mekanisme verifikasi bukti independen, recovery mission berbasis eksposur data, serta sintesis efek audio prosedural Web Audio API merupakan pencapaian teknis yang impresif.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md secara transparan menyatakan belum ada URL demo publik yang terverifikasi dan hanya menyertakan panduan instalasi lokal. Berdasarkan juknis kompetisi, ketiadaan tautan deployment aktif mempengaruhi aspek penilaian fungsionalitas dan aksesibilitas pengujian instan.
-2. Ketergantungan State pada Local Storage: Seluruh riwayat dan progres investigasi tersimpan di local storage peramban. Jika pengguna membersihkan cache atau berganti gawai, progres penyelidikan akan terulang dari awal.
+1. Ketergantungan State pada Local Storage: Seluruh riwayat dan progres investigasi tersimpan di local storage peramban. Jika pengguna membersihkan cache atau berganti gawai, progres penyelidikan akan terulang dari awal.
 
 Saran pengembangan ke depan:
-1. Publikasi Live Demo: Luncurkan aplikasi ke platform hosting statis seperti Vercel, Cloudflare Pages, atau Netlify agar karya dapat langsung diakses publik secara instan.
-2. Opsi Ekspor Sesi: Sediakan fitur ekspor berkas kasus dalam format JSON terenkripsi agar pengguna dapat memindahkan progres investigasi ke perangkat lain.
+1. Opsi Ekspor Sesi: Sediakan fitur ekspor berkas kasus dalam format JSON terenkripsi agar pengguna dapat memindahkan progres investigasi ke perangkat lain.
 
 Karya yang sangat brilian dengan arsitektur dan kualitas kode yang luar biasa tinggi. Sukses selalu untuk tim TrustTrail!
 ```
@@ -665,18 +663,16 @@ Karya Next.js dan PostgreSQL yang sangat matang dan terstruktur!
 | **Total Nilai Akhir** | **100%** | - | **93.35** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1570 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1115 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform Guardian Lab adalah karya rekayasa keamanan siber yang sangat matang dan selaras dengan tema The Trust Trap. Integrasi pemeriksaan tautan dan QR berbasis Logistic Regression V6, bedah statis APK menggunakan dekompilasi JADX dengan DeepSeek AI dan fallback heuristik luring, serta penyediaan Ruang Uji terisolasi berbasis KasmVNC Chromium mencerminkan standar rekayasa yang sangat tinggi. Fitur pembagian Guardian Share Card, modul Academy, dan Community Drill juga berhasil menjembatani edukasi teknis ke masyarakat awam.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyediakan petunjuk instalasi lokal (Docker dan Bun host). Berdasarkan juknis lomba, ketiadaan URL deployment publik yang aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
-2. Kompleksitas Dependensi Lintas Bahasa: Menjalankan ekosistem di luar Docker menuntut banyak dependensi (Bun, MySQL, Python Uvicorn, Java JADX, dan broker Docker), yang rentan memicu friksi lingkungan saat deployment mandiri.
+1. Kompleksitas Dependensi Lintas Bahasa: Menjalankan ekosistem di luar Docker menuntut banyak dependensi (Bun, MySQL, Python Uvicorn, Java JADX, dan broker Docker), yang rentan memicu friksi lingkungan saat deployment mandiri.
 
 Saran pengembangan ke depan:
-1. Penyebaran Live Demo ke Cloud: Sediakan deployment demo daring di VPS atau cloud hosting agar juri dan publik dapat langsung mencoba platform tanpa perlu menjalankan stack Docker lokal.
-2. Sandbox Dinamis Android: Kembangkan modul analisis dinamis Android berbasis emulator cloud terisolasi untuk melengkapi fitur bedah APK statis yang sudah sangat solid.
+1. Sandbox Dinamis Android: Kembangkan modul analisis dinamis Android berbasis emulator cloud terisolasi untuk melengkapi fitur bedah APK statis yang sudah sangat solid.
 
 Karya yang sangat brilian, komprehensif, dan berstandar tinggi. Sukses selalu untuk tim Guardian Lab!
 ```
@@ -857,19 +853,17 @@ Eksekusi arsitektur yang sangat solid, rapi, dan membanggakan. Terus tingkatkan 
 | **Total Nilai Akhir** | **100%** | - | **92.50** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1739 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1454 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform ThreatLens menghadirkan rekayasa arsitektur keamanan siber yang sangat matang dan berbobot dalam kompetisi ini. Pemisahan multi-layanan (Go API, Python analysis-service dengan LangGraph, dan Next.js 16) dirancang sangat disiplin. Prinsip 'aman butuh bukti nyata, bukan sekadar ketiadaan temuan' patut menjadi acuan industri. Modul simulasi percakapan WhatsApp, panduan darurat 15 menit, serta proteksi privasi warga (masking PII, alias HMAC Warga-a1b2c3, dan isolasi worker browser non-root) dieksekusi dengan standar keamanan tinggi.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Live Deployment Publik: Repositori berfokus penuh pada panduan Docker lokal dan belum menyertakan URL deployment cloud aktif. Sesuai juknis, ketiadaan tautan daring yang dapat diuji langsung membatasi verifikasi instan bagi penguji dan berdampak pada skor fungsionalitas.
-2. Format Multi-Repo vs Monorepo: Memecah proyek ke dalam 5 repositori terpisah tanpa git submodule atau root monorepo menambah beban setup lokal karena juri harus meng-clone dan mengonfigurasi file .env lima kali.
-3. Ketergantungan Kredensial Pihak Ketiga: Sistem membutuhkan banyak konfigurasi eksternal (Supabase, Cloudinary, OpenAI, Turnstile) agar seluruh fitur dapat berjalan penuh tanpa berstatus unavailable.
+1. Format Multi-Repo vs Monorepo: Memecah proyek ke dalam 5 repositori terpisah tanpa git submodule atau root monorepo menambah beban setup lokal karena juri harus meng-clone dan mengonfigurasi file .env lima kali.
+2. Ketergantungan Kredensial Pihak Ketiga: Sistem membutuhkan banyak konfigurasi eksternal (Supabase, Cloudinary, OpenAI, Turnstile) agar seluruh fitur dapat berjalan penuh tanpa berstatus unavailable.
 
 Saran peningkatan teknis ke depan:
-1. Penyediaan Demo Staging Publik: Sediakan deployment demo daring di platform cloud dengan akun tamu agar penguji dapat langsung mencoba kecanggihan sistem.
-2. Monorepo Terpadu: Satukan seluruh repositori dalam satu proyek monorepo dengan Docker Compose di root repositori agar alur review lebih mulus.
+1. Monorepo Terpadu: Satukan seluruh repositori dalam satu proyek monorepo dengan Docker Compose di root repositori agar alur review dan instalasi lokal penguji menjadi jauh lebih mulus dan praktis.
 
 Karya rekayasa yang sangat impresif, mendalam, dan membanggakan. Terus berkarya dan sukses selalu!
 ```
@@ -935,19 +929,17 @@ Karya yang sangat matang, beretika tinggi, dan solutif. Sukses selalu untuk tim 
 | **Total Nilai Akhir** | **100%** | - | **92.45** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1654 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1232 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform CekDulu adalah karya yang luar biasa segar, menyenangkan, dan inovatif. Memadukan mekanik gamifikasi ala Duolingo dengan maskot Coach Wall (9 ekspresi SVG), simulasi HP bergaya iPhone yang adaptif, serta materi Voice Phishing dengan Web Speech API on-device adalah pendekatan kreatif yang sangat efektif melatih kewaspadaan anak muda. Kehadiran skenario pesan asli juga sangat mendidik agar pengguna tidak paranoid.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Tautan Live Deployment: README.md belum mencantumkan URL live deployment (seperti GitHub Pages atau Vercel). Berdasarkan juknis, kemudahan akses daring langsung bagi penguji menjadi faktor krusial penilaian fungsionalitas.
-2. Kerapian Layar Sempit: Pada perangkat dengan lebar di bawah 360px, beberapa dialog opsi jawaban bertumpuk cukup padat dengan bingkai HP simulasi.
+1. Kerapian Layar Sempit: Pada perangkat dengan lebar di bawah 360px, beberapa dialog opsi jawaban bertumpuk cukup padat dengan bingkai HP simulasi.
 
 Saran pengembangan ke depan:
-1. Aktifkan GitHub Pages: Karena web ini berbasis file statis murni tanpa build rumit, kalian cukup mengaktifkan fitur GitHub Pages di repositori lalu menyematkan tautannya pada README.
-2. Tambah Mode Cek Bebas: Saat ini CekDulu berfokus pada latihan terpandu. Menambahkan modul pemeriksa pesan bebas (sandbox) akan membuat platform ini menjadi pertolongan pertama saat pengguna menerima pesan mencurigakan di dunia nyata.
-3. Fallback Sintesis Suara: Untuk peramban yang belum memiliki paket bahasa Indonesia di window.speechSynthesis, tambahkan nada panggil oscillator Web Audio agar efek simulasi telepon tetap berbunyi.
+1. Tambah Mode Cek Bebas: Saat ini CekDulu berfokus pada latihan terpandu. Menambahkan modul pemeriksa pesan bebas (sandbox) akan membuat platform ini menjadi pertolongan pertama saat pengguna menerima pesan mencurigakan di dunia nyata.
+2. Fallback Sintesis Suara: Untuk peramban yang belum memiliki paket bahasa Indonesia di window.speechSynthesis, tambahkan nada panggil oscillator Web Audio agar efek simulasi telepon tetap berbunyi.
 
 Disiplin pengujian 93 unit test dan Playwright E2E yang sangat profesional. Karya yang luar biasa keren dan inspiratif buat tim CekDulu!
 ```
@@ -1052,18 +1044,16 @@ Kombinasi simulasi edukasi dan deteksi ancaman yang sangat matang dan berdampak 
 | **Total Nilai Akhir** | **100%** | - | **91.75** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1564 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1156 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform Cekara adalah karya rekayasa keamanan siber yang sangat komprehensif, matang, dan relevan membentengi anak muda dari The Trust Trap. Pendekatan arsitektur tiga pilar (Recognize, Learn, Act) dieksekusi dengan standar teknis yang sangat tinggi. Integrasi deteksi multi-modal teks, pemindai URL phishing, dan analisis tangkapan layar gambar via Gemini Vision, dipadukan failover otomatis ke Heuristic Guardian Engine, membuktikan ketahanan sistem yang handal. Modul simulasi percakapan interaktif, pusat tanggap darurat pascainsiden, WhatsApp Alert Generator, serta Radar Komunitas memperkuat ekosistem perlindungan digital secara nyata.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyertakan panduan instalasi lokal dan opsi Docker. Berdasarkan juknis lomba, ketiadaan URL demo daring aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
-2. Ketergantungan Layanan Real-time Reverb: Fitur ruang diskusi radar komunitas yang memanfaatkan Laravel Reverb membutuhkan daemon websocket yang harus terus berjalan di latar belakang saat deployment.
+1. Ketergantungan Layanan Real-time Reverb: Fitur ruang diskusi radar komunitas yang memanfaatkan Laravel Reverb membutuhkan daemon websocket yang harus terus berjalan di latar belakang saat deployment.
 
 Saran pengembangan ke depan:
-1. Penyebaran Live Demo Publik: Rilis aplikasi ke cloud hosting aktif agar juri dan masyarakat luas dapat langsung menguji fitur tanpa kendala instalasi lokal.
-2. Ekstensi Peramban Cekara: Kembangkan ekstensi browser untuk memindai pesan chat masuk secara real-time pada aplikasi perpesanan web.
+1. Ekstensi Peramban Cekara: Kembangkan ekstensi browser untuk memindai pesan chat masuk secara real-time pada aplikasi perpesanan web.
 
 Karya yang sangat brilian, komprehensif, dan inspiratif. Sukses selalu untuk tim Cekara!
 ```
@@ -1288,20 +1278,18 @@ Karya yang sangat luar biasa, visioner, dan berbobot teknis tinggi. Sukses selal
 | **Total Nilai Akhir** | **100%** | - | **89.30** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1769 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1516 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform TRASP sangat impresif, terutama dibangun oleh tim tingkat SMK dengan Next.js 16 dan Tailwind v4 yang modern. Konsep forensik digitalnya matang, mulai dari redaksi privasi gambar berbasis canvas, normalisasi teks leetspeak, alur darurat 15 menit, hingga simulasi 10 level Cyber Quest dengan Telemetry X-Ray psikologi penipu.
 
 Catatan teknis dan keamanan yang perlu diperhatikan:
 1. Kebocoran Kredensial S3 Nyata: Di file .env.example tercantum kredensial aktif IDCloudHost S3 (Access Key dan Secret Key). Kredensial ini wajib segera di-revoke dan diganti via dashboard cloud agar bucket storage kalian tidak disalahgunakan pihak luar.
-2. Tidak Ada Tautan Deployment Aktif: README belum memuat URL live demo (hanya ada localhost:3000), dan domain tebakan trasp.vercel.app menghasilkan status 404. Berdasarkan juknis, ketiadaan live deployment berdampak langsung pada nilai fungsionalitas.
-3. Sanitasi File Upload: Pada endpoint media, penamaan file gambar sebaiknya di-hash memakai UUID acak sebelum diunggah ke storage untuk mencegah tabrakan nama file atau celah traversal.
+2. Sanitasi File Upload: Pada endpoint media, penamaan file gambar sebaiknya di-hash memakai UUID acak sebelum diunggah ke storage untuk mencegah tabrakan nama file atau celah traversal.
 
 Saran pengembangan ke depan:
 1. Praktik Environment Variable: Selalu pakai dummy placeholder seperti your_key_here pada .env.example dan kelola secret nyata langsung di dashboard deployment.
 2. Optimasi Kanvas Redaksi: Pemrosesan piksel pada gambar besar sebaiknya memanfaatkan OffscreenCanvas atau Web Worker agar thread UI di browser mobile tetap responsif tanpa lag.
-3. Deploy ke Cloud Publik: Sambungkan repositori ke Vercel dan PostgreSQL cloud gratis (seperti Neon/Supabase) agar karya kalian bisa langsung diuji publik secara daring.
 
 Karya yang sangat berani, komprehensif, dan membanggakan untuk level SMK. Pertahankan standar rekayasa ini dan sukses terus buat tim Tiga Trio!
 ```
@@ -1328,18 +1316,16 @@ Karya yang sangat berani, komprehensif, dan membanggakan untuk level SMK. Pertah
 | **Total Nilai Akhir** | **100%** | - | **89.05** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1595 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1198 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform JAGA adalah karya rekayasa keamanan digital yang sangat inspiratif dan berbobot dengan penerapan prinsip Privacy by Design yang kuat. Filosofi 'Kenali sebelum terjebak' diterjemahkan dengan baik melalui kerangka Recognize, Learn, dan Act. Simulasi percakapan WhatsApp kurir APK dieksekusi dengan detail antarmuka yang sangat realistis dan edukatif. Pemrosesan murni di sisi klien (client-side) pada Cek Pesan, validasi CRC-16 pada Cek QRIS, serta panduan mitigasi berbasis urgensi waktu pada modul 'Sudah Terlanjur?' membuktikan kepedulian tinggi terhadap privasi data.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyertakan panduan instalasi lokal dan opsi tunnel. Berdasarkan juknis lomba, ketiadaan URL demo daring aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
-2. Ketergantungan Model AI Vision Lokal: Fitur Cek Lowongan Kerja mengandalkan inferensi lokal Ollama (Qwen3-VL) tanpa fallback otomatis. Jika perangkat penguji belum memasang model lokal, fitur belum dapat digunakan secara langsung.
+1. Ketergantungan Model AI Vision Lokal: Fitur Cek Lowongan Kerja mengandalkan inferensi lokal Ollama (Qwen3-VL) tanpa fallback otomatis. Jika perangkat penguji belum memasang model lokal, fitur belum dapat digunakan secara langsung.
 
 Saran pengembangan ke depan:
 1. Sediakan Fallback Heuristik pada Cek Lowongan: Tambahkan mesin analisis aturan berbasis kata kunci lokal atau opsi cloud API ringan agar Cek Lowongan tetap dapat diuji tanpa keharusan mengunduh model lokal.
-2. Penyebaran Live Demo Publik: Rilis aplikasi ke cloud hosting (Vercel atau Netlify) agar juri dan masyarakat luas dapat langsung mencoba platform.
 
 Karya yang sangat solutif, beretika tinggi, dan rapi. Sukses selalu untuk pengembang JAGA!
 ```
@@ -1558,7 +1544,7 @@ Konsep solutif dengan eksekusi yang fungsional dan bersih. Semangat terus buat t
 | **Total Nilai Akhir** | **100%** | - | **83.45** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1798 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1676 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Inovasi DaveMod sangat menarik dan berani karena melatih neural network sendiri dari nol lalu menjalankannya langsung di browser menggunakan ONNX Runtime Web. Pendekatan zero-server ini luar biasa dalam menjaga privasi data pengguna, sekaligus sangat hemat biaya karena tidak bergantung pada API LLM eksternal. Visualisasi probabilitas 10 kategorinya juga memberikan transparansi yang bagus.
@@ -1567,7 +1553,6 @@ Catatan teknis dan bug yang perlu diperbaiki:
 1. Ketidaksinkronan Vocab Size: Di train.py ukuran vocabulary disetel 3.500, tetapi di MessageDetector.tsx variabel maxValidIndex malah di-hardcode ke angka 2.500. Akibatnya, ada 1.000 kata hasil pelatihan yang dipaksa menjadi OOV (Out of Vocabulary) saat inferensi di web, sehingga akurasi model di browser menurun.
 2. Batas Panjang Kalimat (Max Len 40): Teks input dipotong maksimal 40 kata. Padahal banyak pesan penipuan memakai kalimat pembuka formal yang panjang, sehingga instruksi transfer atau link jebakan di bagian akhir pesan berisiko terpotong dan tidak terbaca oleh model.
 3. Ketergantungan CDN WASM: Runtime ONNX memuat file biner WASM dari jsDelivr. Jika koneksi pengguna sedang offline atau CDN mengalami kendala, model gagal diinisialisasi.
-4. Kelengkapan Berkas README: Tautan live deployment belum dicantumkan di README.md untuk mempermudah pengujian langsung.
 
 Saran pengembangan ke depan:
 1. Simpan Aset WASM Lokal: Pindahkan file biner ONNX WASM ke folder public agar aplikasi bisa berjalan penuh secara offline (PWA) tanpa bergantung pada CDN pihak ketiga.
@@ -1672,20 +1657,18 @@ Saran peningkatan: Benahi data seed peran pada basis data skenario, terapkan has
 | **Total Nilai Akhir** | **100%** | - | **78.90** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1758 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1361 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Pendekatan JeBe (Jebakan Betmen) menarik karena dibangun dengan arsitektur zero-dependency menggunakan Node.js dan vanilla JavaScript tanpa dependensi eksternal. Mesin aturan pada analyzer.js tersusun rapi dengan 12 kategori deteksi, pembobotan kumulatif, penanganan negasi kalimat, dan rekomendasi langkah aman (Act) yang kontekstual. Manipulasi DOM di script.js juga aman dari celah XSS karena menghindari innerHTML.
 
 Catatan teknis dan temuan yang perlu diperhatikan:
-1. Placeholder Submission Belum Diisi: Di README.md, tautan wajib masih berupa draf ("ISI DENGAN URL NETLIFY"). Ketiadaan tautan live deployment aktif sangat memengaruhi penilaian juknis karena juri tidak dapat menguji aplikasi secara daring.
-2. File Terbengkalai main.html: Terdapat file main.html yang belum selesai (tanpa tag body dan konten terpotong) serta tidak bisa diakses dari server. Bersihkan file uji coba yang tidak terpakai dari repositori.
-3. Cakupan Fitur Masih Terbatas: Platform baru menangani analisis pesan teks satu arah. Belum tersedia modul edukasi atau simulasi interaktif (Learn), serta belum ada inspeksi berkas berbahaya (seperti sniffer APK kurir/undangan).
+1. File Terbengkalai main.html: Terdapat file main.html yang belum selesai (tanpa tag body dan konten terpotong) serta tidak bisa diakses dari server. Bersihkan file uji coba yang tidak terpakai dari repositori.
+2. Cakupan Fitur Masih Terbatas: Platform baru menangani analisis pesan teks satu arah. Belum tersedia modul edukasi atau simulasi interaktif (Learn), serta belum ada inspeksi berkas berbahaya (seperti sniffer APK kurir/undangan).
 
 Saran pengembangan ke depan:
-1. Lengkapi Deployment Netlify: Segera deploy aplikasi ke Netlify dan cantumkan tautan aktifnya di README agar platform bisa dicoba langsung oleh publik.
-2. Tambah Skenario Latihan: Bangun simulasi percakapan interaktif untuk melatih refleks pengguna dalam mengambil keputusan saat menghadapi penipu.
-3. Proteksi Rate Limit di Serverless: Pasang distributed rate limiter pada Netlify Functions agar pembatasan request per IP tetap berjalan di lingkungan cloud.
+1. Tambah Skenario Latihan: Bangun simulasi percakapan interaktif untuk melatih refleks pengguna dalam mengambil keputusan saat menghadapi penipu.
+2. Proteksi Rate Limit di Serverless: Pasang distributed rate limiter pada Netlify Functions agar pembatasan request per IP tetap berjalan di lingkungan cloud.
 
 Fondasi kode vanilla yang sangat bersih dan rapi. Terus kembangkan fiturnya dan sukses selalu untuk tim JeBe!
 ```
