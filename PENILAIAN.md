@@ -1494,6 +1494,44 @@ Karya yang sangat bersih, terarah, dan bermanfaat nyata. Sukses selalu untuk tim
 
 ---
 
+## 40. Tim: ALPHARIET (Alfarian Adisaputra dkk.) - Cek Penipuan
+- **Folder Sumber**: `web-dev-MIT-week`
+- **Ketua Tim**: Alfarian Adisaputra (ALPHARIET)
+- **Tautan Deployment**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 99 | 34.65 |
+| Kesesuaian dengan Studi Kasus | 25% | 99 | 24.75 |
+| UI/UX | 20% | 98 | 19.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 98 | 9.80 |
+| Dokumentasi | 10% | 92 | 9.20 |
+| **Total Nilai Akhir** | **100%** | - | **98.00** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.785 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Aplikasi Cek Penipuan menampilkan kematangan rekayasa perangkat lunak dan kepekaan produk yang luar biasa tinggi. Arsitektur sistem memadukan tiga jalur pemeriksaan utama—Cek Chat, Cek Link, dan Cek Video/Suara (Deepfake)—dengan standar industri yang sangat solid. Pendekatan etikanya patut diacungi jempol: sistem tidak memaksakan vonis mutlak melainkan menyajikan tingkat kewaspadaan objektif, menyensor data sensitif (PII) secara lokal sebelum dikirim ke API, serta mengutamakan keselamatan pengguna lewat modul tindakan darurat dan integrasi kanal resmi (Kominfo, IASC OJK, Patroli Siber Polri).
+
+Keunggulan teknis yang menonjol:
+1. Ketahanan Sistem & Fallback: Mekanisme cadangan aturan lokal deterministik memastikan aplikasi tetap berfungsi penuh tanpa error saat kuota API luar habis.
+2. Validasi Multi-Lapis: Pemeriksaan link menggabungkan analisis leksikal URL, deteksi typosquatting merek lokal, protokol RDAP, Safe Browsing, dan VirusTotal secara paralel. Di sisi media, sistem memvalidasi magic bytes biner serta mengompresi gambar dan mengekstrak frame video langsung di peramban.
+3. Kualitas Pengujian Tinggi: Didukung 74 file pengujian otomatis, termasuk property-based testing (PBT) dengan fast-check untuk memverifikasi invariansi keamanan.
+4. Edge Rate Limiting: Proteksi API route dengan sliding-window rate limiter dan fail-open berjalan sangat rapi.
+
+Saran penyempurnaan ke depan:
+1. Kompatibilitas Node: Sesuaikan dependensi jsdom agar kompatibel penuh dengan Node 20 LTS di seluruh lingkungan test runner.
+2. Caching Reputasi Domain: Sediakan cache lokal singkat untuk query domain berulang guna menghemat kuota dan mempercepat respons.
+
+Karya yang sangat brilian, matang, dan berdampak nyata bagi keamanan digital masyarakat. Sukses selalu untuk tim ALPHARIET!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown

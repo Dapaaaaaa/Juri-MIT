@@ -38,6 +38,7 @@ $repos = @(
     @{ Folder = "TUNTUN_KARHUTLA"; Url = "https://github.com/redoomp4/TUNTUN_KARHUTLA.git" },
     @{ Folder = "VeriFy-"; Url = "https://github.com/ArmBagus/VeriFy-.git" },
     @{ Folder = "wardly-app"; Url = "https://github.com/Ridz010/wardly-app.git" },
+    @{ Folder = "web-dev-MIT-week"; Url = "https://github.com/ALPHARIET/web-dev-MIT-week.git" },
     @{ Folder = "web-development"; Url = "https://github.com/th4nch4/web-development.git" }
 )
 
