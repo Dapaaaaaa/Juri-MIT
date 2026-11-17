@@ -1603,6 +1603,43 @@ Karya yang sangat imajinatif, kaya fitur, dan bernilai edukatif tinggi. Sukses s
 
 ---
 
+## 43. Tim: Kalibata Project (Rayhan Muhammad Adha, Juan Agraprana Putra, Gellael) - JEDA: ragu? jeda dulu, cek dulu (Team 50)
+- **Folder Sumber**: `JEDA team 50`
+- **Ketua Tim**: Rayhan Muhammad Adha (Mr22XX)
+- **Tautan Deployment**: https://jeda-kalibata.vercel.app/
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 99 | 34.65 |
+| Kesesuaian dengan Studi Kasus | 25% | 99 | 24.75 |
+| UI/UX | 20% | 98 | 19.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 99 | 9.90 |
+| Dokumentasi | 10% | 94 | 9.40 |
+| **Total Nilai Akhir** | **100%** | - | **98.30** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.764 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform JEDA (Kalibata Project) adalah karya rekayasa pertahanan siber yang sangat matang, elegan, dan berintegritas tinggi. Filosofi 'Ragu? Jeda dulu, cek dulu' menyasar akar psikologis The Trust Trap secara presisi. Eksekusi mesin deteksi menggunakan Rust yang dikompilasi ke WebAssembly (WASM) di sisi klien merupakan keunggulan arsitektural teladan: performa instan tanpa latensi server, beroperasi penuh secara luring (offline-first), dan menjamin privasi pengguna mutlak tanpa risiko kebocoran data.
+
+Keunggulan teknis yang menonjol:
+1. Akurasi Deteksi & Normalisasi Teks: Modul norm.rs dan link.rs terbukti tangguh saat diuji pada dataset SMS riil (docs/DATA-TESTING.md), mampu mengenali leetspeak, manipulasi tanda petik judi online (GACO'R, J'P), pemendek tautan, hingga typosquatting perbankan dengan nol false positive pada SMS resmi.
+2. Integritas Akademis: Dokumen DASAR-PENYUSUNAN.md menunjukkan kejujuran ilmiah yang patut diapresiasi, memisahkan secara tegas antara landasan teoritis (Stajano & Wilson, Cialdini) dan interpretasi aturan heuristik.
+3. Ergonomi UI/UX: Antarmuka bersih berbasis tipografi Bricolage Grotesque, fitur dark mode, dwibahasa (ID/EN) penuh, demo interaktif GSAP yang hemat daya via IntersectionObserver, serta dock navigasi mobile ramah safe-area.
+
+Saran penyempurnaan ke depan:
+1. Tautan Video Demo di README: Pertimbangkan menyematkan tautan video demo produk di README repositori agar juri dapat mengakses demonstrasi visual secara langsung.
+2. Ekstensi Peramban Ringan: Kemas mesin WASM JEDA menjadi add-on browser agar deteksi otomatis dapat berjalan langsung saat pengguna membuka chat web.
+
+Karya yang sangat brilian, beretika tinggi, dan menjadi tolok ukur solusi digital. Sukses selalu untuk tim Kalibata Project!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown
