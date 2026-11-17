@@ -56,6 +56,7 @@ Dokumen ini merupakan hasil harmonisasi resmi nilai dewan juri untuk seluruh **4
 ---
 
 ## 1. Tim: Asa (MIT-040) - Lumina
+
 - **Kode Tim Portal**: `MIT-040` (Asa)
 - **Folder Sumber**: `Lumina`
 - **Identitas Proyek / Ketua**: vaskoyudha (Vasco Yudha Nodyatama Sera | vascoyudha1@gmail.com)
@@ -74,7 +75,7 @@ Dokumen ini merupakan hasil harmonisasi resmi nilai dewan juri untuk seluruh **4
 | **Total Nilai Akhir** | **100%** | - | **96.05** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1759 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1597 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform Lumina menghadirkan solusi pertahanan digital yang sangat komprehensif, matang, dan berstandar industri tinggi dalam menjawab studi kasus The Trust Trap. Integrasi empat pilar utama—Companion (analisis pesan luring), Belajar (12 modul kurikulum adaptif dengan spaced repetition), Simulasi (percakapan interaktif bertingkat dengan timer server), dan Komunitas (forum diskusi bermoderasi)—dieksekusi dengan presisi arsitektur luar biasa.
@@ -87,7 +88,6 @@ Kualitas rekayasa dan keunggulan teknis yang menonjol:
 
 Saran peningkatan teknis ke depan:
 1. Isolasi Akses Berkas Dinamis: Batasi pemanggilan readdir dinamis pada modul studio ke subfolder statis tertentu guna mencegah tracing seluruh repositori saat kompilasi Turbopack.
-2. Tautan Video Demo di README: Pertimbangkan menyematkan tautan video demo pada berkas README agar memudahkan juri mengakses demonstrasi visual secara langsung.
 
 Karya yang sangat visioner, solid, dan berstandar teknis luar biasa. Sukses selalu untuk tim Lumina!
 ```
@@ -95,6 +95,7 @@ Karya yang sangat visioner, solid, dan berstandar teknis luar biasa. Sukses sela
 ---
 
 ## 2. Tim: RAKVEX (MIT-038) - TrustGuard-App
+
 - **Kode Tim Portal**: `MIT-038` (RAKVEX)
 - **Folder Sumber**: `TrustGuard-App`
 - **Identitas Proyek / Ketua**: Robertus567 (robertus567@gmail.com)
@@ -134,6 +135,7 @@ Karya yang sangat visioner, solid, dan beretika tinggi. Sukses selalu untuk tim 
 ---
 
 ## 3. Tim: When Yah Jadi Finalis (MIT-007) - wardly-app
+
 - **Kode Tim Portal**: `MIT-007` (When Yah Jadi Finalis)
 - **Folder Sumber**: `wardly-app`
 - **Identitas Proyek / Ketua**: Farid Kusuma (`Ridz010`)
@@ -173,6 +175,7 @@ Kombinasi Next.js 16 dan Supabase yang sangat solid dan inspiratif. Semangat ter
 ---
 
 ## 4. Tim: linus wannabe (MIT-003) - clarity
+
 - **Kode Tim Portal**: `MIT-003` (linus wannabe)
 - **Folder Sumber**: `clarity`
 - **Identitas Proyek / Ketua**: Mohammad Ariffansyah (Anggota: Nailah Salsabila Ramadhani Kusnadi)
@@ -212,6 +215,7 @@ Karya yang sangat bersih, elegan, dan inspiratif!
 ---
 
 ## 5. Tim: NASI 1985 (MIT-039) - siagadigital
+
 - **Kode Tim Portal**: `MIT-039` (NASI 1985)
 - **Folder Sumber**: `siagadigital`
 - **Identitas Proyek / Ketua**: SAJADDIPURO (NASI1985)
@@ -251,6 +255,7 @@ Karya yang sangat solutif, cerdas secara teknis, dan beretika tinggi. Sukses sel
 ---
 
 ## 6. Tim: BiDaViMan (MIT-027) - Jeda
+
 - **Kode Tim Portal**: `MIT-027` (BiDaViMan)
 - **Folder Sumber**: `Jeda`
 - **Identitas Proyek / Ketua**: Rizky David / Rayendra
@@ -269,15 +274,14 @@ Karya yang sangat solutif, cerdas secara teknis, dan beretika tinggi. Sukses sel
 | **Total Nilai Akhir** | **100%** | - | **94.95** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1778 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1547 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Aplikasi Jeda adalah karya rekayasa keamanan digital yang sangat elegan, matang, dan memiliki filosofi privasi yang mendalam. Konsep 'Ragu? Jeda dulu' menyasar akar psikologis The Trust Trap secara tepat dengan mengedukasi warga agar tidak terburu-buru. Pendekatan pemeriksaan bertingkat pada Bedah Pesan, Cek Tautan dengan proteksi SSRF NetworkGuard, serta inspeksi biner file lokal di peramban sebelum dikirim ke server mencerminkan etika keamanan yang tinggi. Fitur Jam Emas pascainsiden, proteksi Keluarga, PWA Android Share Target, hingga kuis Latihan dengan kode pemulihan berjalan sangat responsif di jeda.up.railway.app.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Kelengkapan Berkas Video Demo: Repositori dan dokumen teknis (ARSITEKTUR.md, API.md, DATABASE.md) sudah tersusun rapi, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama sesuai ketentuan juknis lomba.
-2. Penanganan Dokumen Terproteksi: Pemeriksaan file lokal sangat solid mendeteksi makro dan tanda bahaya awal, namun berkas terenkripsi atau arsip berpassword belum dapat diinspeksi mendalam tanpa kata sandi.
-3. Ketergantungan Sesi Tanpa Akun: Sistem kode pemulihan sangat praktis, namun pengguna awam berisiko kehilangan progres jika membersihkan cache peramban sebelum mencatat kode pemulihan.
+1. Penanganan Dokumen Terproteksi: Pemeriksaan file lokal sangat solid mendeteksi makro dan tanda bahaya awal, namun berkas terenkripsi atau arsip berpassword belum dapat diinspeksi mendalam tanpa kata sandi.
+2. Ketergantungan Sesi Tanpa Akun: Sistem kode pemulihan sangat praktis, namun pengguna awam berisiko kehilangan progres jika membersihkan cache peramban sebelum mencatat kode pemulihan.
 
 Saran pengembangan ke depan:
 1. Pengingat Kode Pemulihan: Tampilkan dialog pengingat pencatatan kode pemulihan saat pengguna mencapai level tertentu agar progres kuis tidak hilang saat sesi peramban berakhir.
@@ -289,6 +293,7 @@ Karya yang sangat brilian, beretika tinggi, dan inspiratif. Sukses selalu untuk 
 ---
 
 ## 7. Tim: Kalibata Project (MIT-050) - JEDA team 50
+
 - **Kode Tim Portal**: `MIT-050` (Kalibata Project)
 - **Folder Sumber**: `JEDA team 50`
 - **Identitas Proyek / Ketua**: Rayhan Muhammad Adha (Mr22XX)
@@ -307,7 +312,7 @@ Karya yang sangat brilian, beretika tinggi, dan inspiratif. Sukses selalu untuk 
 | **Total Nilai Akhir** | **100%** | - | **94.75** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1764 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1598 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform JEDA (Kalibata Project) adalah karya rekayasa pertahanan siber yang sangat matang, elegan, dan berintegritas tinggi. Filosofi 'Ragu? Jeda dulu, cek dulu' menyasar akar psikologis The Trust Trap secara presisi. Eksekusi mesin deteksi menggunakan Rust yang dikompilasi ke WebAssembly (WASM) di sisi klien merupakan keunggulan arsitektural teladan: performa instan tanpa latensi server, beroperasi penuh secara luring (offline-first), dan menjamin privasi pengguna mutlak tanpa risiko kebocoran data.
@@ -318,8 +323,7 @@ Keunggulan teknis yang menonjol:
 3. Ergonomi UI/UX: Antarmuka bersih berbasis tipografi Bricolage Grotesque, fitur dark mode, dwibahasa (ID/EN) penuh, demo interaktif GSAP yang hemat daya via IntersectionObserver, serta dock navigasi mobile ramah safe-area.
 
 Saran penyempurnaan ke depan:
-1. Tautan Video Demo di README: Pertimbangkan menyematkan tautan video demo produk di README repositori agar juri dapat mengakses demonstrasi visual secara langsung.
-2. Ekstensi Peramban Ringan: Kemas mesin WASM JEDA menjadi add-on browser agar deteksi otomatis dapat berjalan langsung saat pengguna membuka chat web.
+1. Ekstensi Peramban Ringan: Kemas mesin WASM JEDA menjadi add-on browser agar deteksi otomatis dapat berjalan langsung saat pengguna membuka chat web.
 
 Karya yang sangat brilian, beretika tinggi, dan menjadi tolok ukur solusi digital. Sukses selalu untuk tim Kalibata Project!
 ```
@@ -327,6 +331,7 @@ Karya yang sangat brilian, beretika tinggi, dan menjadi tolok ukur solusi digita
 ---
 
 ## 8. Tim: papipapipum (MIT-044) - MIT_WEEK2026
+
 - **Kode Tim Portal**: `MIT-044` (papipapipum)
 - **Folder Sumber**: `MIT_WEEK2026`
 - **Identitas Proyek / Ketua**: Jonathan Salim (Anggota: Gregorius Petrus Leslie, Ilham Rafiqin)
@@ -366,6 +371,7 @@ Karya yang sangat visioner, solid, dan beretika tinggi. Sukses selalu untuk tim 
 ---
 
 ## 9. Tim: Lukzy's Chairmate (MIT-014) - ITIHIX
+
 - **Kode Tim Portal**: `MIT-014` (Lukzy's Chairmate)
 - **Folder Sumber**: `ITIHIX`
 - **Identitas Proyek / Ketua**: Zaid Al Hibbur Rasul (zaidarschool@gmail.com)
@@ -384,7 +390,7 @@ Karya yang sangat visioner, solid, dan beretika tinggi. Sukses selalu untuk tim 
 | **Total Nilai Akhir** | **100%** | - | **94.20** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1745 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1710 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform ITIHIX adalah ekosistem media sosial keamanan siber yang luar biasa matang dan masif. Alur multi-role (User, Terpercaya, Moderator, Admin) bekerja sangat rapi, mulai dari antrean moderasi laporan dengan chip alasan cepat, lencana verifikasi, SafeSnaps edukasi, hingga ItihScan AI multi-gambar berfitur editor sensor privasi (blur/mosaik) di peramban.
@@ -392,7 +398,7 @@ Platform ITIHIX adalah ekosistem media sosial keamanan siber yang luar biasa mat
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Kebocoran Kredensial di Git History: Pada komit e193e52, file itihix.env sempat ter-commit memuat sandi MySQL, API key AI, dan App Password Gmail SMTP. Meski file sudah dihapus di komit berikutnya, rahasia ini tersimpan permanen di riwayat git dan wajib segera di-rotate di server.
 2. Beban Payload Multi-Gambar AI: Di api/detect.php, batas teks 4.000 karakter sudah baik, tetapi jika pengguna mengunggah 6 foto resolusi tinggi sekaligus, konversi base64 berisiko memicu timeout pada gateway AI.
-3. Kelengkapan Berkas README: Bagian tim di akhir README masih terpotong dan tautan rekaman video demo 5 menit belum dicantumkan.
+3. Kelengkapan Berkas README: Bagian tim di akhir README masih terpotong dan perlu dilengkapi.
 
 Saran pengembangan ke depan:
 1. Bersihkan Riwayat Git: Gunakan git-filter-repo atau BFG Cleaner untuk menghapus jejak file itihix.env dari git history, lalu rotasi seluruh sandi dan token aktif di server hosting.
@@ -405,6 +411,7 @@ Arsitektur PHP dan skema relasional yang sangat solid, serta sanitasi PDO dan CS
 ---
 
 ## 10. Tim: plis kasih aku juara (MIT-015) - guardian-digital
+
 - **Kode Tim Portal**: `MIT-015` (plis kasih aku juara)
 - **Folder Sumber**: `guardian-digital`
 - **Identitas Proyek / Ketua**: Yanuar Faturrahman
@@ -443,6 +450,7 @@ Disiplin pengujian unit test dan kepatuhan privasi yang luar biasa solid. Sukses
 ---
 
 ## 11. Tim: Nanti Ajah (MIT-041) - TrustTrapGuardian
+
 - **Kode Tim Portal**: `MIT-041` (Nanti Ajah)
 - **Folder Sumber**: `TrustTrapGuardian`
 - **Identitas Proyek / Ketua**: Micho Christianta (Anggota: Znt / deryhafizh, Radit220 | Universitas Gunadarma)
@@ -461,7 +469,7 @@ Disiplin pengujian unit test dan kepatuhan privasi yang luar biasa solid. Sukses
 | **Total Nilai Akhir** | **100%** | - | **94.00** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1759 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1603 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 The Trust Trap Guardian menghadirkan platform mitigasi rekayasa sosial yang cerdas, terstruktur, dan berlandaskan Human-Computer Interaction (HCI) yang kuat. Pendekatan tiga pilar Recognize, Act, dan Learn yang dipadukan prinsip Local-First Privacy membuktikan kematangan konsep tim dalam melindungi pengguna dari manipulasi psikologis penipuan digital tanpa mengorbankan privasi data.
@@ -473,7 +481,6 @@ Kualitas rekayasa dan keunggulan teknis yang menonjol:
 
 Saran peningkatan teknis ke depan:
 1. Penyempurnaan Sintaks Regex: Bersihkan karakter escape berlebih pada privacyScrubber.js dan heuristicRules.js agar seluruh peringatan linter oxlint menjadi nol peringatan secara mutlak.
-2. Tautan Video Demo di README: Pertimbangkan menyematkan tautan rekaman video demo di README agar juri dapat mengakses demonstrasi visual secara langsung.
 
 Karya yang sangat solutif, beretika tinggi, dan sarat inovasi psikologi kognitif. Sukses selalu untuk tim!
 ```
@@ -481,6 +488,7 @@ Karya yang sangat solutif, beretika tinggi, dan sarat inovasi psikologi kognitif
 ---
 
 ## 12. Tim: Pecut Claude (MIT-004) - MIT-week
+
 - **Kode Tim Portal**: `MIT-004` (Pecut Claude)
 - **Folder Sumber**: `MIT-week`
 - **Identitas Proyek / Ketua**: Mursyid Dwi Wahidiyantoro, Bagus Joshua Parabang, Jericho Mikael Tuapardi L, M. Ridho Ansyori
@@ -499,7 +507,7 @@ Karya yang sangat solutif, beretika tinggi, dan sarat inovasi psikologi kognitif
 | **Total Nilai Akhir** | **100%** | - | **93.75** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1834 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1685 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Kualitas rekayasa perangkat lunak AMBA berstandar industri. Pipeline deteksi 4 lapis (Jejak AI, ELA visual kompresi, Cek Fakta media kredibel, dan Keamanan Link) berjalan sangat mulus. Desain antarmuka bergaya Google Gemini tonal surfaces juga modern dan sangat aksesibel.
@@ -512,7 +520,6 @@ Poin Keunggulan Teknis:
 Saran Peningkatan & Metode yang Lebih Baik:
 1. Optimasi Bandwidth Video: Saat ini yt-dlp mengunduh seluruh file video hingga 60 MB. Untuk mempercepat analisis dan menghemat bandwidth server, gunakan flag ekstraksi audio-only (misal format -f ba) dan sampling thumbnail jarak jauh via HTTP range request sebelum mengunduh biner penuh.
 2. Modul Simulasi Percakapan: Fokus AMBA saat ini dominan pada verifikasi konten media. Agar lebih kuat menjawab kasus rekayasa sosial langsung, pertimbangkan menambah arena simulasi chat interaktif (adversarial chat) untuk melatih kewaspadaan pengguna saat ditekan penipu.
-3. Kelengkapan Berkas: Cantumkan tautan rekaman video demo 5 menit pada README.md agar juri dapat mengaksesnya langsung tanpa membuka form terpisah.
 
 Catatan Produksi & Pengujian Tambahan: Analisis konten nyata masih bergantung pada gateway model gratis yang sering gagal (19/35 panggilan, 8 audit terdegradasi) dan Safe Browsing belum aktif. Jadi, pastikan stabilitas backend dan penyedia model cadangan dapat diandalkan sebelum final.
 
@@ -522,6 +529,7 @@ Kombinasi Go Chi dan Svelte 5 yang luar biasa solid!
 ---
 
 ## 13. Tim: Lahan Gosong (MIT-024) - trusttrail
+
 - **Kode Tim Portal**: `MIT-024` (Lahan Gosong)
 - **Folder Sumber**: `trusttrail`
 - **Identitas Proyek / Ketua**: Muhammad Shumin (SlushyMint)
@@ -540,15 +548,14 @@ Kombinasi Go Chi dan Svelte 5 yang luar biasa solid!
 | **Total Nilai Akhir** | **100%** | - | **93.60** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1769 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1607 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 TrustTrail menghadirkan pengalaman investigasi siber interaktif yang sangat matang dan selaras dengan tema The Trust Trap. Konsep gameplay yang menempatkan pengguna dalam dilema rekrutmen daring Ari, dipadukan arsitektur dual-shell Lacak OS untuk desktop dan Saku untuk perangkat bergerak, membuktikan dedikasi rekayasa antarmuka yang sangat serius. Mekanisme verifikasi bukti independen, recovery mission berbasis eksposur data, serta sintesis efek audio prosedural Web Audio API merupakan pencapaian teknis yang impresif.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md secara transparan menyatakan belum ada URL demo publik yang terverifikasi dan hanya menyertakan panduan instalasi lokal. Berdasarkan juknis kompetisi, ketiadaan tautan deployment aktif mempengaruhi aspek penilaian fungsionalitas dan aksesibilitas pengujian instan.
-2. Kelengkapan Tautan Video Demo: Rencana video sudah tersusun rapi di repositori, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
-3. Ketergantungan State pada Local Storage: Seluruh riwayat dan progres investigasi tersimpan di local storage peramban. Jika pengguna membersihkan cache atau berganti gawai, progres penyelidikan akan terulang dari awal.
+2. Ketergantungan State pada Local Storage: Seluruh riwayat dan progres investigasi tersimpan di local storage peramban. Jika pengguna membersihkan cache atau berganti gawai, progres penyelidikan akan terulang dari awal.
 
 Saran pengembangan ke depan:
 1. Publikasi Live Demo: Luncurkan aplikasi ke platform hosting statis seperti Vercel, Cloudflare Pages, atau Netlify agar karya dapat langsung diakses publik secara instan.
@@ -560,6 +567,7 @@ Karya yang sangat brilian dengan arsitektur dan kualitas kode yang luar biasa ti
 ---
 
 ## 14. Tim: 505 Coders (MIT-046) - web-dev-MIT-week
+
 - **Kode Tim Portal**: `MIT-046` (505 Coders)
 - **Folder Sumber**: `web-dev-MIT-week`
 - **Identitas Proyek / Ketua**: Alfarian Adisaputra (ALPHARIET)
@@ -599,6 +607,7 @@ Karya yang sangat brilian, matang, dan berdampak nyata bagi keamanan digital mas
 ---
 
 ## 15. Tim: info loker (MIT-005) - saring-app
+
 - **Kode Tim Portal**: `MIT-005` (info loker)
 - **Folder Sumber**: `saring-app`
 - **Identitas Proyek / Ketua**: hissyam90 (GitHub)
@@ -617,7 +626,7 @@ Karya yang sangat brilian, matang, dan berdampak nyata bagi keamanan digital mas
 | **Total Nilai Akhir** | **100%** | - | **93.50** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1541 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1367 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Saring memiliki kedewasaan filosofi produk yang luar biasa: memposisikan diri sebagai jeda berpikir ("Saring Sebelum Sharing") tanpa vonis biner yang menyesatkan. Ekosistem fiturnya sangat lengkap: periksa pesan 3-in-1, 23 skenario latihan, panduan langkah darurat pascainsiden, serta komunitas publik berbasis Tiptap dengan sistem revisi dan moderasi admin.
@@ -630,7 +639,6 @@ Poin Keunggulan Teknis:
 Saran Peningkatan & Metode yang Lebih Baik:
 1. Export Dossier Bukti (PDF): Pada modul /langkah, sediakan fitur cetak/unduh checklist bukti insiden dalam format PDF terstruktur agar korban bisa langsung membawanya ke kantor polisi atau bank.
 2. Inspeksi Tangkapan Layar (Client-Side OCR): Tambahkan kemampuan membaca gambar chat secara lokal di browser via Tesseract.js Web Worker agar pengguna tidak perlu menyalin teks panjang secara manual.
-3. Tautan Video Demo di README: Naskah video di docs sudah sangat rapi, namun link video jadi belum ada di README. Cantumkan link tersebut berdampingan dengan link produksi.
 
 Karya Next.js dan PostgreSQL yang sangat matang dan terstruktur!
 ```
@@ -638,6 +646,7 @@ Karya Next.js dan PostgreSQL yang sangat matang dan terstruktur!
 ---
 
 ## 16. Tim: Kabinet Kalimantan Berasap, yang Penting Kursi Tetap Mantap (MIT-025) - mit-week-guardian-lab
+
 - **Kode Tim Portal**: `MIT-025` (Kabinet Kalimantan Berasap, yang Penting Kursi Tetap Mantap)
 - **Folder Sumber**: `mit-week-guardian-lab`
 - **Identitas Proyek / Ketua**: Dery Wahyu Perdana | Universitas Teknologi Yogyakarta
@@ -656,15 +665,14 @@ Karya Next.js dan PostgreSQL yang sangat matang dan terstruktur!
 | **Total Nilai Akhir** | **100%** | - | **93.35** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1760 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1570 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform Guardian Lab adalah karya rekayasa keamanan siber yang sangat matang dan selaras dengan tema The Trust Trap. Integrasi pemeriksaan tautan dan QR berbasis Logistic Regression V6, bedah statis APK menggunakan dekompilasi JADX dengan DeepSeek AI dan fallback heuristik luring, serta penyediaan Ruang Uji terisolasi berbasis KasmVNC Chromium mencerminkan standar rekayasa yang sangat tinggi. Fitur pembagian Guardian Share Card, modul Academy, dan Community Drill juga berhasil menjembatani edukasi teknis ke masyarakat awam.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyediakan petunjuk instalasi lokal (Docker dan Bun host). Berdasarkan juknis lomba, ketiadaan URL deployment publik yang aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
-2. Kelengkapan Berkas Video Demo: Dokumen panduan demo sudah tertata rapi dan menyertakan sampel APK uji coba, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
-3. Kompleksitas Dependensi Lintas Bahasa: Menjalankan ekosistem di luar Docker menuntut banyak dependensi (Bun, MySQL, Python Uvicorn, Java JADX, dan broker Docker), yang rentan memicu friksi lingkungan saat deployment mandiri.
+2. Kompleksitas Dependensi Lintas Bahasa: Menjalankan ekosistem di luar Docker menuntut banyak dependensi (Bun, MySQL, Python Uvicorn, Java JADX, dan broker Docker), yang rentan memicu friksi lingkungan saat deployment mandiri.
 
 Saran pengembangan ke depan:
 1. Penyebaran Live Demo ke Cloud: Sediakan deployment demo daring di VPS atau cloud hosting agar juri dan publik dapat langsung mencoba platform tanpa perlu menjalankan stack Docker lokal.
@@ -676,6 +684,7 @@ Karya yang sangat brilian, komprehensif, dan berstandar tinggi. Sukses selalu un
 ---
 
 ## 17. Tim: Team Web ARRAY (MIT-026) - aswaja_cybershield
+
 - **Kode Tim Portal**: `MIT-026` (Team Web ARRAY)
 - **Folder Sumber**: `aswaja_cybershield`
 - **Identitas Proyek / Ketua**: Muhammad Ali Reza | Universitas Nahdlatul Ulama Kalimantan Timur (UNUKALTAM)
@@ -694,15 +703,14 @@ Karya yang sangat brilian, komprehensif, dan berstandar tinggi. Sukses selalu un
 | **Total Nilai Akhir** | **100%** | - | **92.90** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1785 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1556 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Aswaja CyberShield merupakan platform ketahanan digital yang sangat inovatif dan memiliki kedalaman analisis keamanan siber yang tinggi. Perpaduan tradisi Tabayyun (Kaidah 4T) dengan instrumen teknis seperti UrlThreatAnalyzer, sensor Suricata NIDS, dan Google Gemini AI menghasilkan solusi verifikasi tautan yang sangat kontekstual dalam membedah modus The Trust Trap, khususnya penipuan investasi bodong berkedok judol pada domain pemerintah (.go.id) dan akademik (.ac.id). Kesiapan live deployment di Vercel dengan integrasi Supabase PostgreSQL dan panel admin multi-role berjalan sangat mulus.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Kelengkapan Tautan Video Demo: Berkas README.md dan dokumen pendukung sudah sangat lengkap memuat naskah presentasi, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama sesuai ketentuan juknis lomba.
-2. Penanganan Ketergantungan API Eksternal: Mesin orkestrasi bekerja baik, namun ketersediaan kuota dan latensi pemanggilan API Gemini cloud perlu diproteksi dengan fallback cache lokal deterministik yang lebih agresif saat trafik pemindaian melonjak.
-3. Ketergantungan Log Sensor Suricata: Integrasi telemetri Suricata pada lingkungan serverless saat ini masih membaca berkas log telemetri terkurasi.
+1. Penanganan Ketergantungan API Eksternal: Mesin orkestrasi bekerja baik, namun ketersediaan kuota dan latensi pemanggilan API Gemini cloud perlu diproteksi dengan fallback cache lokal deterministik yang lebih agresif saat trafik pemindaian melonjak.
+2. Ketergantungan Log Sensor Suricata: Integrasi telemetri Suricata pada lingkungan serverless saat ini masih membaca berkas log telemetri terkurasi.
 
 Saran pengembangan ke depan:
 1. Integrasi Daemon NIDS Aktif: Kembangkan daemon pemantauan paket jaringan real-time pada infrastruktur VPS mandiri agar telemetri Suricata dapat menganalisis trafik live secara dinamis.
@@ -714,6 +722,7 @@ Karya yang sangat brilian, matang, dan berbobot tinggi. Sukses selalu untuk tim 
 ---
 
 ## 18. Tim: ijin kompe boskyuhh (MIT-011) - JagaRuang
+
 - **Kode Tim Portal**: `MIT-011` (ijin kompe boskyuhh)
 - **Folder Sumber**: `JagaRuang`
 - **Identitas Proyek / Ketua**: Ahmad Syifa'ul Falakhul Khayyi, Mutiara Dewanda Prisvilla, Raffi Azzaky Ramadhani, Ahmad Syafi'al Anam
@@ -732,7 +741,7 @@ Karya yang sangat brilian, matang, dan berbobot tinggi. Sukses selalu untuk tim 
 | **Total Nilai Akhir** | **100%** | - | **92.70** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1695 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1539 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Eksekusi JagaRuang luar biasa matang dan disiplin. Mengadopsi kerangka kerja resmi Guardians (Recognize, Learn, Act) dengan arsitektur 100% on-device client-side tanpa backend server adalah keputusan rekayasa yang sangat tepat dalam menjaga privasi data pengguna. Fitur 8 simulator interaktif, dial-tone synthesizer Web Audio API, 12 modul edukasi, hingga Sandi Verifikasi Keluarga anti-AI Voice Cloning sangat inovatif.
@@ -740,7 +749,6 @@ Eksekusi JagaRuang luar biasa matang dan disiplin. Mengadopsi kerangka kerja res
 Catatan teknis dan temuan yang perlu diperbaiki:
 1. Data Notifikasi Awal: Pada notificationService.ts, daftar notifikasi bawaan masih menyisakan teks dummy berbahasa Inggris ("Your AI Just Got Smarter") yang kurang selaras dengan bahasa aplikasi.
 2. Label Tombol Login Google: Opsi "Login with Google" langsung mengarahkan sesi ke akun demo lokal. Sebaiknya gunakan label transparan seperti "Masuk Instan (Akun Demo)" agar tidak disangka integrasi OAuth Google sungguhan.
-3. Kelengkapan Berkas Video: Tautan rekaman video demo 5 menit belum dicantumkan di README.md, padahal tautan ini merupakan berkas wajib pada juknis lomba.
 
 Saran pengembangan ke depan:
 1. Modularisasi Belajar.tsx: File Belajar.tsx saat ini berukuran lebih dari 4.400 baris. Sebaiknya tab simulator kasus, kuis kilat refleks, dan kamus istilah dipecah ke file komponen terpisah dengan React.lazy agar pemisahan bundle kode (code splitting) lebih optimal.
@@ -752,6 +760,7 @@ Standar rekayasa monorepo, dokumen ADR, dan pengujian Vitest yang sangat profesi
 ---
 
 ## 19. Tim: apa aja lah (MIT-047) - Sistem-Analisis-Data-Antisipasi-Risiko
+
 - **Kode Tim Portal**: `MIT-047` (apa aja lah)
 - **Folder Sumber**: `Sistem-Analisis-Data-Antisipasi-Risiko`
 - **Identitas Proyek / Ketua**: Ario Zulkaisi Nubli | Universitas Indonesia
@@ -791,6 +800,7 @@ Karya yang sangat visioner, solid, dan solutif bagi ekosistem digital Indonesia.
 ---
 
 ## 20. Tim: LeMine (MIT-032) - Scamora
+
 - **Kode Tim Portal**: `MIT-032` (LeMine)
 - **Folder Sumber**: `Scamora`
 - **Identitas Proyek / Ketua**: Rafli (Kalzz76) / Alif Yusuf Anwar (lemonade199) dkk.
@@ -828,6 +838,7 @@ Eksekusi arsitektur yang sangat solid, rapi, dan membanggakan. Terus tingkatkan 
 ---
 
 ## 21. Tim: inpo nama tim (MIT-033) - MITWEEK-inponamatim
+
 - **Kode Tim Portal**: `MIT-033` (inpo nama tim)
 - **Folder Sumber**: `MITWEEK-inponamatim`
 - **Identitas Proyek / Ketua**: arzghy / Rafid Wahyu A / Sausan Asma
@@ -866,6 +877,7 @@ Karya rekayasa yang sangat impresif, mendalam, dan membanggakan. Terus berkarya 
 ---
 
 ## 22. Tim: Calon CEO (MIT-035) - anti-trap-order
+
 - **Kode Tim Portal**: `MIT-035` (Calon CEO)
 - **Folder Sumber**: `anti-trap-order`
 - **Identitas Proyek / Ketua**: Muhammad Shafly Putra Darmawan (Anggota: Al-Ghani Desta Setyawan, Syafaruddin, Widhi Nur Maulida | Dosen Pendamping: Naufal Azmi Verdikha, S.Kom., M.Eng. — Teknik Informatika UMKT)
@@ -904,6 +916,7 @@ Karya yang sangat matang, beretika tinggi, dan solutif. Sukses selalu untuk tim 
 ---
 
 ## 23. Tim: Smatraga (MIT-013) - web-development
+
 - **Kode Tim Portal**: `MIT-013` (Smatraga)
 - **Folder Sumber**: `web-development`
 - **Identitas Proyek / Ketua**: Nathan Chandra (th4nch4 / nathanchandra141-star)
@@ -922,15 +935,14 @@ Karya yang sangat matang, beretika tinggi, dan solutif. Sukses selalu untuk tim 
 | **Total Nilai Akhir** | **100%** | - | **92.45** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1746 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1654 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform CekDulu adalah karya yang luar biasa segar, menyenangkan, dan inovatif. Memadukan mekanik gamifikasi ala Duolingo dengan maskot Coach Wall (9 ekspresi SVG), simulasi HP bergaya iPhone yang adaptif, serta materi Voice Phishing dengan Web Speech API on-device adalah pendekatan kreatif yang sangat efektif melatih kewaspadaan anak muda. Kehadiran skenario pesan asli juga sangat mendidik agar pengguna tidak paranoid.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Ketiadaan Tautan Live Deployment: README.md belum mencantumkan URL live deployment (seperti GitHub Pages atau Vercel). Berdasarkan juknis, kemudahan akses daring langsung bagi penguji menjadi faktor krusial penilaian fungsionalitas.
-2. Kelengkapan Berkas Video: Tautan rekaman video demo 5 menit belum dicantumkan di README.
-3. Kerapian Layar Sempit: Pada perangkat dengan lebar di bawah 360px, beberapa dialog opsi jawaban bertumpuk cukup padat dengan bingkai HP simulasi.
+2. Kerapian Layar Sempit: Pada perangkat dengan lebar di bawah 360px, beberapa dialog opsi jawaban bertumpuk cukup padat dengan bingkai HP simulasi.
 
 Saran pengembangan ke depan:
 1. Aktifkan GitHub Pages: Karena web ini berbasis file statis murni tanpa build rumit, kalian cukup mengaktifkan fitur GitHub Pages di repositori lalu menyematkan tautannya pada README.
@@ -943,6 +955,7 @@ Disiplin pengujian 93 unit test dan Playwright E2E yang sangat profesional. Kary
 ---
 
 ## 24. Tim: The ifor B (MIT-023) - MIT-WEBDEVELOPMENT-IFORB
+
 - **Kode Tim Portal**: `MIT-023` (The ifor B)
 - **Folder Sumber**: `MIT-WEBDEVELOPMENT-IFORB`
 - **Identitas Proyek / Ketua**: @Legansdeveloper (aleasyafa00@gmail.com)
@@ -961,7 +974,7 @@ Disiplin pengujian 93 unit test dan Playwright E2E yang sangat profesional. Kary
 | **Total Nilai Akhir** | **100%** | - | **92.30** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1741 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1556 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform Cynthia adalah karya yang luar biasa memukau, inovatif, dan berstandar rekayasa perangkat lunak tinggi. Penggabungan fine-tuned IndoBERT untuk klasifikasi pesan, Google Safe Browsing dan heuristik untuk validasi URL, model bahasa Groq untuk penjelasan edukatif santai, sintesis suara ElevenLabs yang jernih, serta karakter interaktif Live2D Haru yang responsif terhadap tingkat ancaman menciptakan pengalaman pengguna yang sangat berkelas di cynthia.oscspace.online.
@@ -969,7 +982,6 @@ Platform Cynthia adalah karya yang luar biasa memukau, inovatif, dan berstandar 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Batasan Pembacaan Dokumen PDF: Fitur analisis dokumen saat ini memakai pypdf yang hanya membaca layer teks murni. Jika berkas PDF merupakan hasil pemindaian gambar (scanned document), teks tidak terbaca dan sistem akan menolak dokumen karena belum dilengkapi mesin OCR lokal.
 2. Belum Tersedia Modul Simulasi Percakapan: Cynthia sangat unggul sebagai asisten intelijen dan deteksi pesan. Namun, platform belum menyediakan skenario latihan percakapan bercabang (decision sandbox) untuk menguji respons pengguna secara langsung dalam studi kasus The Trust Trap.
-3. Kelengkapan Berkas Video: README.md sudah sangat detail dan transparan dalam atribusi lisensi, namun belum menyertakan tautan rekaman video demo 5 menit sesuai panduan juknis lomba.
 
 Saran pengembangan ke depan:
 1. Integrasi OCR Fallback pada PDF: Tambahkan fallback OCR untuk mengekstraksi teks dari PDF berbasis gambar agar berkas pindaian surat tilang atau tagihan tetap dapat dianalisis.
@@ -981,6 +993,7 @@ Inovasi teknologi yang sangat matang dan berani. Sukses terus untuk tim Cynthia!
 ---
 
 ## 25. Tim: ProgrammerAkhirZaman (MIT-017) - Cekin
+
 - **Kode Tim Portal**: `MIT-017` (ProgrammerAkhirZaman)
 - **Folder Sumber**: `Cekin`
 - **Identitas Proyek / Ketua**: Ahmad Irfan Maruf M / Damar Syahada / Nelsen Reynardo
@@ -1020,6 +1033,7 @@ Kombinasi simulasi edukasi dan deteksi ancaman yang sangat matang dan berdampak 
 ---
 
 ## 26. Tim: Yang penting menang (MIT-030) - Cekara
+
 - **Kode Tim Portal**: `MIT-030` (Yang penting menang)
 - **Folder Sumber**: `Cekara`
 - **Identitas Proyek / Ketua**: Muhamad Fauzaan
@@ -1038,15 +1052,14 @@ Kombinasi simulasi edukasi dan deteksi ancaman yang sangat matang dan berdampak 
 | **Total Nilai Akhir** | **100%** | - | **91.75** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1783 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1564 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform Cekara adalah karya rekayasa keamanan siber yang sangat komprehensif, matang, dan relevan membentengi anak muda dari The Trust Trap. Pendekatan arsitektur tiga pilar (Recognize, Learn, Act) dieksekusi dengan standar teknis yang sangat tinggi. Integrasi deteksi multi-modal teks, pemindai URL phishing, dan analisis tangkapan layar gambar via Gemini Vision, dipadukan failover otomatis ke Heuristic Guardian Engine, membuktikan ketahanan sistem yang handal. Modul simulasi percakapan interaktif, pusat tanggap darurat pascainsiden, WhatsApp Alert Generator, serta Radar Komunitas memperkuat ekosistem perlindungan digital secara nyata.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyertakan panduan instalasi lokal dan opsi Docker. Berdasarkan juknis lomba, ketiadaan URL demo daring aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
-2. Kelengkapan Berkas Video Demo: Repositori dan dokumen pendukung sudah sangat kaya (ATURAN-DESAIN.md, BRAND_GUIDELINE.md, TEST_READY.md), namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
-3. Ketergantungan Layanan Real-time Reverb: Fitur ruang diskusi radar komunitas yang memanfaatkan Laravel Reverb membutuhkan daemon websocket yang harus terus berjalan di latar belakang saat deployment.
+2. Ketergantungan Layanan Real-time Reverb: Fitur ruang diskusi radar komunitas yang memanfaatkan Laravel Reverb membutuhkan daemon websocket yang harus terus berjalan di latar belakang saat deployment.
 
 Saran pengembangan ke depan:
 1. Penyebaran Live Demo Publik: Rilis aplikasi ke cloud hosting aktif agar juri dan masyarakat luas dapat langsung menguji fitur tanpa kendala instalasi lokal.
@@ -1058,6 +1071,7 @@ Karya yang sangat brilian, komprehensif, dan inspiratif. Sukses selalu untuk tim
 ---
 
 ## 27. Tim: KARHUTLA (MIT-018) - TUNTUN_KARHUTLA
+
 - **Kode Tim Portal**: `MIT-018` (KARHUTLA)
 - **Folder Sumber**: `TUNTUN_KARHUTLA`
 - **Identitas Proyek / Ketua**: Muhammad Ridho Alfarod (muhridhoalfarod@gmail.com)
@@ -1076,7 +1090,7 @@ Karya yang sangat brilian, komprehensif, dan inspiratif. Sukses selalu untuk tim
 | **Total Nilai Akhir** | **100%** | - | **91.65** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1756 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1635 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform TUNTUN Digital Guardian adalah karya rekayasa perangkat lunak yang sangat matang, rapi, dan memiliki ketajaman forensik yang impresif. Tiga pilar utamanya (Recognize, Learn, Act) dieksekusi dengan standar tinggi: pemindai magic-bytes biner berkas di peramban, de-obfuskasi teks leetspeak, simulator percakapan bercabang dengan guardrail deterministik, detektif bukti, serta generator laporan resmi bank dan audio TTS ramah lansia.
@@ -1084,7 +1098,6 @@ Platform TUNTUN Digital Guardian adalah karya rekayasa perangkat lunak yang sang
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Penamaan Repositori yang Membingungkan: Nama repositori TUNTUN_KARHUTLA menimbulkan kesan aplikasi kebakaran hutan, padahal kontennya 100% adalah literasi keamanan siber dan penipuan digital.
 2. Status Routing Serverless di Vercel: Pada deployment live, endpoint /api/health mengembalikan dokumen HTML frontend karena root directory diarahkan ke folder frontend. Seluruh pemrosesan berjalan di sisi klien (SPA), sehingga modul di folder Backend menjadi dead code pada server Vercel.
-3. Kelengkapan Berkas Video: README.md belum mencantumkan tautan rekaman video demo 5 menit sesuai panduan teknis lomba.
 
 Saran pengembangan ke depan:
 1. Penataan Ulang Repositori: Ubah nama repositori GitHub menjadi lebih representatif (misalnya tuntun-guardian) agar tidak memicu kebingungan bagi penilai maupun publik.
@@ -1097,6 +1110,7 @@ Disiplin pengujian unit test dan dokumentasi system design yang luar biasa kompr
 ---
 
 ## 28. Tim: Basicgenis (MIT-036) - Basicgenis-MIT-UNMUL
+
 - **Kode Tim Portal**: `MIT-036` (Basicgenis)
 - **Folder Sumber**: `Basicgenis-MIT-UNMUL`
 - **Identitas Proyek / Ketua**: arya-vrxx (Anggota: Daniel / 24nielsmktinet, Rahma Aisira | SMK TI Airlangga Samarinda)
@@ -1135,6 +1149,7 @@ Karya yang sangat matang, rapi, dan berfaedah nyata bagi ekosistem digital. Suks
 ---
 
 ## 29. Tim: 404Forbidden (MIT-002) - pandu
+
 - **Kode Tim Portal**: `MIT-002` (404Forbidden)
 - **Folder Sumber**: `pandu`
 - **Identitas Proyek / Ketua**: Rio Ardian Pratama | Telkom University
@@ -1177,6 +1192,7 @@ Eksekusi yang sangat berani dan potensial!
 ---
 
 ## 30. Tim: Polnetech Aja (MIT-034) - Trasco---MIT-WEEK-2026
+
 - **Kode Tim Portal**: `MIT-034` (Polnetech Aja)
 - **Folder Sumber**: `Trasco---MIT-WEEK-2026`
 - **Identitas Proyek / Ketua**: ajrth21 (Anggota: Muhammad Dwi Reza, Rx)
@@ -1214,6 +1230,7 @@ Karya yang sangat solutif, rapi, dan beretika tinggi. Sukses selalu untuk tim TR
 ---
 
 ## 31. Tim: Abang Abangan Infor (MIT-051) - Red-John
+
 - **Kode Tim Portal**: `MIT-051` (Abang Abangan Infor)
 - **Folder Sumber**: `Red-John`
 - **Identitas Proyek / Ketua**: Rendy (r3nddy)
@@ -1252,6 +1269,7 @@ Karya yang sangat luar biasa, visioner, dan berbobot teknis tinggi. Sukses selal
 ---
 
 ## 32. Tim: Tiga Trio (MIT-010) - TRASP
+
 - **Kode Tim Portal**: `MIT-010` (Tiga Trio)
 - **Folder Sumber**: `TRASP`
 - **Identitas Proyek / Ketua**: Raya Raihana Yasmin (Ketua), Andi Rivelani Aurellah, Yelena Amanda | SMK Negeri 6 Balikpapan
@@ -1291,6 +1309,7 @@ Karya yang sangat berani, komprehensif, dan membanggakan untuk level SMK. Pertah
 ---
 
 ## 33. Tim: Tim Joan (MIT-031) - jaga
+
 - **Kode Tim Portal**: `MIT-031` (Tim Joan)
 - **Folder Sumber**: `jaga`
 - **Identitas Proyek / Ketua**: Joan Orlanda Purba
@@ -1309,15 +1328,14 @@ Karya yang sangat berani, komprehensif, dan membanggakan untuk level SMK. Pertah
 | **Total Nilai Akhir** | **100%** | - | **89.05** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1786 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1595 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform JAGA adalah karya rekayasa keamanan digital yang sangat inspiratif dan berbobot dengan penerapan prinsip Privacy by Design yang kuat. Filosofi 'Kenali sebelum terjebak' diterjemahkan dengan baik melalui kerangka Recognize, Learn, dan Act. Simulasi percakapan WhatsApp kurir APK dieksekusi dengan detail antarmuka yang sangat realistis dan edukatif. Pemrosesan murni di sisi klien (client-side) pada Cek Pesan, validasi CRC-16 pada Cek QRIS, serta panduan mitigasi berbasis urgensi waktu pada modul 'Sudah Terlanjur?' membuktikan kepedulian tinggi terhadap privasi data.
 
 Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Ketiadaan Tautan Live Deployment Publik: Berkas README.md hanya menyertakan panduan instalasi lokal dan opsi tunnel. Berdasarkan juknis lomba, ketiadaan URL demo daring aktif membatasi pengujian instan dan mempengaruhi penilaian fungsionalitas.
-2. Kelengkapan Berkas Video Demo: Repositori dan dokumen pendukung sudah tersusun rapi dengan gambar antarmuka, namun tautan rekaman video demo 5 menit belum disematkan pada README.md utama.
-3. Ketergantungan Model AI Vision Lokal: Fitur Cek Lowongan Kerja mengandalkan inferensi lokal Ollama (Qwen3-VL) tanpa fallback otomatis. Jika perangkat penguji belum memasang model lokal, fitur belum dapat digunakan secara langsung.
+2. Ketergantungan Model AI Vision Lokal: Fitur Cek Lowongan Kerja mengandalkan inferensi lokal Ollama (Qwen3-VL) tanpa fallback otomatis. Jika perangkat penguji belum memasang model lokal, fitur belum dapat digunakan secara langsung.
 
 Saran pengembangan ke depan:
 1. Sediakan Fallback Heuristik pada Cek Lowongan: Tambahkan mesin analisis aturan berbasis kata kunci lokal atau opsi cloud API ringan agar Cek Lowongan tetap dapat diuji tanpa keharusan mengunduh model lokal.
@@ -1329,6 +1347,7 @@ Karya yang sangat solutif, beretika tinggi, dan rapi. Sukses selalu untuk pengem
 ---
 
 ## 34. Tim: MURID KAK GEM (MIT-048) - know-your-scam
+
 - **Kode Tim Portal**: `MIT-048` (MURID KAK GEM)
 - **Folder Sumber**: `know-your-scam`
 - **Identitas Proyek / Ketua**: Nayla Audyna
@@ -1363,6 +1382,7 @@ Karya yang sangat imajinatif, kaya fitur, dan bernilai edukatif tinggi. Sukses s
 ---
 
 ## 35. Tim: Ravendale (MIT-045) - The-Trust-Trap
+
 - **Kode Tim Portal**: `MIT-045` (Ravendale)
 - **Folder Sumber**: `The-Trust-Trap`
 - **Identitas Proyek / Ketua**: Nadhif
@@ -1399,6 +1419,7 @@ Karya yang sangat bersih, terarah, dan bermanfaat nyata. Sukses selalu untuk tim
 ---
 
 ## 36. Tim: SKS TEAM (MIT-006) - Spot-the-Scam-Cek-Pesan-Penipuan
+
 - **Kode Tim Portal**: `MIT-006` (SKS TEAM)
 - **Folder Sumber**: `Spot-the-Scam-Cek-Pesan-Penipuan`
 - **Identitas Proyek / Ketua**: Lodra Kalimasada A.A. (Anggota: Hadaina Silmi Damanik)
@@ -1438,6 +1459,7 @@ Idenya sudah sangat bagus dan fungsional, tinggal matangkan lagi logika filterny
 ---
 
 ## 37. Tim: Ambaweb (MIT-037) - cekat-website
+
 - **Kode Tim Portal**: `MIT-037` (Ambaweb)
 - **Folder Sumber**: `cekat-website`
 - **Identitas Proyek / Ketua**: ambakes (Jhonatan Farles | jhonatanfarles@gmail.com)
@@ -1477,6 +1499,7 @@ Karya yang sangat artistik, solutif, dan berstandar teknis tinggi. Sukses selalu
 ---
 
 ## 38. Tim: 17 Rb (MIT-008) - Cekkan
+
 - **Kode Tim Portal**: `MIT-008` (17 Rb)
 - **Folder Sumber**: `Cekkan`
 - **Identitas Proyek / Ketua**: Maharaja Geral, RajibIF, dkk. | Institut Teknologi Kalimantan (ITK)
@@ -1516,6 +1539,7 @@ Konsep solutif dengan eksekusi yang fungsional dan bersih. Semangat terus buat t
 ---
 
 ## 39. Tim: BASIS-64 (MIT-009) - davemoderator
+
 - **Kode Tim Portal**: `MIT-009` (BASIS-64)
 - **Folder Sumber**: `davemoderator`
 - **Identitas Proyek / Ketua**: Gabriel Ado Ramos Tukan | BASIS-64
@@ -1534,7 +1558,7 @@ Konsep solutif dengan eksekusi yang fungsional dan bersih. Semangat terus buat t
 | **Total Nilai Akhir** | **100%** | - | **83.45** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1843 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1798 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Inovasi DaveMod sangat menarik dan berani karena melatih neural network sendiri dari nol lalu menjalankannya langsung di browser menggunakan ONNX Runtime Web. Pendekatan zero-server ini luar biasa dalam menjaga privasi data pengguna, sekaligus sangat hemat biaya karena tidak bergantung pada API LLM eksternal. Visualisasi probabilitas 10 kategorinya juga memberikan transparansi yang bagus.
@@ -1543,7 +1567,7 @@ Catatan teknis dan bug yang perlu diperbaiki:
 1. Ketidaksinkronan Vocab Size: Di train.py ukuran vocabulary disetel 3.500, tetapi di MessageDetector.tsx variabel maxValidIndex malah di-hardcode ke angka 2.500. Akibatnya, ada 1.000 kata hasil pelatihan yang dipaksa menjadi OOV (Out of Vocabulary) saat inferensi di web, sehingga akurasi model di browser menurun.
 2. Batas Panjang Kalimat (Max Len 40): Teks input dipotong maksimal 40 kata. Padahal banyak pesan penipuan memakai kalimat pembuka formal yang panjang, sehingga instruksi transfer atau link jebakan di bagian akhir pesan berisiko terpotong dan tidak terbaca oleh model.
 3. Ketergantungan CDN WASM: Runtime ONNX memuat file biner WASM dari jsDelivr. Jika koneksi pengguna sedang offline atau CDN mengalami kendala, model gagal diinisialisasi.
-4. Kelengkapan Berkas README: Tautan live demo dan video presentasi belum dicantumkan di README.md, padahal kedua tautan ini merupakan berkas wajib pada juknis lomba.
+4. Kelengkapan Berkas README: Tautan live deployment belum dicantumkan di README.md untuk mempermudah pengujian langsung.
 
 Saran pengembangan ke depan:
 1. Simpan Aset WASM Lokal: Pindahkan file biner ONNX WASM ke folder public agar aplikasi bisa berjalan penuh secara offline (PWA) tanpa bergantung pada CDN pihak ketiga.
@@ -1554,6 +1578,7 @@ Saran pengembangan ke depan:
 ---
 
 ## 40. Tim: gesellschaft (MIT-020) - Guardian
+
 - **Kode Tim Portal**: `MIT-020` (gesellschaft)
 - **Folder Sumber**: `Guardian`
 - **Identitas Proyek / Ketua**: Nosutora (altaccdamqsstar@gmail.com)
@@ -1572,7 +1597,7 @@ Saran pengembangan ke depan:
 | **Total Nilai Akhir** | **100%** | - | **82.50** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1808 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1690 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Platform Guardian menghadirkan utilitas keamanan digital yang ringkas, bersih, dan berfokus langsung pada fungsi deteksi praktis. Integrasi server-side API VirusTotal untuk pemindaian tautan dan berkas serta chatbot Gemini untuk konsultasi keamanan siber berjalan mulus di server Railway, dipercantik dengan maskot robot interaktif, efek Web Audio, dan radial menu yang futuristik.
@@ -1581,7 +1606,6 @@ Catatan teknis dan evaluasi yang perlu diperhatikan:
 1. Ruang Lingkup Fitur dan Studi Kasus: Aplikasi saat ini murni berfokus sebagai pemindai utilitas (wrapper API eksternal). Belum ada fitur interaktif studi kasus The Trust Trap, modul simulasi percakapan penipuan, maupun sistem basis data untuk menyimpan riwayat analisis pengguna.
 2. Ketergantungan Eksternal Tanpa Fallback: Pemindaian dan chatbot sepenuhnya bergantung pada ketersediaan kuota VirusTotal dan Gemini. Jika kuota API habis atau server pihak ketiga lambat, aplikasi tidak memiliki mesin aturan heuristik lokal sebagai jaring pengaman.
 3. Optimasi Aset Tailwind: Pada template Blade, CSS masih memuat script cdn.tailwindcss.com secara runtime di peramban, yang kurang efisien untuk performa aplikasi produksi.
-4. Kelengkapan Berkas Video: README belum mencantumkan tautan rekaman video demo 5 menit sesuai panduan juknis lomba.
 
 Saran pengembangan ke depan:
 1. Bangun Mesin Deteksi Heuristik Lokal: Tambahkan parser ekspresi reguler dan deteksi pola rekayasa sosial di sisi server agar tautan atau teks umum tetap dapat dianalisis secara instan tanpa membebani kuota API luar.
@@ -1593,6 +1617,7 @@ Eksekusi antarmuka yang unik dan integrasi API yang sangat rapi. Sukses terus un
 ---
 
 ## 41. Tim: timnas spanyol (MIT-042) - guardiola
+
 - **Kode Tim Portal**: `MIT-042` (timnas spanyol)
 - **Folder Sumber**: `guardiola`
 - **Identitas Proyek / Ketua**: secondaryfarand (Second Farand)
@@ -1628,6 +1653,7 @@ Saran peningkatan: Benahi data seed peran pada basis data skenario, terapkan has
 ---
 
 ## 42. Tim: Semoga Finalist (MIT-012) - JeBe-Jebakan_Betmen
+
 - **Kode Tim Portal**: `MIT-012` (Semoga Finalist)
 - **Folder Sumber**: `JeBe-Jebakan_Betmen`
 - **Identitas Proyek / Ketua**: Anugrah Dwantara (anugrahdwantara-Sage)
@@ -1646,13 +1672,13 @@ Saran peningkatan: Benahi data seed peran pada basis data skenario, terapkan has
 | **Total Nilai Akhir** | **100%** | - | **78.90** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1782 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1758 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
 Pendekatan JeBe (Jebakan Betmen) menarik karena dibangun dengan arsitektur zero-dependency menggunakan Node.js dan vanilla JavaScript tanpa dependensi eksternal. Mesin aturan pada analyzer.js tersusun rapi dengan 12 kategori deteksi, pembobotan kumulatif, penanganan negasi kalimat, dan rekomendasi langkah aman (Act) yang kontekstual. Manipulasi DOM di script.js juga aman dari celah XSS karena menghindari innerHTML.
 
 Catatan teknis dan temuan yang perlu diperhatikan:
-1. Placeholder Submission Belum Diisi: Di README.md, tautan wajib masih berupa draf ("ISI DENGAN URL NETLIFY", "ISI DENGAN URL VIDEO"). Ketiadaan tautan live deployment aktif sangat memengaruhi penilaian juknis karena juri tidak dapat menguji aplikasi secara daring.
+1. Placeholder Submission Belum Diisi: Di README.md, tautan wajib masih berupa draf ("ISI DENGAN URL NETLIFY"). Ketiadaan tautan live deployment aktif sangat memengaruhi penilaian juknis karena juri tidak dapat menguji aplikasi secara daring.
 2. File Terbengkalai main.html: Terdapat file main.html yang belum selesai (tanpa tag body dan konten terpotong) serta tidak bisa diakses dari server. Bersihkan file uji coba yang tidak terpakai dari repositori.
 3. Cakupan Fitur Masih Terbatas: Platform baru menangani analisis pesan teks satu arah. Belum tersedia modul edukasi atau simulasi interaktif (Learn), serta belum ada inspeksi berkas berbahaya (seperti sniffer APK kurir/undangan).
 
@@ -1667,6 +1693,7 @@ Fondasi kode vanilla yang sangat bersih dan rapi. Terus kembangkan fiturnya dan 
 ---
 
 ## 43. Tim: pitipiwpiw (MIT-021) - VeriFy-
+
 - **Kode Tim Portal**: `MIT-021` (pitipiwpiw)
 - **Folder Sumber**: `VeriFy-`
 - **Identitas Proyek / Ketua**: Bagus Aufa Ariq Armeidi (`ArmBagus`), Irfan (`AIZOFan`), Affan Abdul Majid Syahrul, Dea Gusriyanti | Universitas Multi Data Palembang (MDP)
@@ -1702,6 +1729,7 @@ Potensi konsep dan arsitektur simulasi sangat tinggi. Sukses selalu untuk tim Ve
 ---
 
 ## 44. Tim: TIM CASAN LAPTOP (MIT-022) - FRAUDD-ANT/FRAUD-ANT
+
 - **Kode Tim Portal**: `MIT-022` (TIM CASAN LAPTOP)
 - **Folder Sumber**: `FRAUDD-ANT/FRAUD-ANT`
 - **Identitas Proyek / Ketua**: Leonardo Elian (leonardo.elian2008@gmail.com)
