@@ -1198,6 +1198,44 @@ Karya yang sangat matang, rapi, dan berfaedah nyata bagi ekosistem digital. Suks
 
 ---
 
+## 32. Tim: ambakes (Jhonatan Farles) - CEKAT
+- **Folder Sumber**: `cekat-website`
+- **Ketua Tim**: ambakes (Jhonatan Farles | jhonatanfarles@gmail.com)
+- **Tautan Deployment**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tersedia di Portal Penilaian Juri
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 96 | 33.60 |
+| Kesesuaian dengan Studi Kasus | 25% | 96 | 24.00 |
+| UI/UX | 20% | 97 | 19.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 96 | 9.60 |
+| Dokumentasi | 10% | 94 | 9.40 |
+| **Total Nilai Akhir** | **100%** | - | **96.00** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.745 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Aplikasi CEKAT menghadirkan platform edukasi dan verifikasi penipuan digital yang sangat segar, matang, dan berkarakter kuat. Pendekatan visual bernuansa alam piksel dengan tema mint dan tipografi Silkscreen memberikan identitas visual khas tanpa mengorbankan keterbacaan maupun performa aplikasi web.
+
+Kualitas rekayasa dan keunggulan teknis yang menonjol:
+1. Analisis Lengkap Termasuk QRIS: Dekoder gambar QR di peramban yang mampu membedah struktur data TLV QRIS, memvalidasi checksum CRC-16, serta membedakan format Wi-Fi dan URL merupakan nilai tambah inovatif yang sangat relevan dengan modus penipuan merchant saat ini.
+2. Deteksi Cerdas Tautan & Pesan: Pemindaian memadukan heuristik cerdas (normalisasi leetspeak dan jarak edit Levenshtein terhadap basis data merek) dengan reputasi Google Safe Browsing dan IsThisSpam.
+3. Standar Aksesibilitas Luar Biasa: Panel aksesibilitas mandiri dengan pengaturan kontras tinggi, penyesuaian ukuran teks, penghentian animasi, dan garis bawah tautan mencerminkan kepedulian inklusif yang nyata bagi pengguna.
+4. Kode Bersih & Teruji: Struktur React 19 dan TypeScript tersusun sangat rapi tanpa peringatan linter (oxlint 0 warning) serta didukung 15 unit test logika yang lulus sempurna.
+
+Saran peningkatan teknis ke depan:
+1. Fallback Heuristik Mandiri: Sediakan indikator status transparan di antarmuka jika kuota API eksternal habis, agar pengguna tahu analisis tetap berjalan memakai mesin heuristik lokal.
+2. Validasi Batas Nominal QRIS: Kembangkan deteksi batas nominal pembayaran pada tag data QRIS dinamis untuk mengidentifikasi anomali tagihan sebelum pengguna memindai lewat dompet digital.
+
+Karya yang sangat artistik, solutif, dan berstandar teknis tinggi. Sukses selalu untuk tim CEKAT!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown
