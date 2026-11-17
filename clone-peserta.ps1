@@ -18,6 +18,7 @@ $repos = @(
     @{ Folder = "JagaRuang"; Url = "https://github.com/syifamojocanggih-hash/JagaRuang.git" },
     @{ Folder = "JeBe-Jebakan_Betmen"; Url = "https://github.com/anugrahdwantara-Sage/JeBe-Jebakan_Betmen.git" },
     @{ Folder = "Jeda"; Url = "https://github.com/rizkydavid/Jeda.git" },
+    @{ Folder = "Lumina"; Url = "https://github.com/vaskoyudha/Lumina.git" },
     @{ Folder = "MIT-WEBDEVELOPMENT-IFORB"; Url = "https://github.com/Legansdeveloper/MIT-WEBDEVELOPMENT-IFORB.git" },
     @{ Folder = "MIT-week"; Url = "https://github.com/fujimaruC/MIT-week.git" },
     @{ Folder = "mit-week-guardian-lab"; Url = "https://github.com/DeryWahyu/mit-week-guardian-lab.git" },
