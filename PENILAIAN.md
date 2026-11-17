@@ -1161,6 +1161,43 @@ Karya yang sangat matang, beretika tinggi, dan solutif. Sukses selalu untuk tim 
 
 ---
 
+## 31. Tim: arya-vrxx dkk. (Basicgenis) - Incident Response & Recovery Kit
+- **Folder Sumber**: `Basicgenis-MIT-UNMUL`
+- **Ketua Tim**: arya-vrxx (Anggota: Daniel / 24nielsmktinet, Rahma Aisira | SMK TI Airlangga Samarinda)
+- **Tautan Deployment**: Tidak Dicantumkan di README (Tautan GitHub Pages https://arya-vrxx.github.io/Basicgenis-MIT-UNMUL/ menghasilkan status 404 Not Found)
+- **Video Demo**: Tidak Dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 84 | 29.40 |
+| Kesesuaian dengan Studi Kasus | 25% | 95 | 23.75 |
+| UI/UX | 20% | 95 | 19.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 94 | 9.40 |
+| Dokumentasi | 10% | 88 | 8.80 |
+| **Total Nilai Akhir** | **100%** | - | **90.35** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.756 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Incident Response & Recovery Kit karya perwakilan SMK TI Airlangga Samarinda menghadirkan pertolongan pertama pasca-insiden siber yang sangat praktis, taktis, dan aplikatif. Fokus pada pemulihan fase darurat setelah pengguna terkena insiden (phishing, APK berbahaya, akun dibajak, atau terlanjur transfer) menjawab celah krusial yang kerap terlewatkan pada platform edukasi keamanan siber pada umumnya.
+
+Kualitas rekayasa dan nilai positif dari proyek ini:
+1. Arsitektur Mandiri & PWA Luring: Dibangun dengan Vanilla JavaScript modular tanpa ketergantungan framework berat. Implementasi Service Worker berjalan sangat prima sehingga panduan darurat tetap dapat beroperasi penuh tanpa koneksi internet.
+2. Analisis Rule-Based Teruji: Mesin pemeriksa tautan (12 aturan) dan pesan mencurigakan (8 indikator) dilengkapi 19 unit test mandiri. Sanitasi input melalui escapeHtml diterapkan dengan disiplin sebelum manipulasi DOM untuk mencegah celah XSS.
+3. UI/UX dan Kerapian Detail: Tampilan bersih dengan tema sage konsisten, tema gelap/terang persisten di localStorage, dukungan prefers-reduced-motion, serta maskot robot SVG interaktif yang memberi sentuhan humanis.
+
+Catatan evaluasi dan saran teknis ke depan:
+1. Tautan Live Deployment: Sangat disayangkan tautan live deployment belum aktif (GitHub Pages menghasilkan 404). Mengaktifkan hosting statis gratis seperti Vercel, Netlify, atau Cloudflare Pages akan memudahkan akses instan bagi masyarakat luas.
+2. Resolusi Pemendek Tautan: Kembangkan penanganan pemendek URL dengan mekanisme ekspansi alamat tujuan agar analisis tautan yang dipersingkat dapat mendeteksi domain akhir secara presisi.
+
+Karya yang sangat matang, rapi, dan berfaedah nyata bagi ekosistem digital. Sukses selalu untuk tim!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown

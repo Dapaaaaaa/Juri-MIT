@@ -3,6 +3,7 @@
 $repos = @(
     @{ Folder = "anti-trap-order"; Url = "https://github.com/fk0u/anti-trap-order.git" },
     @{ Folder = "aswaja_cybershield"; Url = "https://github.com/makecoding2110-beep/aswaja_cybershield.git" },
+    @{ Folder = "Basicgenis-MIT-UNMUL"; Url = "https://github.com/arya-vrxx/Basicgenis-MIT-UNMUL.git" },
     @{ Folder = "Cekara"; Url = "https://github.com/Fauzaro01/Cekara.git" },
     @{ Folder = "Cekin"; Url = "https://github.com/ahmadirfanmarufm/Cekin.git" },
     @{ Folder = "Cekkan"; Url = "https://github.com/MaharajaGeral/Cekkan.git" },
