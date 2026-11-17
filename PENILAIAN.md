@@ -905,7 +905,7 @@ Karya yang sangat brilian, matang, dan berbobot tinggi. Sukses selalu untuk tim 
 ---
 
 ## 24. Tim: rizkydavid & Rayendra dkk. - Jeda
-- **Folder Sumber**: `Jeda`
+- **Folder Sumber**: `Jeda` / `Jeda team 24`
 - **Ketua Tim**: Rizky David / Rayendra
 - **Tautan Deployment**: https://jeda.up.railway.app
 - **Video Demo**: Tidak Dicantumkan di README
