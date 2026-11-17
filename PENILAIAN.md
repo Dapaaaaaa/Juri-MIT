@@ -1421,6 +1421,44 @@ Saran peningkatan: Benahi data seed peran pada basis data skenario, terapkan has
 
 ---
 
+## 38. Tim: papipapipum (Jonathan Salim dkk.) - Jeli
+- **Folder Sumber**: `MIT_WEEK2026`
+- **Ketua Tim**: Jonathan Salim (Anggota: Gregorius Petrus Leslie, Ilham Rafiqin)
+- **Tautan Deployment**: https://jeli-mit.vercel.app/#home
+- **Video Demo**: https://drive.google.com/drive/folders/11HcbpnGFz4UnpxVIa-04SdCE7CDHotaT
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 98 | 34.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 98 | 19.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 97 | 9.70 |
+| Dokumentasi | 10% | 98 | 9.80 |
+| **Total Nilai Akhir** | **100%** | - | **97.90** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.754 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Jeli menghadirkan solusi keamanan digital yang sangat matang, berkarakter kuat, dan terarah dalam melindungi pencari kerja muda dari penipuan lowongan kerja. Pemaduan tiga fitur utama—Jeli Cek (inspeksi pesan, gambar, link), Jeli Lakon (simulator rekrutmen berapor PDF), serta Sahabat Jeli (avatar pendamping berbasis suara)—dieksekusi dengan standar rekayasa tingkat industri.
+
+Kualitas rekayasa dan keunggulan teknis yang menonjol:
+1. Validasi Multi-Modal & Regulasi: Jeli Cek menganalisis teks, gambar, dan URL yang dipadukan basis hukum ketenagakerjaan (Permenaker No. 18 Tahun 2024) serta tautan verifikasi instan ke portal AHU Kemenkumham.
+2. Arsitektur Stateless & Privasi: Sesi latihan Jeli Lakon beroperasi tanpa penyimpanan transkrip di database, melainkan memakai token sesi bertanda tangan kriptografis HMAC-SHA256 terkompresi zlib di sisi klien. Pendekatan zero-retention ini menjamin privasi pengguna secara maksimal.
+3. Kerapian UI/UX & Aksesibilitas Suara: Antarmuka toska gelap tersusun elegan, responsif di berbagai layar, mendukung dwibahasa (ID/EN), serta menyediakan interaksi suara dua arah (speech-to-text Web Speech API dan sintesis ElevenLabs).
+4. Dokumentasi & Kode Berkualitas: Struktur React 19 TypeScript dan FastAPI Pydantic v2 tersusun rapi, build frontend lulus sempurna, dan dilengkapi panduan teknis yang lengkap.
+
+Saran peningkatan teknis ke depan:
+1. Fallback Heuristik Luring: Pertimbangkan modul pencocokan kata kunci lokal di sisi klien sebagai jaring pengaman saat kuota API eksternal habis.
+2. Filter Data Pribadi Otomatis: Sediakan deteksi otomatis nomor KTP atau rekening sebelum data dikirim untuk analisis.
+
+Karya yang sangat visioner, solid, dan beretika tinggi. Sukses selalu untuk tim papipapipum!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown

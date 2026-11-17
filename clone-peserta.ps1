@@ -22,6 +22,7 @@ $repos = @(
     @{ Folder = "Lumina"; Url = "https://github.com/vaskoyudha/Lumina.git" },
     @{ Folder = "MIT-WEBDEVELOPMENT-IFORB"; Url = "https://github.com/Legansdeveloper/MIT-WEBDEVELOPMENT-IFORB.git" },
     @{ Folder = "MIT-week"; Url = "https://github.com/fujimaruC/MIT-week.git" },
+    @{ Folder = "MIT_WEEK2026"; Url = "https://github.com/jona-2212/MIT_WEEK2026.git" },
     @{ Folder = "mit-week-guardian-lab"; Url = "https://github.com/DeryWahyu/mit-week-guardian-lab.git" },
     @{ Folder = "pandu"; Url = "https://github.com/riiardian/pandu.git" },
     @{ Folder = "saring-app"; Url = "https://github.com/hissyam90/saring-app.git" },
