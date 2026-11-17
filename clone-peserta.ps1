@@ -27,6 +27,7 @@ $repos = @(
     @{ Folder = "Spot-the-Scam-Cek-Pesan-Penipuan"; Url = "https://github.com/Lodraalbar/Spot-the-Scam-Cek-Pesan-Penipuan.git" },
     @{ Folder = "Trasco---MIT-WEEK-2026"; Url = "https://github.com/ajrth21/Trasco---MIT-WEEK-2026.git" },
     @{ Folder = "TRASP"; Url = "https://github.com/raya-raihana/TRASP.git" },
+    @{ Folder = "TrustGuard-App"; Url = "https://github.com/Robertus567/TrustGuard-App.git" },
     @{ Folder = "trusttrail"; Url = "https://github.com/SlushyMint/trusttrail.git" },
     @{ Folder = "TUNTUN_KARHUTLA"; Url = "https://github.com/redoomp4/TUNTUN_KARHUTLA.git" },
     @{ Folder = "VeriFy-"; Url = "https://github.com/ArmBagus/VeriFy-.git" },
