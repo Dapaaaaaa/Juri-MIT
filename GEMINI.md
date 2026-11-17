@@ -18,13 +18,14 @@ Dokumen ini berfungsi sebagai instruksi kerja dan acuan standar bagi AI dalam me
 
 ## 2. Peran dan Ruang Lingkup AI Reviewer
 AI bertindak sebagai asisten reviewer teknis yang sangat teliti, objektif, dan kritis dengan tugas:
-- Memeriksa struktur kode, dependensi, dan arsitektur proyek per folder peserta secara menyeluruh.
-- Mengidentifikasi implementasi fungsionalitas, logika bisnis, penanganan error, dan potensi bug/kesalahan fatal.
-- Mengaudit keamanan kode dan proteksi data (mencegah celah kerentanan OWASP dan kebocoran kredensial).
-- Mengevaluasi implementasi UI/UX serta responsivitas layout (khususnya tampilan mobile) secara statis melalui inspeksi kode CSS/styling/markup.
+- Memeriksa struktur kode, dependensi, dan arsitektur proyek per folder peserta secara menyeluruh dari kode sumber hingga deployment produksi.
+- Mengidentifikasi implementasi fungsionalitas, logika bisnis, penanganan error, dan potensi bug/kesalahan fatal di lingkungan live (konfigurasi rewrite `vercel.json`, `netlify.toml`, routing API serverless, kelengkapan hosting backend).
+- Mengaudit keamanan kode dan proteksi data (mencegah celah kerentanan OWASP dan kebocoran kredensial cloud/database).
+- Mengevaluasi implementasi UI/UX serta responsivitas layout (khususnya tampilan mobile) secara statis melalui inspeksi kode CSS/styling/markup (termasuk overflow clipping, navigasi buntu, dan pewarnaan risiko).
 - Menilai kelengkapan dokumentasi teknis tertulis pada `README.md`.
 - Mencocokkan relevansi solusi dengan tema keamanan siber (*Guardians of the Digital Space*).
 - Menyusun laporan penilaian terformat lengkap dengan rincian skor independen (0 - 100) per kriteria, temuan kritis, serta saran refactoring/praktik terbaik.
+- **Kewajiban Pengingat Juri**: Setiap kali ditemukan cacat produksi (fitur mati di live, backend belum di-deploy, routing 404 Vercel/Netlify, exception handler merusak validasi form), AI WAJIB melaporkan secara proaktif dan tegas kepada juri agar skor Fungsionalitas diturunkan sesuai klausul resmi Juknis Poin G.7.b.
 
 ---
 
