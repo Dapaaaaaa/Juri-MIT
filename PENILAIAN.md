@@ -1350,6 +1350,43 @@ Karya yang sangat visioner, solid, dan berstandar teknis luar biasa. Sukses sela
 
 ---
 
+## 36. Tim: Nanti Ajah (MIT-041) - The Trust Trap Guardian
+- **Folder Sumber**: `TrustTrapGuardian`
+- **Ketua Tim**: Micho Christianta (Anggota: Znt / deryhafizh, Radit220 | Universitas Gunadarma)
+- **Tautan Deployment**: https://trusttrapguardian.vercel.app/
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 97 | 33.95 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 97 | 19.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 96 | 9.60 |
+| Dokumentasi | 10% | 95 | 9.50 |
+| **Total Nilai Akhir** | **100%** | - | **96.95** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.759 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+The Trust Trap Guardian menghadirkan platform mitigasi rekayasa sosial yang cerdas, terstruktur, dan berlandaskan Human-Computer Interaction (HCI) yang kuat. Pendekatan tiga pilar Recognize, Act, dan Learn yang dipadukan prinsip Local-First Privacy membuktikan kematangan konsep tim dalam melindungi pengguna dari manipulasi psikologis penipuan digital tanpa mengorbankan privasi data.
+
+Kualitas rekayasa dan keunggulan teknis yang menonjol:
+1. Mesin Heuristik Transparan & Privasi Lokal: Pemindaian 11 modul ancaman (upfront fee, APK/OTP, phishing link dengan rasio Shannon Entropy, hingga romance scam) berjalan 100% di peramban. Modul privacyScrubber menyensor NIK, nomor rekening, dan OTP secara instan sebelum analisis teks dimulai.
+2. Penerapan Ergonomi Kognitif yang Matang: Fitur Panic Triage menerapkan Hick's Law dan tindakan darurat time-boxed (detik 0–30 untuk mode pesawat dan menit 1–60 untuk isolasi perbankan), diperkuat banner Psychological First Aid (anti-shame loop) dan checklist darurat berefek endowed progress.
+3. Kualitas Kode & Pengujian Masif: Dilengkapi 53 automated unit test pada verifyEngine.mjs yang lulus 100% tanpa celah, mencakup verifikasi kasus bahaya, penanganan leetspeak, dan uji ketahanan terhadap false positive pada pesan resmi.
+
+Saran peningkatan teknis ke depan:
+1. Penyempurnaan Sintaks Regex: Bersihkan karakter escape berlebih pada privacyScrubber.js dan heuristicRules.js agar seluruh peringatan linter oxlint menjadi nol peringatan secara mutlak.
+2. Tautan Video Demo di README: Pertimbangkan menyematkan tautan rekaman video demo di README agar juri dapat mengakses demonstrasi visual secara langsung.
+
+Karya yang sangat solutif, beretika tinggi, dan sarat inovasi psikologi kognitif. Sukses selalu untuk tim!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown
