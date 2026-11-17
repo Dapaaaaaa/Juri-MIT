@@ -1570,6 +1570,39 @@ Karya yang sangat visioner, solid, dan solutif bagi ekosistem digital Indonesia.
 
 ---
 
+## 42. Tim: naylancy (Nayla Audyna) - KNOW YOUR SCAM: ANTI-GRAVITY CYBER DEFENSE
+- **Folder Sumber**: `know-your-scam`
+- **Ketua Tim**: Nayla Audyna
+- **Tautan Deployment**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 94 | 32.90 |
+| Kesesuaian dengan Studi Kasus | 25% | 96 | 24.00 |
+| UI/UX | 20% | 95 | 19.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 78 | 7.80 |
+| Dokumentasi | 10% | 88 | 8.80 |
+| **Total Nilai Akhir** | **100%** | - | **92.50** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.634 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Know Your Scam menyajikan konsep gamifikasi pertahanan siber yang sangat atraktif, hidup, dan berkarakter kuat. Pendekatan antarmuka Sci-Fi HUD lengkap dengan efek audio synthesizer interaktif, briefing taktis di tiap permainan, modul edukasi komprehensif, serta empat variasi game edukatif (Kasus Multi-POV, Finding Diff, Criminal Case, dan AI Analyzer) berhasil mengubah materi keamanan siber menjadi pengalaman yang sangat memikat. Guardrail kurasi visual pada Legit Checker yang menolak tangkapan layar buram sebelum dianalisis juga menjadi sentuhan teknis yang cerdas.
+
+Namun, terdapat temuan teknis dan celah keamanan kritis yang perlu dibenahi:
+1. Kebocoran Kredensial API di Kode Sumber: Pada CheckerController dan ScannerController, ditemukan token API Google Gemini aktif yang di-hardcode ke dalam kode menggunakan base64_decode(). Mengaburkan kunci dengan base64 sangat mudah didekode dan berisiko tinggi disalahgunakan. Simpan seluruh API key secara eksklusif di berkas .env dan lindungi melalui .gitignore.
+2. Sandi Pengguna Bawaan Masih Berupa Plaintext: Pada database.json, kredensial akun bawaan tersimpan dalam teks polos tanpa enkripsi. Pastikan seluruh kata sandi di-hash menggunakan algoritma aman seperti bcrypt demi integritas akun.
+3. Transparansi Konsensus Multi-AI: Fitur debat 3-AI sebenarnya memanggil satu endpoint Gemini yang sama melalui persona prompting. Ke depan, hubungkan API multi-vendor secara riil atau sampaikan secara transparan bahwa ini merupakan simulasi multi-sudut pandang.
+
+Karya yang sangat imajinatif, kaya fitur, dan bernilai edukatif tinggi. Sukses selalu untuk tim naylancy!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown
