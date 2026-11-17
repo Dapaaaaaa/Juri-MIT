@@ -13,6 +13,7 @@ $repos = @(
     @{ Folder = "FRAUDD-ANT"; Url = "https://github.com/leonardoelian2008-web/FRAUDD-ANT.git" },
     @{ Folder = "Guardian"; Url = "https://github.com/NosutoraDa/Guardian.git" },
     @{ Folder = "guardian-digital"; Url = "https://github.com/YanuarFaturrahman/guardian-digital.git" },
+    @{ Folder = "guardiola"; Url = "https://github.com/secondaryfarand/guardiola.git" },
     @{ Folder = "ITIHIX"; Url = "https://github.com/ZaidAlHibb/ITIHIX.git" },
     @{ Folder = "jaga"; Url = "https://github.com/joanpurbaa/jaga.git" },
     @{ Folder = "JagaRuang"; Url = "https://github.com/syifamojocanggih-hash/JagaRuang.git" },

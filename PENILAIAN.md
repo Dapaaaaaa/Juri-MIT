@@ -1387,6 +1387,43 @@ Karya yang sangat solutif, beretika tinggi, dan sarat inovasi psikologi kognitif
 
 ---
 
+## 37. Tim: secondaryfarand (Second Farand) - Guardiola
+- **Folder Sumber**: `guardiola`
+- **Ketua Tim**: secondaryfarand (Second Farand)
+- **Tautan Deployment**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 90 | 31.50 |
+| Kesesuaian dengan Studi Kasus | 25% | 95 | 23.75 |
+| UI/UX | 20% | 92 | 18.40 |
+| Kualitas Kode & Pemeliharaan | 10% | 84 | 8.40 |
+| Dokumentasi | 10% | 88 | 8.80 |
+| **Total Nilai Akhir** | **100%** | - | **90.85** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.771 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform Guardiola menghadirkan inovasi ekosistem pertahanan siber yang sangat menarik, kaya fitur, dan memiliki sudut pandang edukasi yang segar. Ide menghadirkan Reverse Lab—di mana pengguna berlatih simulasi dari sudut pandang pelaku untuk membujuk persona AI Target Warga—merupakan terobosan kreatif yang efektif melatih pemahaman psikologis terhadap taktik rekayasa sosial.
+
+Kualitas rekayasa dan keunggulan teknis yang menonjol:
+1. Ekosistem Fitur yang Komprehensif: Integrasi URL Inspector dengan OCR Tesseract.js di peramban, Community Threat Reporting, Pusat Edukasi Siber, Simulator Lab interaktif, hingga Reverse Lab berbasis Gemini AI memberikan cakupan perlindungan multi-dimensi.
+2. Inovasi Subfitur Ekstensi Peramban: Penyediaan ekstensi browser Manifest V3 yang memantau navigasi dan mengalihkan tautan berisiko tinggi secara otomatis ke portal peringatan merupakan nilai tambah praktis yang patut diapresiasi.
+3. Desain Antarmuka Bersih: Tampilan web mengusung estetika clean white yang rapi dan konsisten dengan tata letak modular berbasis CSS Modules.
+
+Catatan evaluasi teknis dan saran perbaikan kritis:
+1. Keamanan Autentikasi Kredensial: Ditemukan celah fatal pada authController.js di mana password pengguna disimpan dan dicocokkan dalam bentuk plaintext tanpa enkripsi hashing (seperti bcrypt atau argon2). Wajib terapkan hashing password dan pengamanan sesi berbasis JWT/HttpOnly cookie.
+2. Konfigurasi Lingkungan Dinamis: Ekstensi peramban masih meng-hardcode alamat localhost sehingga perlu diabstraksikan ke konfigurasi environment agar otomatis tersambung ke backend cloud produksi. Sediakan pula berkas .env.example untuk memandu setup lokal.
+
+Proyek yang sangat berani berinovasi dan kaya fitur aplikatif. Sukses selalu untuk tim Guardiola!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown
