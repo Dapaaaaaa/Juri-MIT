@@ -1274,6 +1274,44 @@ Karya yang sangat visioner, solid, dan beretika tinggi. Sukses selalu untuk tim 
 
 ---
 
+## 34. Tim: SAJADDIPURO - SiagaDigital
+- **Folder Sumber**: `siagadigital`
+- **Ketua Tim**: SAJADDIPURO (NASI1985)
+- **Tautan Deployment**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tersedia di Portal Penilaian Juri
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 97 | 33.95 |
+| Kesesuaian dengan Studi Kasus | 25% | 97 | 24.25 |
+| UI/UX | 20% | 96 | 19.20 |
+| Kualitas Kode & Pemeliharaan | 10% | 97 | 9.70 |
+| Dokumentasi | 10% | 96 | 9.60 |
+| **Total Nilai Akhir** | **100%** | - | **96.70** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.740 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+SiagaDigital menghadirkan platform mitigasi penipuan digital yang sangat matang, berakar kuat pada kebutuhan nyata masyarakat, dan dieksekusi dengan pendekatan arsitektur luring yang mengagumkan. Keputusan tim menjalankan seluruh logika secara mandiri di sisi klien tanpa server maupun telemetri menjamin privasi data pengguna secara mutlak.
+
+Kualitas rekayasa dan keunggulan teknis yang menonjol:
+1. Mesin Analisis Berbasis Linguistik: Normalisasi teks menangani leetspeak, homoglif Kiril, unspacing kata, serta peluluhan afiks imbuhan bahasa Indonesia (mentransfer menjadi transfer) pada modul affix bekerja sangat cerdas mencegah manipulasi kata.
+2. Pengenalan Konteks Edukasi: Penanganan kalimat peringatan seperti "jangan bagikan kode OTP" yang tidak memicu alarm palsu membuktikan kepekaan tim terhadap akurasi deteksi di lapangan.
+3. Chatbot Luring & Simulasi Interaktif: SiagaBot deterministik multi-turn mengenali bahasa gaul dan salah ketik tanpa ketergantungan API eksternal, dipadukan 6 skenario latihan bertahap yang mendidik.
+4. Kualitas Kode & Pengujian Masif: Pemisahan concern sangat rapi, bebas dependensi berlebih, serta didukung 93 unit test otomatis yang lulus sempurna di seluruh modul inti.
+
+Saran peningkatan teknis ke depan:
+1. Pengelompokan Kategori Lebih Fleksibel: Pertimbangkan struktur trie atau regex terkompilasi terindeks untuk basis data kata kunci agar pencarian ratusan pola lebih efisien saat kamus terus bertambah.
+2. Ekspor Rencana Tindakan Darurat: Tambahkan fitur unduh berkas teks ringkas untuk rangkuman langkah darurat korban agar mudah dibawa saat melapor ke pihak bank atau kepolisian.
+
+Karya yang sangat solutif, cerdas secara teknis, dan beretika tinggi. Sukses selalu untuk tim SiagaDigital!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown
