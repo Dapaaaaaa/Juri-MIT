@@ -1532,6 +1532,44 @@ Karya yang sangat brilian, matang, dan berdampak nyata bagi keamanan digital mas
 
 ---
 
+## 41. Tim: Apa Aja Lah (Ario Zulkaisi Nubli & Aisyah Azka Salsabila) - SADAR (Sistem Analisis Data & Antisipasi Risiko)
+- **Folder Sumber**: `Sistem-Analisis-Data-Antisipasi-Risiko`
+- **Ketua Tim**: Ario Zulkaisi Nubli | Universitas Indonesia
+- **Tautan Deployment**: https://ristek.link/sadar
+- **Video Demo**: Tidak dicantumkan di README
+
+### Rincian Nilai Form
+
+| Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
+| :--- | :---: | :---: | :---: |
+| Fungsionalitas | 35% | 98 | 34.30 |
+| Kesesuaian dengan Studi Kasus | 25% | 98 | 24.50 |
+| UI/UX | 20% | 98 | 19.60 |
+| Kualitas Kode & Pemeliharaan | 10% | 95 | 9.50 |
+| Dokumentasi | 10% | 94 | 9.40 |
+| **Total Nilai Akhir** | **100%** | - | **97.30** |
+
+### Masukan untuk Tim (Siap Salin ke Form)
+*Catatan: 1.763 karakter (aman di bawah batas 2.000 karakter).*
+
+```text
+Platform SADAR (Sistem Analisis Data & Antisipasi Risiko) menghadirkan karya rekayasa keamanan siber yang sangat komprehensif, matang, dan kaya fitur. Pendekatan tanpa login dan tanpa retensi data permanen mencerminkan komitmen tinggi terhadap privasi. Pemaduan modul analitik—mulai dari Analisis Chat & Screenshot Vision AI, Pemindai Tautan multi-mesin (Safe Browsing, Cloudflare DNS, URLhaus, dan AI), Cek E-Wallet/Rekening, Decision Lab, hingga minigame edukatif SADAR Run—dieksekusi secara profesional.
+
+Keunggulan teknis yang menonjol:
+1. Resiliensi Sistem & Mode Offline: Fallback heuristik lokal di setiap fitur memastikan platform tetap beroperasi optimal dan memberikan rekomendasi keselamatan tanpa hambatan, bahkan saat kuota API habis atau perangkat luring.
+2. Desain Antarmuka & UX Responsif: Visual bertema siber dengan kartu tilt 3D dan animasi Framer Motion tersusun rapi. Ketersediaan tombol uji cepat (quick buttons) pada seluruh formulir memudahkan pengguna menguji skenario nyata seketika.
+3. Edukasi Simulasi: Decision Lab dengan empat studi kasus (Kurir APK, Call Center, QRIS Quishing, Typosquatting) menyajikan panduan penanganan darurat (incident response) yang aplikatif.
+4. Dokumentasi Rapi: Dokumen README dilengkapi diagram Mermaid alur sistem dan panduan konfigurasi yang jelas.
+
+Saran penyempurnaan ke depan:
+1. Pembaruan Patch Next.js: Perbarui rilis minor Next.js ke versi patch stabil terbaru guna mengatasi anjuran keamanan CLI bawaan.
+2. Pengujian Otomatis (Automated Testing): Tambahkan suite unit test (seperti Vitest/Jest) untuk memverifikasi logika pemindai tautan dan normalisasi entitas secara mandiri.
+
+Karya yang sangat visioner, solid, dan solutif bagi ekosistem digital Indonesia. Sukses selalu untuk tim Apa Aja Lah!
+```
+
+---
+
 ## Template Penilaian Tim Berikutnya
 
 ```markdown

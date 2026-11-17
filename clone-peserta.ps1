@@ -28,6 +28,7 @@ $repos = @(
     @{ Folder = "saring-app"; Url = "https://github.com/hissyam90/saring-app.git" },
     @{ Folder = "siagadigital"; Url = "https://github.com/NASI1985/siagadigital.git" },
     @{ Folder = "Scamora"; Url = "https://github.com/Kalzz76/Scamora.git" },
+    @{ Folder = "Sistem-Analisis-Data-Antisipasi-Risiko"; Url = "https://github.com/Rio3zN9G/Sistem-Analisis-Data-Antisipasi-Risiko.git" },
     @{ Folder = "Spot-the-Scam-Cek-Pesan-Penipuan"; Url = "https://github.com/Lodraalbar/Spot-the-Scam-Cek-Pesan-Penipuan.git" },
     @{ Folder = "The-Trust-Trap"; Url = "https://github.com/Nadhif56/The-Trust-Trap.git" },
     @{ Folder = "Trasco---MIT-WEEK-2026"; Url = "https://github.com/ajrth21/Trasco---MIT-WEEK-2026.git" },
