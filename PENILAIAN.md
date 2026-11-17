@@ -1165,7 +1165,7 @@ Karya yang sangat matang, beretika tinggi, dan solutif. Sukses selalu untuk tim 
 - **Folder Sumber**: `Basicgenis-MIT-UNMUL`
 - **Ketua Tim**: arya-vrxx (Anggota: Daniel / 24nielsmktinet, Rahma Aisira | SMK TI Airlangga Samarinda)
 - **Tautan Deployment**: Tersedia di Portal Penilaian Juri
-- **Video Demo**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tidak dicantumkan di README
 
 ### Rincian Nilai Form
 
@@ -1202,7 +1202,7 @@ Karya yang sangat matang, rapi, dan berfaedah nyata bagi ekosistem digital. Suks
 - **Folder Sumber**: `cekat-website`
 - **Ketua Tim**: ambakes (Jhonatan Farles | jhonatanfarles@gmail.com)
 - **Tautan Deployment**: Tersedia di Portal Penilaian Juri
-- **Video Demo**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tidak dicantumkan di README
 
 ### Rincian Nilai Form
 
@@ -1240,7 +1240,7 @@ Karya yang sangat artistik, solutif, dan berstandar teknis tinggi. Sukses selalu
 - **Folder Sumber**: `TrustGuard-App`
 - **Ketua Tim**: Robertus567 (robertus567@gmail.com)
 - **Tautan Deployment**: Tersedia di Portal Penilaian Juri
-- **Video Demo**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tidak dicantumkan di README
 
 ### Rincian Nilai Form
 
@@ -1278,7 +1278,7 @@ Karya yang sangat visioner, solid, dan beretika tinggi. Sukses selalu untuk tim 
 - **Folder Sumber**: `siagadigital`
 - **Ketua Tim**: SAJADDIPURO (NASI1985)
 - **Tautan Deployment**: Tersedia di Portal Penilaian Juri
-- **Video Demo**: Tersedia di Portal Penilaian Juri
+- **Video Demo**: Tidak dicantumkan di README
 
 ### Rincian Nilai Form
 
@@ -1318,8 +1318,8 @@ Karya yang sangat solutif, cerdas secara teknis, dan beretika tinggi. Sukses sel
 ## [Nomor Urut]. Tim: [Nama Tim] ([Kode Tim]) - [Nama Proyek]
 - **Folder Sumber**: `[nama_folder]`
 - **Ketua Tim**: [Nama Ketua] | [Asal Kampus / Sekolah]
-- **Tautan Deployment**: [URL]
-- **Video Demo**: [URL atau Keterangan]
+- **Tautan Deployment**: [URL atau Tersedia di Portal Penilaian Juri]
+- **Video Demo**: [URL Video jika ada di README / Tidak dicantumkan di README]
 
 ### Rincian Nilai Form
 

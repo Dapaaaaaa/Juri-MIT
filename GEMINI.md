@@ -73,13 +73,17 @@ Fokus evaluasi:
 - **Peluang Penerapan Kode yang Lebih Baik (Refactoring Opportunities)**:
   - Identifikasi pola kode yang berpotensi ditingkatkan (penggunaan custom hooks, state management yang lebih efisien, optimasi query, atau modularisasi komponen monolitik).
 
-### E. Dokumentasi Tertulis (Bobot: 10% | Skor: 0 - 100)
+### E. Dokumentasi & Video Demo (Bobot: 10% | Skor: 0 - 100)
 Fokus evaluasi:
-- Evaluasi difokuskan secara mendalam pada file `README.md` pada root folder peserta.
-- **Petunjuk Setup & Instalasi**: Kejelasan langkah-langkah menjalankan aplikasi secara lokal (prerequisites, konfigurasi `.env.example`, perintah instalasi dependensi, dan perintah migrasi database/build).
-- **Deskripsi Proyek & Arsitektur**: Penjelasan solusi, diagram alur (jika ada), tech stack yang digunakan, serta daftar fitur.
-- **Atribusi Sumber Daya**: Keterbukaan pencantuman library, template, aset, atau kode sumber pihak ketiga yang signifikan sesuai ketentuan Juknis.
-*(Catatan: Penilaian video presentasi/demo dinilai langsung secara manual oleh reviewer).*
+- Evaluasi mencakup dua aspek utama:
+  1. **Tautan Video Demo Produk**:
+     - Periksa file `README.md` pada repositori peserta.
+     - Jika terdapat tautan video demo (misalnya YouTube, Google Drive, Loom, Vimeo, dsb.), cantumkan tautan video tersebut secara eksplisit pada laporan dan file `PENILAIAN.md`.
+     - Jika tidak terdapat tautan video di `README.md`, catat dan informasikan secara transparan bahwa tautan video tidak dicantumkan di README (tidak masalah/jangan panik, cukup laporkan statusnya apa adanya karena pengumpulan video dapat melalui form/portal juri terpisah).
+  2. **Kelengkapan & Kualitas README.md**:
+     - **Petunjuk Setup & Instalasi**: Kejelasan langkah-langkah menjalankan aplikasi secara lokal (prerequisites, konfigurasi `.env.example`, perintah instalasi dependensi, dan perintah migrasi database/build/test).
+     - **Deskripsi Proyek & Arsitektur**: Penjelasan solusi, diagram alur (jika ada), tech stack yang digunakan, serta daftar fitur.
+     - **Atribusi Sumber Daya**: Keterbukaan pencantuman library, template, aset, atau kode sumber pihak ketiga yang signifikan sesuai ketentuan Juknis.
 
 ---
 
@@ -92,7 +96,8 @@ Gunakan struktur baku berikut saat memaparkan hasil evaluasi:
 
 #### 1. Ringkasan Proyek
 - Tech Stack: [contoh: Next.js, React, Tailwind CSS, Prisma, PostgreSQL]
-- Tautan Deployment: [URL atau Tidak Ada]
+- Tautan Deployment: [URL atau Tersedia di Portal Penilaian Juri]
+- Tautan Video Demo: [URL Video jika ada di README / Tidak dicantumkan di README]
 - Status Setup: [contoh: Siap dijalankan / Kurang file .env.example / Dependensi konflik]
 
 #### 2. Rincian Skor (Skala 0 - 100)
@@ -102,7 +107,7 @@ Gunakan struktur baku berikut saat memaparkan hasil evaluasi:
 | Kesesuaian dengan Tema & Studi Kasus | 25% | [Nilai] | [Nilai * 0.25] |
 | UI/UX & Responsivitas Mobile | 20% | [Nilai] | [Nilai * 0.20] |
 | Kualitas Kode, Pemeliharaan & Keamanan | 10% | [Nilai] | [Nilai * 0.10] |
-| Dokumentasi (README) | 10% | [Nilai] | [Nilai * 0.10] |
+| Dokumentasi & Video Demo | 10% | [Nilai] | [Nilai * 0.10] |
 | **Total Nilai Akhir** | **100%** | - | **[Total Skor]** |
 
 #### 3. Kelebihan Utama
@@ -125,7 +130,7 @@ Gunakan struktur baku berikut saat memaparkan hasil evaluasi:
 
 ## 5. Instruksi Operasional AI Reviewer
 1. **Pemeriksaan Independen**: Lakukan audit folder per folder secara terisolasi tanpa terpengaruh folder peserta lain.
-2. **Baca README Terlebih Dahulu**: Buka file `README.md` pada folder peserta untuk memahami alur kerja, tautan deployment, dan batasan yang mereka buat.
+2. **Periksa README & Tautan Video Terlebih Dahulu**: Buka file `README.md` pada folder peserta untuk memahami alur kerja, tautan deployment, dan batasan yang mereka buat. Periksa apakah terdapat tautan video demo produk (YouTube, Drive, Loom, dsb.): jika ada cantumkan tautan aslinya, dan jika tidak ada, beri tahu secara transparan bahwa tautan video tidak dicantumkan di README.
 3. **Audit Statis Mendalam**:
    - Telusuri endpoint API, sanitasi payload, proteksi data, dan penanganan autentikasi.
    - Telusuri styling komponen (Tailwind breakpoint, overflow, target sentuh) untuk memvalidasi mobile responsiveness.
