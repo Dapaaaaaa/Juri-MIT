@@ -678,11 +678,11 @@ Eksekusi antarmuka yang unik dan integrasi API yang sangat rapi. Sukses terus un
 
 ---
 
-## 18. Tim: ArmBagus dkk. - VeriFy
+## 18. Tim: ArmBagus dkk. (pitipiwpiw) - VeriFy
 - **Folder Sumber**: `VeriFy-`
 - **Ketua Tim / Anggota**: Bagus Aufa Ariq Armeidi (`ArmBagus`), Irfan (`AIZOFan`), Affan Abdul Majid Syahrul, Dea Gusriyanti | Universitas Multi Data Palembang (MDP)
-- **Tautan Deployment**: Belum dicantumkan di README *(Arsitektur Laravel dengan panduan php artisan serve di localhost:8000)*
-- **Video Demo**: Belum dicantumkan di README
+- **Tautan Deployment**: Tersedia di Portal Penilaian Juri (Vercel Serverless)
+- **Video Demo**: Tidak dicantumkan di README
 - **Akun Demo**:
   - User: `irfan@gmail.com` / `12345678` (seeder: `user@verify.id` / `user123`)
   - Admin: `admin@gmail.com` / `admin123` (seeder: `admin@verify.id` / `admin123`)
@@ -691,67 +691,60 @@ Eksekusi antarmuka yang unik dan integrasi API yang sangat rapi. Sukses terus un
 
 | Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
 | :--- | :---: | :---: | :---: |
-| Fungsionalitas | 35% | 82 | 28.70 |
-| Kesesuaian dengan Studi Kasus | 25% | 95 | 23.75 |
-| UI/UX | 20% | 96 | 19.20 |
-| Kualitas Kode & Pemeliharaan | 10% | 80 | 8.00 |
-| Dokumentasi | 10% | 84 | 8.40 |
-| **Total Nilai Akhir** | **100%** | - | **88.05** |
+| Fungsionalitas | 35% | 65 | 22.75 |
+| Kesesuaian dengan Studi Kasus | 25% | 92 | 23.00 |
+| UI/UX | 20% | 90 | 18.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 70 | 7.00 |
+| Dokumentasi | 10% | 70 | 7.00 |
+| **Total Nilai Akhir** | **100%** | - | **77.75** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1.736 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1.760 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
-Platform VeriFy adalah karya yang sangat terkonsep dengan arsitektur matang untuk menjawab studi kasus The Trust Trap. Mesin deteksinya memadukan regex pola penipuan lokal, heuristik URL, dan Google Safe Browsing. Yang paling impresif adalah Scam Simulator berbasis Story Graph JSON dengan validasi graf DFS (StoryValidator) untuk mencegah alur buntu, serta panel admin lengkap untuk mengelola modul edukasi, skenario latihan, dan pemantauan scan.
+Platform VeriFy menghadirkan rancangan arsitektur penanganan The Trust Trap yang sangat matang, komprehensif, dan terkonsep baik. Gagasan mesin deteksi berbasis heuristik URL lokal yang dipadukan dengan Google Safe Browsing serta Scam Simulator berbasis Story Graph JSON dengan validasi graf DFS (StoryValidator) membuktikan kedalaman rekayasa tim.
 
-Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Tautan Live Deployment: File README.md belum mencantumkan tautan deployment aktif (hanya panduan localhost). Berdasarkan juknis, kemudahan akses daring langsung bagi penguji menjadi faktor krusial penilaian fungsionalitas.
-2. Kebocoran Kredensial di README: Kunci API Google Safe Browsing (AIzaSy...) tertulis terbuka pada baris contoh .env di README.md publik. Segera lakukan rotasi/revoke key tersebut di Google Cloud Console.
-3. Potensi Kerentanan IDOR: Di Api/SimulatorController.php pada method saveAttempt, field user_id diambil dari payload request ($request->user_id). Ini membuka celah manipulasi skor atas nama akun lain. Sebaiknya kunci mutlak ke Auth::id().
-4. Template .env Hilang: File .env.example terhapus dari repositori, sehingga langkah setup lokal pada dokumentasi mengalami kegagalan.
+Namun, pengujian pada tautan live deployment Vercel menemukan kendala kritis yang berdampak langsung pada skor fungsionalitas sesuai Juknis poin G.7.b:
+1. Fitur Simulator Tidak Dapat Diakses di Production: Konfigurasi routing pada vercel.json menelan prefix /api, sehingga seluruh request seperti GET /api/simulator/scenarios dan POST /api/simulator/attempts jatuh ke api/index.php dan rute Laravel tidak ditemukan (404). Akibatnya, fitur unggulan simulasi interaktif mati total di peramban live.
+2. Penanganan Exception Debug Merusak Alur Validasi: Pada api/index.php, penangkapan seluruh Throwable untuk output HTML menampilkan stack trace internal /var/task/... dan mengubah validasi form biasa menjadi HTTP 500. Biarkan Laravel menangani ValidationException dan NotFoundHttpException secara bawaan, serta bungkus renderer debug dengan kondisi app.debug.
+3. Kebocoran Kredensial Sensitif di README: Host database TiDB Cloud, username root, dan Google Safe Browsing API Key tertulis terbuka pada dokumentasi publik. Segera rotasi kunci tersebut di Google Cloud Console, amankan database, dan sediakan berkas .env.example bersih tanpa nilai rahasia.
+4. Penyempurnaan Tampilan UI: Tampilkan judul topik pada kartu simulator, bersihkan elemen badge duplikat, dan selaraskan teks antarmuka agar konsisten berbahasa Indonesia.
 
-Saran pengembangan ke depan:
-1. Sediakan Live Deployment: Deploy aplikasi ke platform cloud publik dan sematkan tautan aktifnya di README agar platform bisa diuji langsung secara daring.
-2. Proteksi Kunci API: Terapkan pembatasan HTTP referrer di Google Cloud Console agar API key tidak disalahgunakan pihak luar.
-
-Konsep alur simulasi dan rancangan panel admin yang sangat berbobot. Sukses terus untuk tim VeriFy!
+Potensi konsep dan arsitektur simulasi sangat tinggi. Sukses selalu untuk tim VeriFy!
 ```
 
 ---
 
-## 19. Tim: Leonardo Elian - FRAUD-ANT
+## 19. Tim: Leonardo Elian (casan laptop) - FRAUD-ANT
 - **Folder Sumber**: `FRAUDD-ANT/FRAUD-ANT`
 - **Ketua Tim**: Leonardo Elian (leonardo.elian2008@gmail.com)
-- **Tautan Deployment**: Belum dicantumkan di README *(Arsitektur full-stack React + Express lokal)*
-- **Video Demo**: Belum dicantumkan di README
+- **Tautan Deployment**: Tersedia di Portal Penilaian Juri (Firebase Hosting)
+- **Video Demo**: Tidak dicantumkan di README
 
 ### Rincian Nilai Form
 
 | Kriteria Penilaian | Bobot | Nilai Input (0 - 100) | Skor Terbobot |
 | :--- | :---: | :---: | :---: |
-| Fungsionalitas | 35% | 78 | 27.30 |
-| Kesesuaian dengan Studi Kasus | 25% | 82 | 20.50 |
-| UI/UX | 20% | 88 | 17.60 |
-| Kualitas Kode & Pemeliharaan | 10% | 85 | 8.50 |
-| Dokumentasi | 10% | 80 | 8.00 |
-| **Total Nilai Akhir** | **100%** | - | **81.90** |
+| Fungsionalitas | 35% | 52 | 18.20 |
+| Kesesuaian dengan Studi Kasus | 25% | 78 | 19.50 |
+| UI/UX | 20% | 75 | 15.00 |
+| Kualitas Kode & Pemeliharaan | 10% | 74 | 7.40 |
+| Dokumentasi | 10% | 70 | 7.00 |
+| **Total Nilai Akhir** | **100%** | - | **67.10** |
 
 ### Masukan untuk Tim (Siap Salin ke Form)
-*Catatan: 1.747 karakter (aman di bawah batas 2.000 karakter).*
+*Catatan: 1.682 karakter (aman di bawah batas 2.000 karakter).*
 
 ```text
-Platform FRAUD-ANT menghadirkan pendekatan menarik dengan memadukan pemindai bukti chat TrapScan berbasis OCR Tesseract lokal dan pemeriksa tautan TrapLink. Keputusan memproses OCR dan aturan heuristik langsung di lingkungan server tanpa ketergantungan API pihak ketiga patut diapresiasi karena menjaga privasi tangkapan layar pengguna, dipercantik antarmuka modern bernuansa hijau-kuning dengan animasi partikel dinamis.
+Platform FRAUD-ANT mengusung konsep visual dan ide perlindungan siber yang menarik melalui integrasi TrapScan berbasis OCR dan pemeriksa tautan TrapLink. Pengolahan analisis di sisi server mandiri merupakan pendekatan yang baik dalam menjaga privasi data pengguna.
 
-Catatan teknis dan evaluasi yang perlu diperhatikan:
-1. Ketiadaan Tautan Live Deployment dan Video: File README.md belum menyertakan tautan deployment aktif yang dapat diakses publik maupun video demonstrasi. Sesuai panduan teknis lomba, kemudahan juri menguji aplikasi secara langsung menjadi aspek esensial penilaian fungsionalitas.
-2. Siklus Hidup Worker OCR pada Backend: Di server/src/routes/scan.ts, fungsi createWorker('ind+eng') dan worker.terminate() dieksekusi berulang kali di dalam setiap request. Inisialisasi ulang model per-request memicu latensi tinggi dan beban CPU berlebih saat ada unggahan gambar bersamaan.
-3. Ruang Lingkup Fitur Masih Terbatas: Platform saat ini berfokus pada utilitas pemindai satu arah. Belum tersedia modul simulasi interaktif bercabang untuk melatih kewaspadaan pengguna maupun sistem basis data untuk menyimpan riwayat analisis.
+Namun, pengujian pada tautan live deployment menemukan kendala fungsionalitas dan arsitektur kritis yang wajib dibenahi:
+1. Backend Belum Di-deploy di Lingkungan Live: Fitur utama 0 dari 2 dapat berjalan di production. Frontend Firebase memanggil endpoint relatif /api/scan dan /api/url-check tanpa ketersediaan backend aktif, menghasilkan respons 404 HTML dan error mentah ke pengguna. Host API di cloud provider (seperti Cloud Run, Render, atau Railway), lalu sambungkan via rewrite atau variabel environment VITE_API_BASE_URL.
+2. Navigasi Menu & Aksesibilitas Mobile: Menu CardNav mengarahkan ke #about, #education, dan #faq yang tidak memiliki elemen target di DOM. Pada tampilan mobile, ganti overflow-hidden dengan overflow-y-auto agar menu tidak terpotong pada layar kecil.
+3. Diferensiasi Tingkat Risiko: Seluruh hasil pemeriksaan saat ini di-hardcode dengan warna teks merah dan ikon segitiga bahaya, bahkan untuk risiko rendah. Bedakan warna visual indikator serta tampilkan skor dan rincian sumber temuan.
+4. Perapian Kode & Selaras Branding: Satukan identitas antara ChatTrap dan FRAUD-ANT pada judul, favicon, dan metadata. Hapus script Tailwind CDN dari index.html produksi, terapkan worker pool singleton pada OCR Tesseract, dan pecah App.tsx menjadi komponen modular.
 
-Saran pengembangan ke depan:
-1. Optimasi Worker Pool OCR: Terapkan pola singleton worker pool di server agar model Tesseract dimuat sekali saat boot dan siap melayani permintaan secara instan.
-2. Sediakan Live Deployment: Deploy aplikasi ke cloud hosting publik (seperti Railway atau Render) dan sematkan tautan aktifnya di README.
-
-Konsep pelindung digital yang solid dengan eksekusi OCR mandiri yang sangat berani. Sukses terus untuk tim FRAUD-ANT!
+Jika backend live dan navigasi disempurnakan, platform ini memiliki potensi yang sangat baik. Sukses selalu untuk tim casan laptop!
 ```
 
 ---
